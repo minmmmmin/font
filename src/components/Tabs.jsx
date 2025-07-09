@@ -1,34 +1,28 @@
-import { useState } from "react";
 import ViewsGraph from "./graphs/ViewsGraph";
 import TrendGraph from "./graphs/TrendGraph";
 import OsShareGraph from "./graphs/OsShareGraph";
 import BrowserShareGraph from "./graphs/BrowserShareGraph";
 
-const tabList = [
-  { id: "views", label: "Views" },
-  { id: "os", label: "OS Share" },
-  { id: "browser", label: "Browser Share" },
-  { id: "trend", label: "Trend" },
-];
-
 const Tabs = ({ font }) => {
+  if (!font) return null;
+
   return (
     <div className="grid grid-cols-2 grid-rows-2 gap-8 p-4">
       <section className="bg-white p-4 rounded shadow">
         <h2 className="text-xl font-semibold mb-2">Views</h2>
-        <ViewsGraph data={font} />
+        <ViewsGraph key={font.name} data={font} />
       </section>
       <section className="bg-white p-4 rounded shadow">
         <h2 className="text-xl font-semibold mb-2">OS Share</h2>
-        <OsShareGraph data={font} />
+        <OsShareGraph key={font.name} data={font} />
       </section>
       <section className="bg-white p-4 rounded shadow">
         <h2 className="text-xl font-semibold mb-2">Browser Share</h2>
-        <BrowserShareGraph data={font} />
+        <BrowserShareGraph key={font.name} data={font} />
       </section>
       <section className="bg-white p-4 rounded shadow">
         <h2 className="text-xl font-semibold mb-2">Trend</h2>
-        <TrendGraph data={font} />
+        <TrendGraph key={font.name} data={font} />
       </section>
     </div>
   );
