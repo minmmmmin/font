@@ -1,6 +1,7 @@
 {
   "name": "font",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -22,7 +23,8 @@
     "@vitejs/plugin-react": "^4.6.0",
     "postcss": "^8.5.6",
     "postcss-import": "^16.1.1",
+    "rollup": "^4.44.2",
     "tailwindcss": "^4.1.11",
-    "vite": "^6.3.5"
+    "vite": "^7.0.3"
   }
 }
