@@ -72,8 +72,8 @@ const ViewsGraph = ({ data }) => {
           x={xScale(d.label)}
           y={yScale(d.views)}
           width={xScale.bandwidth()}
-          height={height - margin.bottom - yScale(d.views)}
-          fill="#3B82F6" // 青
+          height={yScale(0) - yScale(d.views)}
+          className="fill-blue-400 hover:fill-blue-600 transition-all duration-1000 ease-out"
         />
       ))}
     </svg>

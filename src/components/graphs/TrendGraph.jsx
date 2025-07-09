@@ -13,7 +13,7 @@ const TrendGraph = ({ data }) => {
 
   const width = 400;
   const height = 200;
-  const margin = { top: 20, right: 40, bottom: 40, left: 40 }; // bottomを広げた
+  const margin = { top: 20, right: 40, bottom: 40, left: 40 };
 
   const xScale = d3
     .scalePoint()
@@ -33,14 +33,24 @@ const TrendGraph = ({ data }) => {
 
   return (
     <svg width={width} height={height} className="bg-white shadow rounded">
-      {/* データ点と数値ラベル */}
+      {/* 折れ線 */}
+      <path
+        d={line(viewEntries)}
+        fill="none"
+        stroke="#3B82F6"
+        strokeWidth="2"
+        className="transition-all duration-700"
+      />
+
+      {/* 各データ点とテキスト */}
       {viewEntries.map((d, i) => (
         <g key={i}>
           <circle
             cx={xScale(d.label)}
             cy={yScale(d.views)}
             r={4}
-            fill="#3B82F6"
+            className="fill-blue-500 transition-transform duration-500"
+            style={{ transitionDelay: `${i * 150}ms`, transformOrigin: 'center' }}
           />
           <text
             x={xScale(d.label)}
@@ -48,19 +58,17 @@ const TrendGraph = ({ data }) => {
             textAnchor="middle"
             fontSize="10"
             fill="#333"
+            className="opacity-0 translate-y-2 transition-all duration-500"
+            style={{
+              transitionDelay: `${i * 150 + 100}ms`,
+              opacity: 1,
+              transform: "translateY(0)",
+            }}
           >
             {(d.views / 1_000_000).toFixed(1)}M
           </text>
         </g>
       ))}
-
-      {/* 折れ線 */}
-      <path
-        d={line(viewEntries)}
-        fill="none"
-        stroke="#3B82F6"
-        strokeWidth="2"
-      />
 
       {/* 横軸ラベル */}
       {viewEntries.map((d, i) => (
@@ -71,12 +79,16 @@ const TrendGraph = ({ data }) => {
           textAnchor="middle"
           fontSize="12"
           fill="#666"
+          className="opacity-0 translate-y-2 transition-all duration-500"
+          style={{
+            transitionDelay: `${i * 150 + 100}ms`,
+            opacity: 1,
+            transform: "translateY(0)",
+          }}
         >
           {d.label}
         </text>
       ))}
-
-
     </svg>
   );
 };
