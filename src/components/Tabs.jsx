@@ -12,43 +12,25 @@ const tabList = [
 ];
 
 const Tabs = ({ font }) => {
-  const [activeTab, setActiveTab] = useState("views");
-
-  const renderTabContent = () => {
-    switch (activeTab) {
-      case "views":
-        return <ViewsGraph data={font} />;
-      case "os":
-        return <OsShareGraph data={font} />;
-      case "browser":
-        return <BrowserShareGraph data={font} />;
-      case "trend":
-        return <TrendGraph data={font} />;
-      default:
-        return null;
-    }
-  };
-
   return (
-    <>
-      <div className="flex border-b mb-4">
-        {tabList.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className={`px-4 py-2 font-medium border-b-2 transition-colors duration-200 ${
-              activeTab === tab.id
-                ? "border-blue-500 text-blue-600"
-                : "border-transparent text-gray-500 hover:text-gray-700"
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
-
-      <div>{renderTabContent()}</div>
-    </>
+    <div className="space-y-8">
+      <section>
+        <h2 className="text-xl font-semibold mb-2">Views</h2>
+        <ViewsGraph data={font} />
+      </section>
+      <section>
+        <h2 className="text-xl font-semibold mb-2">OS Share</h2>
+        <OsShareGraph data={font} />
+      </section>
+      <section>
+        <h2 className="text-xl font-semibold mb-2">Browser Share</h2>
+        <BrowserShareGraph data={font} />
+      </section>
+      <section>
+        <h2 className="text-xl font-semibold mb-2">Trend</h2>
+        <TrendGraph data={font} />
+      </section>
+    </div>
   );
 };
 
