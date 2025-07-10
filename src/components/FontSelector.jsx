@@ -3,10 +3,22 @@ import { useState } from "react";
 const FontSelector = ({ fonts, selectedFont, onSelect }) => {
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
+  const [isHoveringList, setIsHoveringList] = useState(false);
 
-  const filteredFonts = fonts.filter((font) =>
-    font.family.toLowerCase().includes(query.toLowerCase())
-  );
+  const isQueryExactMatch = fonts.some((font) => font.family === query);
+
+  const filteredFonts =
+    query === "" || isQueryExactMatch
+      ? fonts // 検索してない、または完全一致の時は全件出す
+      : fonts.filter((font) =>
+          font.family.toLowerCase().includes(query.toLowerCase())
+        );
+
+  const handleBlur = () => {
+    setTimeout(() => {
+      if (!isHoveringList) setIsOpen(false);
+    }, 100);
+  };
 
   return (
     <div className="relative w-64">
@@ -20,10 +32,17 @@ const FontSelector = ({ fonts, selectedFont, onSelect }) => {
           setIsOpen(true);
         }}
         onFocus={() => setIsOpen(true)}
-        onBlur={() => setTimeout(() => setIsOpen(false), 100)} // 選択後すぐ消えないように
+        onBlur={handleBlur}
       />
       {isOpen && (
-        <ul className="absolute z-10 w-full max-h-40 overflow-auto bg-white border rounded shadow">
+        <ul
+          className="absolute z-10 w-full max-h-40 overflow-auto bg-white border rounded shadow"
+          onMouseEnter={() => setIsHoveringList(true)}
+          onMouseLeave={() => {
+            setIsHoveringList(false);
+            setIsOpen(false);
+          }}
+        >
           {filteredFonts.length > 0 ? (
             filteredFonts.map((font) => (
               <li
