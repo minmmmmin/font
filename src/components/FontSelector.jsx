@@ -13,7 +13,7 @@ const FontSelector = ({ fonts, selectedFont, onSelect }) => {
       <input
         type="text"
         className="w-full p-2 border rounded"
-        placeholder="フォントを検索..."
+        placeholder="Search..."
         value={query}
         onChange={(e) => {
           setQuery(e.target.value);
