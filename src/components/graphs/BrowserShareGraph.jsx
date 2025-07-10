@@ -1,3 +1,4 @@
+import { useState } from "react";
 import * as d3 from "d3";
 
 const BrowserShareGraph = ({ data }) => {
@@ -7,6 +8,8 @@ const BrowserShareGraph = ({ data }) => {
     .map(([browser, ratio]) => ({ browser, ratio }))
     .filter((d) => d.ratio > 0.01)
     .sort((a, b) => b.ratio - a.ratio);
+
+  const [hovered, setHovered] = useState(null);
 
   const width = 320;
   const height = 320;
@@ -23,25 +26,44 @@ const BrowserShareGraph = ({ data }) => {
     .arc()
     .innerRadius(0)
     .outerRadius(radius - 10);
+  const outerArc = d3
+    .arc()
+    .innerRadius(radius * 0.9)
+    .outerRadius(radius * 0.9);
 
   return (
     <div className="flex flex-col sm:flex-row gap-6">
       <svg width={width} height={height} className="bg-white shadow rounded">
         <g transform={`translate(${width / 2}, ${height / 2})`}>
-          {pie(pieData).map((d, i) => (
-            <g key={i}>
-              <path d={arc(d)} fill={color(d.data.browser)} />
-              <text
-                transform={`translate(${arc.centroid(d)})`}
-                textAnchor="middle"
-                fontSize="12"
-                fontWeight="bold"
-                fill="#333"
-              >
-                {(d.data.ratio * 100).toFixed(1)}%
-              </text>
-            </g>
-          ))}
+          {pie(pieData).map((d, i) => {
+            const [labelX, labelY] = outerArc.centroid(d);
+            const isHovered = hovered?.data?.browser === d.data.browser;
+
+            return (
+              <g key={i}>
+                <path
+                  d={arc(d)}
+                  fill={color(d.data.browser)}
+                  onMouseEnter={() => setHovered(d)}
+                  onMouseLeave={() => setHovered(null)}
+                  className="cursor-pointer transition-opacity duration-200 hover:opacity-80"
+                />
+                {isHovered && (
+                  <text
+                    x={labelX}
+                    y={labelY}
+                    textAnchor="middle"
+                    fontSize="12"
+                    fontWeight="bold"
+                    fill="#333"
+                    className="pointer-events-none"
+                  >
+                    {(d.data.ratio * 100).toFixed(1)}%
+                  </text>
+                )}
+              </g>
+            );
+          })}
         </g>
       </svg>
 
