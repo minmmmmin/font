@@ -4,11 +4,22 @@ const TrendGraph = ({ data }) => {
   if (!data || !data.viewsByDateRange) return null;
 
   const rangeData = data.viewsByDateRange;
+
+  const year = rangeData["year"]?.views || 0;
+  const last90 = rangeData["90day"]?.views || 0;
+  const last30 = rangeData["30day"]?.views || 0;
+  const last7 = rangeData["7day"]?.views || 0;
+
+  const seg1 = year - last90;
+  const seg2 = last90 - last30;
+  const seg3 = last30 - last7;
+  const seg4 = last7;
+
   const viewEntries = [
-    { label: "7day", ...rangeData["7day"] },
-    { label: "30day", ...rangeData["30day"] },
-    { label: "90day", ...rangeData["90day"] },
-    { label: "year", ...rangeData["year"] },
+    { label: "1年以前", views: seg1 },
+    { label: "90日〜30日前", views: seg1 + seg2 },
+    { label: "30日〜7日前", views: seg1 + seg2 + seg3 },
+    { label: "直近7日", views: seg1 + seg2 + seg3 + seg4 },
   ];
 
   const width = 400;
@@ -33,7 +44,6 @@ const TrendGraph = ({ data }) => {
 
   return (
     <svg width={width} height={height} className="bg-white shadow rounded">
-      {/* 折れ線 */}
       <path
         d={line(viewEntries)}
         fill="none"
@@ -42,7 +52,6 @@ const TrendGraph = ({ data }) => {
         className="transition-all duration-700"
       />
 
-      {/* 各データ点とテキスト */}
       {viewEntries.map((d, i) => (
         <g key={i}>
           <circle
@@ -50,7 +59,10 @@ const TrendGraph = ({ data }) => {
             cy={yScale(d.views)}
             r={4}
             className="fill-blue-500 transition-transform duration-500"
-            style={{ transitionDelay: `${i * 150}ms`, transformOrigin: 'center' }}
+            style={{
+              transitionDelay: `${i * 150}ms`,
+              transformOrigin: "center",
+            }}
           />
           <text
             x={xScale(d.label)}
@@ -58,7 +70,6 @@ const TrendGraph = ({ data }) => {
             textAnchor="middle"
             fontSize="10"
             fill="#333"
-            className="opacity-0 translate-y-2 transition-all duration-500"
             style={{
               transitionDelay: `${i * 150 + 100}ms`,
               opacity: 1,
@@ -79,7 +90,6 @@ const TrendGraph = ({ data }) => {
           textAnchor="middle"
           fontSize="12"
           fill="#666"
-          className="opacity-0 translate-y-2 transition-all duration-500"
           style={{
             transitionDelay: `${i * 150 + 100}ms`,
             opacity: 1,
