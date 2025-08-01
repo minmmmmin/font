@@ -11,21 +11,21 @@ const Quiz = () => {
 
     Promise.all([
       fetchFontAnalytics().catch((e) => {
-        console.error("❌ fetchFontAnalytics failed:", e);
+        console.error("fetchFontAnalytics failed:", e);
         return [];
       }),
       fetch("/umap_font_data.csv")
         .then((res) => {
-          if (!res.ok) throw new Error("❌ CSV fetch failed");
+          if (!res.ok) throw new Error("CSV fetch failed");
           return res.text();
         })
         .catch((e) => {
-          console.error("❌ CSV fetch error:", e);
+          console.error("CSV fetch error:", e);
           return "";
         }),
     ]).then(([fontData, csvText]) => {
-      console.log("📦 Font Analytics Loaded:", fontData);
-      console.log("📄 CSV text length:", csvText.length);
+      console.log("Font Analytics Loaded:", fontData);
+      console.log("CSV text length:", csvText.length);
 
       const lines = csvText.trim().split("\n").slice(1);
       const umap = lines.map((line) => {
@@ -52,8 +52,8 @@ const Quiz = () => {
         })
         .filter(Boolean);
 
-      console.log("✏️ Sample font from API:", fontData[0]?.family);
-      console.log("✏️ Sample font from CSV:", umap[0]?.family);
+      console.log("Sample font from API:", fontData[0]?.family);
+      console.log("Sample font from CSV:", umap[0]?.family);
       console.log(
         "🔍 Normalize match check:",
         normalize(fontData[0]?.family),
@@ -64,6 +64,23 @@ const Quiz = () => {
       setFonts(merged);
     });
   }, []);
+
+  useEffect(() => {
+    if (!recommended) return;
+
+    recommended.forEach((font) => {
+      const linkId = `font-link-${font.family.replace(/\s+/g, "-")}`;
+      if (!document.getElementById(linkId)) {
+        const link = document.createElement("link");
+        link.id = linkId;
+        link.href = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(
+          font.family
+        )}&display=swap`;
+        link.rel = "stylesheet";
+        document.head.appendChild(link);
+      }
+    });
+  }, [recommended]);
 
   return (
     <div>
@@ -82,7 +99,7 @@ const Quiz = () => {
                 marginBottom: "1rem",
               }}
             >
-              {font.family} — サンプルテキスト
+              {font.family} — sample text
             </div>
           ))}
         </div>
