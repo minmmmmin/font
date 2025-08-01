@@ -40,10 +40,6 @@ const Dashboard = () => {
 
       <FontPreview fontFamily={selectedFont.family} previewText={previewText} />
 
-      <div className="my-8 max-w-4xl mx-auto">
-        <h2 className="text-lg font-bold mb-2">フォントマップ</h2>
-        <FontMap />
-      </div>
 
       <Tabs font={selectedFont} />
     </>
