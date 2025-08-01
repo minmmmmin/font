@@ -7,7 +7,7 @@ const Quiz = () => {
   const [recommended, setRecommended] = useState(null);
 
   useEffect(() => {
-    console.log("🟡 useEffect called in Quiz.jsx");
+    console.log("useEffect called in Quiz.jsx");
 
     Promise.all([
       fetchFontAnalytics().catch((e) => {
@@ -31,7 +31,7 @@ const Quiz = () => {
       const umap = lines.map((line) => {
         const [rawFamily, x, y] = line.split(",");
 
-        // 1. 余計な空白や引用符を除去（"Roboto 100" → "Roboto"）
+        // 余計な空白や引用符を除去（"Roboto 100" → "Roboto"）
         const cleanFamily = rawFamily.replace(/["']/g, "").split(" ")[0];
 
         return {
@@ -102,6 +102,20 @@ const Quiz = () => {
               {font.family} — sample text
             </div>
           ))}
+          <button
+            onClick={() => setRecommended(null)}
+            style={{
+              marginTop: "2rem",
+              padding: "0.5rem 1rem",
+              fontSize: "1rem",
+              borderRadius: "6px",
+              border: "1px solid #ccc",
+              backgroundColor: "#f5f5f5",
+              cursor: "pointer",
+            }}
+          >
+            もう一度診断する
+          </button>
         </div>
       )}
     </div>
