@@ -4,7 +4,7 @@ const QuizMode = ({ allFonts, onResult }) => {
   const [quizFonts, setQuizFonts] = useState([]);
   const [likedFonts, setLikedFonts] = useState([]);
   const [questionCount, setQuestionCount] = useState(0);
-  const [loadingFonts, setLoadingFonts] = useState(false); // ← 追加
+  const [loadingFonts, setLoadingFonts] = useState(false);
   const totalQuestions = 5;
 
   const loadNextQuiz = () => {
@@ -13,9 +13,11 @@ const QuizMode = ({ allFonts, onResult }) => {
     setLoadingFonts(true);
     setQuizFonts(nextFonts);
 
-    // フォント読み込み完了を待ってから表示
     document.fonts.ready.then(() => {
-      console.log("✅ フォント読み込み完了:", nextFonts.map(f => f.family));
+      console.log(
+        "フォント読み込み完了:",
+        nextFonts.map((f) => f.family)
+      );
       setLoadingFonts(false);
     });
   };
@@ -99,7 +101,7 @@ const QuizMode = ({ allFonts, onResult }) => {
                 fontSize: "1.5rem",
               }}
             >
-              <p style={{ marginBottom: "0.5rem" }}>サンプルテキスト</p>
+              <p style={{ marginBottom: "0.5rem" }}>Sample Text</p>
               <div style={{ fontSize: "0.9rem", color: "#555" }}>
                 {font.family}
               </div>
