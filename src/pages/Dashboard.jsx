@@ -3,6 +3,7 @@ import { fetchFontAnalytics } from "../api/analytics";
 import FontSelector from "../components/FontSelector";
 import Tabs from "../components/Tabs";
 import FontPreview from "../components/FontPreview";
+import FontMap from "../components/graphs/FontMap";
 
 const Dashboard = () => {
   const [fontData, setFontData] = useState([]);
@@ -38,6 +39,11 @@ const Dashboard = () => {
       </div>
 
       <FontPreview fontFamily={selectedFont.family} previewText={previewText} />
+
+      <div className="my-8 max-w-4xl mx-auto">
+        <h2 className="text-lg font-bold mb-2">フォントマップ</h2>
+        <FontMap />
+      </div>
 
       <Tabs font={selectedFont} />
     </>
