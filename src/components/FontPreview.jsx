@@ -16,9 +16,10 @@ const FontPreview = ({ fontFamily, previewText }) => {
     <div
       style={{
         fontFamily,
-        border: "1px solid #ccc",
+        border: "px solid #ccc",
         padding: "1rem",
         marginTop: "1rem",
+        marginLeft: "1rem",
       }}
     >
       {previewText || "プレビューしたいテキストを入力してください"}
