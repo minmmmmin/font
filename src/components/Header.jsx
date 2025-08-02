@@ -9,7 +9,7 @@ const Header = () => {
         </h1>
         <nav className="flex justify-center md:justify-end gap-6 text-green-700 text-lg">
           <Link to="/" className="hover:underline">
-            How to Use
+            Home
           </Link>
           <Link to="/dashboard" className="hover:underline">
             Dashboard

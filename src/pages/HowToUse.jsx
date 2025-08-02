@@ -1,34 +1,55 @@
+import { Link } from "react-router-dom";
+
 const HowToUse = () => {
   return (
-    <div className="p-8 max-w-3xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6 text-green-800">How to Use</h2>
+    <div className="p-8 max-w-3xl mx-auto text-gray-800">
+      <h2 className="text-3xl font-bold mb-6 text-green-800">使い方ガイド</h2>
 
-      <p className="mb-6 text-gray-700">
-        このツールでは、Google Fonts
-        の人気データを可視化しています。フォントを選ぶと、
-        そのフォントの利用傾向がさまざまなグラフで表示されます。
-        デザインや選定の参考に、自由に使ってみてください。
+      <p className="mb-6">
+        <strong>mojivisual</strong> は、Google Fonts の人気データを可視化し、
+        フォント選びをもっと直感的で楽しいものにするためのツールです。
+        デザイン制作や資料作成のフォント選定にぜひ活用してください。
       </p>
 
-      <ol className="list-decimal ml-6 space-y-4 text-gray-800">
+      <ol className="list-decimal ml-6 space-y-4">
         <li>
           <strong>フォントを選ぶ：</strong>
-          上部の検索ボックスから好きなフォントを選択してください。リアルタイムで候補が絞り込まれます。
+          ホーム画面で、一覧または検索から気になるフォントを選択します。
         </li>
         <li>
-          <strong>グラフを見る：</strong>
-          選んだフォントに関する様々なデータ（使用ブラウザ比率、OS比率、人気推移など）が自動で表示されます。
+          <strong>傾向を確認する：</strong>
+          使用ブラウザ・OSの比率、人気の推移、時系列の変化など、
+          選んだフォントの使用傾向がグラフで表示されます。
         </li>
         <li>
-          <strong>データの傾向を楽しむ：</strong>
-          時系列のトレンドや環境ごとの使用比率から、フォントの「使われ方の特徴」を探ってみましょう。
+          <strong>診断に挑戦する：</strong>
+          「診断」ページでは、好みのフォントを選んでいくことで、
+          あなたにぴったりのフォントを提案してくれます。
         </li>
       </ol>
 
-      <p className="mt-8 text-gray-600 text-sm">
-        ※データは Google Fonts
-        の公開APIや解析データに基づいており、実際の使用状況と異なる場合があります。
+      <p className="mt-8 text-sm text-gray-600">
+        ※ 表示されるデータは Google Fonts API や独自解析に基づいており、
+        実際の使用状況とは異なる場合があります。
       </p>
+
+      <div className="mt-6 text-center">
+        <Link
+          to="/dashboard"
+          className="inline-block px-6 py-3 border border-green-600 text-green-700 font-medium rounded hover:bg-green-50 transition"
+        >
+          フォント一覧を見てみる
+        </Link>
+      </div>
+
+      <div className="mt-10 text-center">
+        <Link
+          to="/quiz"
+          className="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded hover:bg-green-700 transition"
+        >
+          フォント診断を試してみる
+        </Link>
+      </div>
     </div>
   );
 };
