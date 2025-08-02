@@ -84,7 +84,7 @@ const Quiz = () => {
 
   return (
     <div>
-      <h1 style={{ margin: "1rem" }}>フォント診断</h1>
+      <h1 style={{ margin: "1rem" }}>フォント診断結果</h1>
       {!recommended ? (
         <QuizMode allFonts={fonts} onResult={setRecommended} />
       ) : (
