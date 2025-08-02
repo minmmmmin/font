@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-const QuizMode = ({ allFonts, onResult }) => {
+const QuizMode = ({ allFonts, onResult, setLikedFonts }) => {
   const [quizFonts, setQuizFonts] = useState([]);
-  const [likedFonts, setLikedFonts] = useState([]);
+  const [localLiked, setLocalLiked] = useState([]);
   const [questionCount, setQuestionCount] = useState(0);
   const [loadingFonts, setLoadingFonts] = useState(false);
   const totalQuestions = 5;
@@ -14,18 +14,12 @@ const QuizMode = ({ allFonts, onResult }) => {
     setQuizFonts(nextFonts);
 
     document.fonts.ready.then(() => {
-      console.log(
-        "フォント読み込み完了:",
-        nextFonts.map((f) => f.family)
-      );
       setLoadingFonts(false);
     });
   };
 
-  // フォントリンクを動的に追加
   useEffect(() => {
     if (quizFonts.length === 0) return;
-
     quizFonts.forEach((font) => {
       const linkId = `font-link-${font.family.replace(/\s+/g, "-")}`;
       if (!document.getElementById(linkId)) {
@@ -47,13 +41,13 @@ const QuizMode = ({ allFonts, onResult }) => {
   }, [allFonts]);
 
   const handleChoice = (font) => {
-    const newLikedFonts = [...likedFonts, font];
-    setLikedFonts(newLikedFonts);
-    const nextCount = questionCount + 1;
-    setQuestionCount(nextCount);
+    const updated = [...localLiked, font];
+    setLocalLiked(updated);
+    setQuestionCount((prev) => prev + 1);
 
-    if (nextCount >= totalQuestions) {
-      const result = recommendFonts(newLikedFonts);
+    if (updated.length >= totalQuestions) {
+      const result = recommendFonts(updated);
+      setLikedFonts(updated);
       onResult(result);
     } else {
       loadNextQuiz();

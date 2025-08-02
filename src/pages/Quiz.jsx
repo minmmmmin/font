@@ -5,10 +5,9 @@ import { fetchFontAnalytics } from "../api/analytics";
 const Quiz = () => {
   const [fonts, setFonts] = useState([]);
   const [recommended, setRecommended] = useState(null);
+  const [likedFonts, setLikedFonts] = useState([]);
 
   useEffect(() => {
-    console.log("useEffect called in Quiz.jsx");
-
     Promise.all([
       fetchFontAnalytics().catch((e) => {
         console.error("fetchFontAnalytics failed:", e);
@@ -24,16 +23,10 @@ const Quiz = () => {
           return "";
         }),
     ]).then(([fontData, csvText]) => {
-      console.log("Font Analytics Loaded:", fontData);
-      console.log("CSV text length:", csvText.length);
-
       const lines = csvText.trim().split("\n").slice(1);
       const umap = lines.map((line) => {
         const [rawFamily, x, y] = line.split(",");
-
-        // 余計な空白や引用符を除去（"Roboto 100" → "Roboto"）
         const cleanFamily = rawFamily.replace(/["']/g, "").split(" ")[0];
-
         return {
           family: cleanFamily,
           x: parseFloat(x),
@@ -42,7 +35,6 @@ const Quiz = () => {
       });
 
       const normalize = (str) => str.toLowerCase().replace(/[^a-z0-9]/gi, "");
-
       const merged = fontData
         .map((font) => {
           const coords = umap.find(
@@ -51,15 +43,6 @@ const Quiz = () => {
           return coords ? { ...font, x: coords.x, y: coords.y } : null;
         })
         .filter(Boolean);
-
-      console.log("Sample font from API:", fontData[0]?.family);
-      console.log("Sample font from CSV:", umap[0]?.family);
-      console.log(
-        "🔍 Normalize match check:",
-        normalize(fontData[0]?.family),
-        "vs",
-        normalize(umap[0]?.family)
-      );
 
       setFonts(merged);
     });
@@ -86,7 +69,11 @@ const Quiz = () => {
     <div>
       <h1 style={{ margin: "1rem" }}>フォント診断結果</h1>
       {!recommended ? (
-        <QuizMode allFonts={fonts} onResult={setRecommended} />
+        <QuizMode
+          allFonts={fonts}
+          onResult={setRecommended}
+          setLikedFonts={setLikedFonts} // ← 追加
+        />
       ) : (
         <div style={{ padding: "1rem" }}>
           <h2>あなたにおすすめのフォント</h2>
@@ -102,8 +89,30 @@ const Quiz = () => {
               {font.family} — sample text
             </div>
           ))}
+
+          {likedFonts.length > 0 && (
+            <>
+              <h3 style={{ marginTop: "2rem" }}>あなたが選んだフォント</h3>
+              {likedFonts.map((font, idx) => (
+                <div
+                  key={`${font.family}-${idx}`}
+                  style={{
+                    fontFamily: font.family,
+                    fontSize: "1.2rem",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  {font.family}
+                </div>
+              ))}
+            </>
+          )}
+
           <button
-            onClick={() => setRecommended(null)}
+            onClick={() => {
+              setRecommended(null);
+              setLikedFonts([]); // ← reset!
+            }}
             style={{
               marginTop: "2rem",
               padding: "0.5rem 1rem",
