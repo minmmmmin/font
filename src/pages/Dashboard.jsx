@@ -48,13 +48,27 @@ const Dashboard = () => {
     };
   }, []);
 
-  
+  const CATEGORY_COLORS = {
+    serif: "#1f77b4",
+    "sans-serif": "#ff7f0e",
+    display: "#2ca02c",
+    handwriting: "#d62728",
+    monospace: "#9467bd",
+  };
+
+  const categoryColor = (cat, idx = 0) => {
+    if (CATEGORY_COLORS[cat]) return CATEGORY_COLORS[cat];
+    const fallback = ["#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"];
+    return fallback[idx % fallback.length];
+  };
 
   const viewBox = `${bounds.minX} ${bounds.minY} ${bounds.maxX - bounds.minX} ${
     bounds.maxY - bounds.minY
   }`;
 
-  const color = (c) => ["#1f77b4", "#ff7f0e", "#2ca02c"][c % 3];
+  const categories = useMemo(() => {
+    return [...new Set(data.map((d) => d.category))];
+  }, []);
 
   return (
     <div>
@@ -74,6 +88,34 @@ const Dashboard = () => {
           />
         </label>
       </div>
+      <div
+        style={{
+          display: "flex",
+          gap: "12px",
+          alignItems: "center",
+          flexWrap: "wrap",
+          marginBottom: "0.5rem",
+        }}
+      >
+        {categories.map((cat, i) => (
+          <div
+            key={cat}
+            style={{ display: "flex", alignItems: "center", gap: 6 }}
+          >
+            <span
+              style={{
+                display: "inline-block",
+                width: 12,
+                height: 12,
+                background: categoryColor(cat, i),
+                borderRadius: 2,
+                border: "1px solid #ccc",
+              }}
+            />
+            <span style={{ fontSize: 12 }}>{cat}</span>
+          </div>
+        ))}
+      </div>
       <svg
         width={1000}
         height={750}
@@ -91,7 +133,7 @@ const Dashboard = () => {
               fontSize={0.2}
               textAnchor="middle"
               dominantBaseline="central"
-              fill={color(d.cluster)}
+              fill={categoryColor(d.category, i)}
               style={{
                 fontFamily: `${fam}, cursive`,
                 fontWeight,
