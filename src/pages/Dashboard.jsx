@@ -1,12 +1,12 @@
 import React, { useMemo, useState } from "react";
-import data from "/public/output.json";
+import data from "../../output2.json";
 
 const Dashboard = () => {
   const [glyph, setGlyph] = useState("A");
 
   // family抽出
-  const extractFamily = (name) =>
-    name.replace(/\s(regular|italic|\d{3}italic?|\d{3})$/i, "");
+  const extractFamily = (family) =>
+    family.replace(/\s(regular|italic|\d{3}italic?|\d{3})$/i, "");
 
   // variantをCSSに
   const parseVariant = (variant) => {
@@ -23,16 +23,19 @@ const Dashboard = () => {
 
   // Google Fontsリンク作成
   const fontLinks = useMemo(() => {
-    const fams = [...new Set(data.map((d) => extractFamily(d.name)))];
-    return fams.map((fam) => (
-      <link
-        key={fam}
-        rel="stylesheet"
-        href={`https://fonts.googleapis.com/css2?family=${encodeURIComponent(
-          fam.replace(/\s+/g, "+")
-        )}&display=swap`}
-      />
-    ));
+    const fams = [...new Set(data.map((d) => extractFamily(d.family)))];
+    return fams.map((fam) => {
+      console.log(fam);
+      return (
+        <link
+          key={fam}
+          rel="stylesheet"
+          href={`https://fonts.googleapis.com/css2?family=${encodeURIComponent(
+            fam
+          )}&display=swap`}
+        />
+      );
+    });
   }, []);
 
   // 座標範囲
@@ -117,13 +120,12 @@ const Dashboard = () => {
         ))}
       </div>
       <svg
-        width={1000}
-        height={750}
         viewBox={viewBox}
         style={{ background: "#fff", border: "1px solid #ccc" }}
       >
         {data.map((d, i) => {
-          const fam = extractFamily(d.name);
+          console.log(d);
+          const fam = extractFamily(d.family);
           const { fontWeight, fontStyle } = parseVariant(d.variant);
           return (
             <text

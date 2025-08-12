@@ -12,7 +12,7 @@ embedding = reducer.fit_transform(vectors)
 
 # ===== DataFrameに統合 =====
 result_df = pd.concat([metadata, pd.DataFrame(embedding, columns=["x", "y"])], axis=1)
-result_df.to_csv("n150min0..csv", index=False)
+result_df.to_csv("n150min09.sv", index=False)
 
 # ===== カテゴリごとに色分け散布図 =====
 plt.figure(figsize=(8, 6))
