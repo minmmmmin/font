@@ -1,56 +1,31 @@
 import pandas as pd
-import numpy as np
 import umap
-from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
-import json
-import random
 
-# データ読み込み
+# ===== データ読み込み =====
 vectors = pd.read_csv("public/vectors-200.tsv", sep="\t", header=None)
 metadata = pd.read_csv("public/metadata.tsv", sep="\t")
 
-# ===== ランダムに1カテゴリ選択 =====
-categories = metadata["category"].unique()
-selected_cat = random.choice(categories)
-print(f"選択されたカテゴリ: {selected_cat}")
+# ===== UMAP変換 =====
+reducer = umap.UMAP(n_neighbors=150, min_dist=0.99, random_state=42)
+embedding = reducer.fit_transform(vectors)
 
-# そのカテゴリだけ抽出
-meta_cat = metadata[metadata["category"] == selected_cat].reset_index(drop=True)
-vectors_cat = vectors.loc[meta_cat.index].reset_index(drop=True)
+# ===== DataFrameに統合 =====
+result_df = pd.concat([metadata, pd.DataFrame(embedding, columns=["x", "y"])], axis=1)
+result_df.to_csv("n150min0..csv", index=False)
 
-# ===== UMAP（カテゴリ内だけ） =====
-reducer = umap.UMAP(random_state=42)
-embedding_cat = reducer.fit_transform(vectors_cat)
+# ===== カテゴリごとに色分け散布図 =====
+plt.figure(figsize=(8, 6))
+categories = result_df["category"].unique()
+colors = plt.cm.get_cmap("tab10", len(categories))
 
-# DataFrameにUMAP座標追加
-df_cat = meta_cat.copy()
-df_cat["x"] = embedding_cat[:, 0]
-df_cat["y"] = embedding_cat[:, 1]
+for idx, cat in enumerate(categories):
+    subset = result_df[result_df["category"] == cat]
+    plt.scatter(subset["x"], subset["y"], label=cat, s=20, alpha=0.5, color=colors(idx))
 
-# ===== クラスタリング（UMAP後の座標で） =====
-kmeans = KMeans(n_clusters=3, random_state=42, n_init="auto")
-df_cat["cluster"] = kmeans.fit_predict(df_cat[["x", "y"]])
-
-# ===== 散布図表示 =====
-plt.figure(figsize=(8, 8))
-for c in np.unique(df_cat["cluster"]):
-    mask = df_cat["cluster"] == c
-    plt.scatter(
-        df_cat.loc[mask, "x"],
-        df_cat.loc[mask, "y"],
-        s=30,
-        label=f"cluster {c}",
-        alpha=0.9
-    )
-
-plt.title(f"UMAP of '{selected_cat}' Fonts (Clustering on UMAP space)")
+plt.title("UMAP Projection of Fonts by Category (n150min0.99.)")
 plt.xlabel("UMAP-1")
 plt.ylabel("UMAP-2")
-plt.legend(loc="best", fontsize=8, frameon=True, markerscale=1.5)
+plt.legend(title="Category", fontsize=8, frameon=True, markerscale=1.5)
 plt.tight_layout()
-plt.savefig(f"umap_kmeans_on_umapspace_{selected_cat}.png", dpi=180, bbox_inches="tight")
-plt.show()
-
-# ===== JSON保存（任意） =====
-df_cat.to_json(f"umap_kmeans_on_umapspace_{selected_cat}.json", orient="records", force_ascii=False, indent=2)
+plt.savefig("n150min0.99.png", dpi=180)
