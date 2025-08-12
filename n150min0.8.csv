@@ -1,0 +1,1884 @@
+name,variant,category,x,y
+Roboto 100,100,sans-serif,-3.0863025,17.637417
+Roboto 100italic,100italic,sans-serif,-3.4228919,16.113373
+Roboto 300,300,sans-serif,-4.9076114,17.791351
+Roboto 300italic,300italic,sans-serif,-4.9163437,14.636322
+Roboto regular,regular,sans-serif,-7.76832,17.474588
+Roboto italic,italic,sans-serif,-7.964383,11.553482
+Roboto 500,500,sans-serif,-9.460046,15.804655
+Roboto 500italic,500italic,sans-serif,-8.935456,10.893011
+Roboto 700,700,sans-serif,-10.359398,14.734257
+Roboto 700italic,700italic,sans-serif,-9.388522,10.341632
+Roboto 900,900,sans-serif,-11.193564,14.124143
+Roboto 900italic,900italic,sans-serif,-9.858191,10.371675
+Open Sans 300,300,sans-serif,-4.211259,18.028597
+Open Sans 300italic,300italic,sans-serif,-4.461888,14.939157
+Open Sans regular,regular,sans-serif,-6.646482,17.813992
+Open Sans italic,italic,sans-serif,-7.2277026,11.792773
+Open Sans 600,600,sans-serif,-8.548183,16.624697
+Open Sans 600italic,600italic,sans-serif,-8.492886,10.437811
+Open Sans 700,700,sans-serif,-10.208872,15.230888
+Open Sans 700italic,700italic,sans-serif,-9.106418,10.213885
+Open Sans 800,800,sans-serif,-11.244388,14.585506
+Open Sans 800italic,800italic,sans-serif,-9.72953,10.119328
+Lato 100,100,sans-serif,-2.6491354,17.458166
+Lato 100italic,100italic,sans-serif,-3.145253,16.602316
+Lato 300,300,sans-serif,-3.9284801,18.35611
+Lato 300italic,300italic,sans-serif,-4.2881055,15.102798
+Lato regular,regular,sans-serif,-8.207531,17.66966
+Lato italic,italic,sans-serif,-7.761814,11.2163315
+Lato 700,700,sans-serif,-10.253936,14.801744
+Lato 700italic,700italic,sans-serif,-9.271764,11.025293
+Lato 900,900,sans-serif,-11.004103,13.967749
+Lato 900italic,900italic,sans-serif,-10.082699,10.696127
+Slabo 27px regular,regular,serif,-0.06448432,12.076333
+Roboto Condensed 300,300,sans-serif,-5.8753266,17.799414
+Roboto Condensed 300italic,300italic,sans-serif,-7.5315604,12.337195
+Roboto Condensed regular,regular,sans-serif,-9.423258,13.983169
+Roboto Condensed italic,italic,sans-serif,-9.388474,11.361033
+Roboto Condensed 700,700,sans-serif,-10.623658,12.76348
+Roboto Condensed 700italic,700italic,sans-serif,-10.410329,11.101252
+Oswald 200,200,sans-serif,-6.3374605,16.361609
+Oswald 300,300,sans-serif,-9.513562,13.3447275
+Oswald regular,regular,sans-serif,-10.646921,12.647151
+Oswald 500,500,sans-serif,-10.92321,12.409292
+Oswald 600,600,sans-serif,-11.108055,12.612208
+Oswald 700,700,sans-serif,-11.166577,12.873962
+Source Sans Pro 200,200,sans-serif,-3.2448447,18.011208
+Source Sans Pro 200italic,200italic,sans-serif,-3.520861,15.598259
+Source Sans Pro 300,300,sans-serif,-4.0786085,18.07766
+Source Sans Pro 300italic,300italic,sans-serif,-4.105817,15.044192
+Source Sans Pro regular,regular,sans-serif,-7.043831,17.524027
+Source Sans Pro italic,italic,sans-serif,-7.0828724,11.9521675
+Source Sans Pro 600,600,sans-serif,-9.772206,15.249516
+Source Sans Pro 600italic,600italic,sans-serif,-8.12452,10.698613
+Source Sans Pro 700,700,sans-serif,-10.720235,14.137758
+Source Sans Pro 700italic,700italic,sans-serif,-9.247473,10.294993
+Source Sans Pro 900,900,sans-serif,-11.2386465,13.999275
+Source Sans Pro 900italic,900italic,sans-serif,-9.635361,9.99648
+Montserrat 100,100,sans-serif,-3.128104,17.262823
+Montserrat 100italic,100italic,sans-serif,-3.5887065,16.618555
+Montserrat 200,200,sans-serif,-3.8841164,17.635344
+Montserrat 200italic,200italic,sans-serif,-4.489123,15.961747
+Montserrat 300,300,sans-serif,-4.7561655,16.840942
+Montserrat 300italic,300italic,sans-serif,-5.058251,15.409622
+Montserrat regular,regular,sans-serif,-6.109397,17.164501
+Montserrat italic,italic,sans-serif,-6.4193883,13.605731
+Montserrat 500,500,sans-serif,-9.610607,16.824484
+Montserrat 500italic,500italic,sans-serif,-7.728669,9.882206
+Montserrat 600,600,sans-serif,-10.848015,15.999977
+Montserrat 600italic,600italic,sans-serif,-8.141212,9.482176
+Montserrat 700,700,sans-serif,-11.581006,16.012941
+Montserrat 700italic,700italic,sans-serif,-8.73581,9.231933
+Montserrat 800,800,sans-serif,-12.099813,15.647312
+Montserrat 800italic,800italic,sans-serif,-9.194077,9.459478
+Montserrat 900,900,sans-serif,-12.166799,15.192381
+Montserrat 900italic,900italic,sans-serif,-9.242436,9.453915
+Raleway 100,100,sans-serif,-2.6561902,17.181196
+Raleway 100italic,100italic,sans-serif,-3.5287163,16.013636
+Raleway 200,200,sans-serif,-3.2611363,17.157787
+Raleway 200italic,200italic,sans-serif,-3.7371192,15.538748
+Raleway 300,300,sans-serif,-4.263787,17.089027
+Raleway 300italic,300italic,sans-serif,-4.5070744,15.155087
+Raleway regular,regular,sans-serif,-4.8374724,16.950478
+Raleway italic,italic,sans-serif,-5.413158,14.646329
+Raleway 500,500,sans-serif,-5.7032104,16.985596
+Raleway 500italic,500italic,sans-serif,-7.0493746,12.484796
+Raleway 600,600,sans-serif,-7.324929,16.967537
+Raleway 600italic,600italic,sans-serif,-7.503469,11.057738
+Raleway 700,700,sans-serif,-9.856768,16.520475
+Raleway 700italic,700italic,sans-serif,-8.012437,10.161742
+Raleway 800,800,sans-serif,-11.083132,16.004158
+Raleway 800italic,800italic,sans-serif,-8.589049,9.840925
+Raleway 900,900,sans-serif,-11.703418,15.006481
+Raleway 900italic,900italic,sans-serif,-8.932754,9.639842
+PT Sans regular,regular,sans-serif,-8.28828,17.75998
+PT Sans italic,italic,sans-serif,-7.3635116,11.4565
+PT Sans 700,700,sans-serif,-10.08931,14.155367
+PT Sans 700italic,700italic,sans-serif,-9.468993,10.696012
+Merriweather 300,300,serif,-0.44990233,13.102705
+Merriweather 300italic,300italic,serif,-5.580596,11.135075
+Merriweather regular,regular,serif,-0.78258026,11.394702
+Merriweather italic,italic,serif,-6.2834907,10.849538
+Merriweather 700,700,serif,-1.4905232,8.8572445
+Merriweather 700italic,700italic,serif,-6.8018055,10.6067705
+Merriweather 900,900,serif,-1.6362519,8.459968
+Merriweather 900italic,900italic,serif,-7.103747,10.187383
+Roboto Slab 100,100,serif,-0.7833906,14.651399
+Roboto Slab 300,300,serif,-1.4952993,14.251023
+Roboto Slab regular,regular,serif,-0.8993752,11.576515
+Roboto Slab 700,700,serif,-1.4258982,8.880744
+Open Sans Condensed 300,300,sans-serif,-6.0127463,16.832397
+Open Sans Condensed 300italic,300italic,sans-serif,-6.3868012,13.970649
+Open Sans Condensed 700,700,sans-serif,-10.562582,12.91799
+Lora regular,regular,serif,-0.25200683,12.602899
+Lora italic,italic,serif,-4.784757,11.2391815
+Lora 700,700,serif,-1.0358194,8.946109
+Lora 700italic,700italic,serif,-5.8935347,10.563263
+Droid Sans regular,regular,sans-serif,-7.497885,17.342184
+Droid Sans 700,700,sans-serif,-10.349154,14.807613
+Ubuntu 300,300,sans-serif,-5.352152,18.217773
+Ubuntu 300italic,300italic,sans-serif,-6.2439904,12.657203
+Ubuntu regular,regular,sans-serif,-8.400883,16.759924
+Ubuntu italic,italic,sans-serif,-7.7658467,10.993917
+Ubuntu 500,500,sans-serif,-9.539726,15.383339
+Ubuntu 500italic,500italic,sans-serif,-8.398585,10.735416
+Ubuntu 700,700,sans-serif,-10.090334,15.015843
+Ubuntu 700italic,700italic,sans-serif,-8.678863,10.0777
+Droid Serif regular,regular,serif,-0.8158021,11.548544
+Droid Serif italic,italic,serif,-5.7687645,10.628986
+Droid Serif 700,700,serif,-1.2280717,9.517449
+Droid Serif 700italic,700italic,serif,-6.241785,10.695952
+Playfair Display regular,regular,serif,0.29531577,11.731702
+Playfair Display italic,italic,serif,-5.3609867,10.0215225
+Playfair Display 700,700,serif,-0.318678,9.219061
+Playfair Display 700italic,700italic,serif,-6.0732226,10.63324
+Playfair Display 900,900,serif,-0.67564934,9.232791
+Playfair Display 900italic,900italic,serif,-6.596212,10.385231
+Noto Sans regular,regular,sans-serif,-6.832285,18.155478
+Noto Sans italic,italic,sans-serif,-7.7954617,11.526316
+Noto Sans 700,700,sans-serif,-10.416868,15.484745
+Noto Sans 700italic,700italic,sans-serif,-9.117761,10.171076
+PT Serif regular,regular,serif,0.16735472,11.817545
+PT Serif italic,italic,serif,-6.0666485,9.874057
+PT Serif 700,700,serif,-1.2037185,9.326908
+PT Serif 700italic,700italic,serif,-6.6533556,10.020081
+Arimo regular,regular,sans-serif,-7.269036,17.744396
+Arimo italic,italic,sans-serif,-7.366939,12.22316
+Arimo 700,700,sans-serif,-10.099446,16.203278
+Arimo 700italic,700italic,sans-serif,-8.170228,9.992029
+Titillium Web 200,200,sans-serif,-3.8410819,17.881779
+Titillium Web 200italic,200italic,sans-serif,-4.128004,15.091782
+Titillium Web 300,300,sans-serif,-6.1538596,18.126253
+Titillium Web 300italic,300italic,sans-serif,-6.635843,12.115973
+Titillium Web regular,regular,sans-serif,-7.0842214,17.85318
+Titillium Web italic,italic,sans-serif,-7.452468,11.660285
+Titillium Web 600,600,sans-serif,-9.650369,14.578005
+Titillium Web 600italic,600italic,sans-serif,-8.80367,10.650392
+Titillium Web 700,700,sans-serif,-10.3931265,13.984764
+Titillium Web 700italic,700italic,sans-serif,-9.334212,10.618167
+Titillium Web 900,900,sans-serif,-12.604744,14.557408
+PT Sans Narrow regular,regular,sans-serif,-8.654714,14.579627
+PT Sans Narrow 700,700,sans-serif,-10.340056,12.656741
+Muli 200,200,sans-serif,-4.0803523,16.982038
+Muli 200italic,200italic,sans-serif,-4.037999,16.701838
+Muli 300,300,sans-serif,-4.706231,17.002794
+Muli 300italic,300italic,sans-serif,-4.9811335,16.321123
+Muli regular,regular,sans-serif,-5.9754076,17.526403
+Muli italic,italic,sans-serif,-6.3488507,16.253044
+Muli 600,600,sans-serif,-7.388791,17.178667
+Muli 600italic,600italic,sans-serif,-7.271593,15.66593
+Muli 700,700,sans-serif,-9.316893,17.000324
+Muli 700italic,700italic,sans-serif,-8.967057,14.907189
+Muli 800,800,sans-serif,-10.905068,16.121464
+Muli 800italic,800italic,sans-serif,-10.512945,14.123849
+Muli 900,900,sans-serif,-11.56942,15.612616
+Muli 900italic,900italic,sans-serif,-11.409002,14.194343
+Poppins 300,300,sans-serif,-5.0462384,17.190168
+Poppins regular,regular,sans-serif,-6.0659223,17.004698
+Poppins 500,500,sans-serif,-7.658858,16.516172
+Poppins 600,600,sans-serif,-10.332559,16.503078
+Poppins 700,700,sans-serif,-11.068677,16.060913
+Indie Flower regular,regular,handwriting,-4.9466147,15.252102
+Bitter regular,regular,serif,-1.2416413,11.013614
+Bitter italic,italic,serif,-6.3384967,10.480663
+Bitter 700,700,serif,-1.4516066,8.580987
+Dosis 200,200,sans-serif,-4.011216,17.820333
+Dosis 300,300,sans-serif,-4.952941,17.599905
+Dosis regular,regular,sans-serif,-6.4802547,16.638906
+Dosis 500,500,sans-serif,-7.6751914,15.563299
+Dosis 600,600,sans-serif,-8.023196,14.779708
+Dosis 700,700,sans-serif,-7.954382,14.1252985
+Dosis 800,800,sans-serif,-8.331405,14.397847
+Inconsolata regular,regular,monospace,-8.668934,18.619518
+Inconsolata 700,700,monospace,-10.396081,17.032545
+Fjalla One regular,regular,sans-serif,-10.843715,12.146365
+Hind 300,300,sans-serif,-5.4578915,18.543398
+Hind regular,regular,sans-serif,-7.1237717,18.538588
+Hind 500,500,sans-serif,-9.137803,17.171705
+Hind 600,600,sans-serif,-10.773056,15.539491
+Hind 700,700,sans-serif,-11.325728,15.066018
+Oxygen 300,300,sans-serif,-5.0176587,18.585865
+Oxygen regular,regular,sans-serif,-7.426728,18.639635
+Oxygen 700,700,sans-serif,-9.801999,16.321249
+Anton regular,regular,sans-serif,-11.208077,12.491372
+Noto Serif regular,regular,serif,-0.8551743,11.641188
+Noto Serif italic,italic,serif,-5.899173,10.752363
+Noto Serif 700,700,serif,-1.3865428,9.351645
+Noto Serif 700italic,700italic,serif,-5.978168,10.880414
+Cabin regular,regular,sans-serif,-8.48071,17.326273
+Cabin italic,italic,sans-serif,-8.167679,11.240488
+Cabin 500,500,sans-serif,-8.675831,16.408329
+Cabin 500italic,500italic,sans-serif,-8.300475,11.299761
+Cabin 600,600,sans-serif,-9.470394,16.051796
+Cabin 600italic,600italic,sans-serif,-8.756576,10.767972
+Cabin 700,700,sans-serif,-10.063965,14.67112
+Cabin 700italic,700italic,sans-serif,-8.841044,10.881905
+Arvo regular,regular,serif,-0.7834779,12.239529
+Arvo italic,italic,serif,-6.0419307,10.296857
+Arvo 700,700,serif,-2.707021,9.831556
+Arvo 700italic,700italic,serif,-8.252958,9.673568
+Libre Baskerville regular,regular,serif,-0.7013395,11.808083
+Libre Baskerville italic,italic,serif,-5.4838905,10.271286
+Libre Baskerville 700,700,serif,-1.3519323,10.154777
+Nunito 200,200,sans-serif,-3.72061,17.396852
+Nunito 200italic,200italic,sans-serif,-3.9813726,16.370354
+Nunito 300,300,sans-serif,-5.1371017,17.134699
+Nunito 300italic,300italic,sans-serif,-5.154611,16.262257
+Nunito regular,regular,sans-serif,-6.2398243,16.606531
+Nunito italic,italic,sans-serif,-5.813349,15.305236
+Nunito 600,600,sans-serif,-6.2962074,15.150763
+Nunito 600italic,600italic,sans-serif,-6.404325,14.6666765
+Nunito 700,700,sans-serif,-7.0473294,14.532341
+Nunito 700italic,700italic,sans-serif,-6.7223167,14.115751
+Nunito 800,800,sans-serif,-7.3385777,14.021434
+Nunito 800italic,800italic,sans-serif,-7.096714,14.038414
+Nunito 900,900,sans-serif,-7.559515,14.260413
+Nunito 900italic,900italic,sans-serif,-7.093323,13.622796
+Lobster regular,regular,display,-8.488313,11.854184
+Crimson Text regular,regular,serif,1.748954,11.661399
+Crimson Text italic,italic,serif,-5.263684,9.881654
+Crimson Text 600,600,serif,-0.31932744,10.333172
+Crimson Text 600italic,600italic,serif,-5.6859946,10.2345495
+Crimson Text 700,700,serif,-1.5081013,9.738741
+Crimson Text 700italic,700italic,serif,-5.9693255,10.214431
+Yanone Kaffeesatz 200,200,sans-serif,-3.7768612,17.377445
+Yanone Kaffeesatz 300,300,sans-serif,-5.893389,16.571165
+Yanone Kaffeesatz regular,regular,sans-serif,-8.546485,13.752215
+Yanone Kaffeesatz 700,700,sans-serif,-8.536189,13.814908
+Roboto Mono 100,100,monospace,-4.136966,17.604061
+Roboto Mono 100italic,100italic,monospace,-4.1935234,16.45794
+Roboto Mono 300,300,monospace,-7.7527003,18.562323
+Roboto Mono 300italic,300italic,monospace,-6.0136304,15.999461
+Roboto Mono regular,regular,monospace,-9.263381,18.544203
+Roboto Mono italic,italic,monospace,-7.857634,12.8612175
+Roboto Mono 500,500,monospace,-10.192744,17.690226
+Roboto Mono 500italic,500italic,monospace,-8.21469,11.663245
+Roboto Mono 700,700,monospace,-10.63514,17.116507
+Roboto Mono 700italic,700italic,monospace,-8.698676,11.484916
+Josefin Sans 100,100,sans-serif,-2.603317,17.34614
+Josefin Sans 100italic,100italic,sans-serif,-3.1890147,16.568634
+Josefin Sans 300,300,sans-serif,-3.474751,17.471243
+Josefin Sans 300italic,300italic,sans-serif,-4.125954,16.044188
+Josefin Sans regular,regular,sans-serif,-4.9610844,17.188963
+Josefin Sans italic,italic,sans-serif,-5.589482,15.345421
+Josefin Sans 600,600,sans-serif,-7.9772325,17.113073
+Josefin Sans 600italic,600italic,sans-serif,-7.9440665,11.780887
+Josefin Sans 700,700,sans-serif,-9.066224,16.918833
+Josefin Sans 700italic,700italic,sans-serif,-8.255562,10.926031
+Bree Serif regular,regular,serif,-1.3157916,9.200815
+Catamaran 100,100,sans-serif,-4.427393,18.129925
+Catamaran 200,200,sans-serif,-4.9589095,17.8813
+Catamaran 300,300,sans-serif,-5.4057846,18.281887
+Catamaran regular,regular,sans-serif,-7.791552,18.150585
+Catamaran 500,500,sans-serif,-8.203627,16.837706
+Catamaran 600,600,sans-serif,-9.402604,15.639643
+Catamaran 700,700,sans-serif,-10.112674,14.805657
+Catamaran 800,800,sans-serif,-11.04029,14.889234
+Catamaran 900,900,sans-serif,-11.677252,15.1947975
+Merriweather Sans 300,300,sans-serif,-6.479308,18.398855
+Merriweather Sans 300italic,300italic,sans-serif,-6.6134634,12.164342
+Merriweather Sans regular,regular,sans-serif,-8.376736,16.799448
+Merriweather Sans italic,italic,sans-serif,-7.5801244,11.228427
+Merriweather Sans 700,700,sans-serif,-10.178932,14.899677
+Merriweather Sans 700italic,700italic,sans-serif,-8.550251,10.846201
+Merriweather Sans 800,800,sans-serif,-10.922128,14.447971
+Merriweather Sans 800italic,800italic,sans-serif,-8.812698,10.305563
+Fira Sans 100,100,sans-serif,-2.6630476,17.597383
+Fira Sans 100italic,100italic,sans-serif,-3.488555,16.372921
+Fira Sans 200,200,sans-serif,-4.1634593,18.191696
+Fira Sans 200italic,200italic,sans-serif,-4.3406825,15.361589
+Fira Sans 300,300,sans-serif,-5.12552,18.164242
+Fira Sans 300italic,300italic,sans-serif,-5.151814,14.820971
+Fira Sans regular,regular,sans-serif,-7.9886847,17.046728
+Fira Sans italic,italic,sans-serif,-7.3215313,11.561132
+Fira Sans 500,500,sans-serif,-10.157064,14.138348
+Fira Sans 500italic,500italic,sans-serif,-8.922697,10.758634
+Fira Sans 600,600,sans-serif,-10.46118,13.76999
+Fira Sans 600italic,600italic,sans-serif,-9.328306,10.610329
+Fira Sans 700,700,sans-serif,-10.902341,13.585311
+Fira Sans 700italic,700italic,sans-serif,-9.522142,10.635822
+Fira Sans 800,800,sans-serif,-11.2933445,13.495624
+Fira Sans 800italic,800italic,sans-serif,-9.936755,10.370527
+Fira Sans 900,900,sans-serif,-11.679819,13.434494
+Fira Sans 900italic,900italic,sans-serif,-10.092664,10.368086
+Abril Fatface regular,regular,display,-0.79020655,9.432742
+Exo 2 100,100,sans-serif,-2.9876509,17.682632
+Exo 2 100italic,100italic,sans-serif,-3.6497335,16.11759
+Exo 2 200,200,sans-serif,-3.6559196,17.63421
+Exo 2 200italic,200italic,sans-serif,-4.417967,15.446975
+Exo 2 300,300,sans-serif,-5.6072254,17.38481
+Exo 2 300italic,300italic,sans-serif,-5.5943456,14.360826
+Exo 2 regular,regular,sans-serif,-6.9272614,16.804607
+Exo 2 italic,italic,sans-serif,-6.764932,12.695695
+Exo 2 500,500,sans-serif,-8.0553055,16.422968
+Exo 2 500italic,500italic,sans-serif,-6.9427586,11.690852
+Exo 2 600,600,sans-serif,-9.346969,15.322443
+Exo 2 600italic,600italic,sans-serif,-7.5625215,10.829954
+Exo 2 700,700,sans-serif,-10.549892,14.638189
+Exo 2 700italic,700italic,sans-serif,-8.139666,10.497982
+Exo 2 800,800,sans-serif,-11.359235,14.0714855
+Exo 2 800italic,800italic,sans-serif,-8.836359,10.253143
+Exo 2 900,900,sans-serif,-11.951565,14.2214365
+Exo 2 900italic,900italic,sans-serif,-9.52412,10.500132
+Asap regular,regular,sans-serif,-7.1467686,17.060389
+Asap italic,italic,sans-serif,-7.1593,12.071319
+Asap 500,500,sans-serif,-9.39498,14.074966
+Asap 500italic,500italic,sans-serif,-8.297683,11.530457
+Asap 700,700,sans-serif,-9.533441,13.620733
+Asap 700italic,700italic,sans-serif,-8.207871,11.339027
+Varela Round regular,regular,sans-serif,-6.201558,15.926018
+Abel regular,regular,sans-serif,-6.350441,17.26729
+Quicksand 300,300,sans-serif,-4.0133038,17.403713
+Quicksand regular,regular,sans-serif,-4.654256,16.696344
+Quicksand 500,500,sans-serif,-6.2255025,15.598223
+Quicksand 700,700,sans-serif,-7.0699105,15.146826
+Gloria Hallelujah regular,regular,handwriting,-5.706674,14.135817
+Pacifico regular,regular,handwriting,-5.6765666,12.521207
+Rubik 300,300,sans-serif,-5.1422877,17.07081
+Rubik 300italic,300italic,sans-serif,-5.4079638,14.728699
+Rubik regular,regular,sans-serif,-6.8367405,17.115913
+Rubik italic,italic,sans-serif,-6.97356,12.625335
+Rubik 500,500,sans-serif,-9.925418,16.452929
+Rubik 500italic,500italic,sans-serif,-7.6065927,9.977757
+Rubik 700,700,sans-serif,-10.7638235,16.138657
+Rubik 700italic,700italic,sans-serif,-8.407085,9.353602
+Rubik 900,900,sans-serif,-11.878533,15.691035
+Rubik 900italic,900italic,sans-serif,-9.3693075,9.318102
+Karla regular,regular,sans-serif,-6.0113754,16.801107
+Karla italic,italic,sans-serif,-6.923802,15.866305
+Karla 700,700,sans-serif,-9.466306,16.583357
+Karla 700italic,700italic,sans-serif,-9.062337,11.77175
+Ubuntu Condensed regular,regular,sans-serif,-9.756456,12.736126
+Work Sans 100,100,sans-serif,-2.6421564,17.18257
+Work Sans 200,200,sans-serif,-2.8545377,17.955877
+Work Sans 300,300,sans-serif,-4.602839,17.422003
+Work Sans regular,regular,sans-serif,-6.0279613,17.308924
+Work Sans 500,500,sans-serif,-7.718187,16.643353
+Work Sans 600,600,sans-serif,-10.14885,16.130535
+Work Sans 700,700,sans-serif,-11.218156,15.5565405
+Work Sans 800,800,sans-serif,-12.025134,15.308747
+Work Sans 900,900,sans-serif,-12.296126,15.173005
+Cuprum regular,regular,sans-serif,-9.625705,13.581795
+Cuprum italic,italic,sans-serif,-9.01505,11.286743
+Cuprum 700,700,sans-serif,-10.208566,13.241748
+Cuprum 700italic,700italic,sans-serif,-9.301126,10.949818
+Signika 300,300,sans-serif,-6.725862,17.283087
+Signika regular,regular,sans-serif,-8.391084,15.36654
+Signika 600,600,sans-serif,-9.12124,14.191616
+Signika 700,700,sans-serif,-9.498891,14.086272
+Archivo Narrow regular,regular,sans-serif,-8.908305,14.684378
+Archivo Narrow italic,italic,sans-serif,-8.909338,11.541091
+Archivo Narrow 700,700,sans-serif,-10.580494,13.3617325
+Archivo Narrow 700italic,700italic,sans-serif,-9.566437,10.9329
+Play regular,regular,sans-serif,-7.7349763,16.927162
+Play 700,700,sans-serif,-10.468334,16.029135
+Questrial regular,regular,sans-serif,-5.3755007,17.072184
+Shadows Into Light regular,regular,handwriting,-6.395199,14.071451
+Dancing Script regular,regular,handwriting,-5.0340376,12.668196
+Dancing Script 700,700,handwriting,-5.206234,12.719671
+PT Sans Caption regular,regular,sans-serif,-7.4591765,17.775686
+PT Sans Caption 700,700,sans-serif,-10.152438,15.729612
+Alegreya regular,regular,serif,-0.56770146,11.478879
+Alegreya italic,italic,serif,-5.764022,10.015656
+Alegreya 700,700,serif,-1.2229626,9.054143
+Alegreya 700italic,700italic,serif,-6.610171,9.959828
+Alegreya 900,900,serif,-1.6993356,8.764283
+Alegreya 900italic,900italic,serif,-7.05524,10.200237
+Francois One regular,regular,sans-serif,-10.5146675,13.179498
+Exo 100,100,sans-serif,-3.0211692,17.33825
+Exo 100italic,100italic,sans-serif,-3.4439065,16.406496
+Exo 200,200,sans-serif,-3.706813,17.539911
+Exo 200italic,200italic,sans-serif,-4.3999915,15.620152
+Exo 300,300,sans-serif,-5.056582,17.555346
+Exo 300italic,300italic,sans-serif,-5.510987,14.613692
+Exo regular,regular,sans-serif,-6.456216,17.110657
+Exo italic,italic,sans-serif,-7.232776,12.2950945
+Exo 500,500,sans-serif,-7.7761445,16.388044
+Exo 500italic,500italic,sans-serif,-7.876092,11.689602
+Exo 600,600,sans-serif,-9.471654,14.877976
+Exo 600italic,600italic,sans-serif,-8.64257,11.134684
+Exo 700,700,sans-serif,-9.987123,13.983986
+Exo 700italic,700italic,sans-serif,-8.801602,10.777685
+Exo 800,800,sans-serif,-10.865839,14.028721
+Exo 800italic,800italic,sans-serif,-9.176108,10.579543
+Exo 900,900,sans-serif,-11.828525,13.84589
+Exo 900italic,900italic,sans-serif,-9.95327,10.600425
+Acme regular,regular,sans-serif,-10.160663,12.701475
+EB Garamond regular,regular,serif,1.3236392,11.81303
+Vollkorn regular,regular,serif,-0.51219475,11.046284
+Vollkorn italic,italic,serif,-6.0634246,10.434522
+Vollkorn 700,700,serif,-2.3762858,9.361308
+Vollkorn 700italic,700italic,serif,-5.661909,11.034381
+Source Code Pro 200,200,monospace,-4.5642285,17.706284
+Source Code Pro 300,300,monospace,-5.6397734,17.841764
+Source Code Pro regular,regular,monospace,-8.958739,18.365458
+Source Code Pro 500,500,monospace,-9.407098,17.89747
+Source Code Pro 600,600,monospace,-9.794339,17.636566
+Source Code Pro 700,700,monospace,-10.473322,16.758827
+Source Code Pro 900,900,monospace,-10.918906,16.514956
+Maven Pro regular,regular,sans-serif,-6.129728,17.851162
+Maven Pro 500,500,sans-serif,-8.653405,16.795488
+Maven Pro 700,700,sans-serif,-11.000066,15.615367
+Maven Pro 900,900,sans-serif,-11.559075,15.152573
+Pathway Gothic One regular,regular,sans-serif,-9.074495,13.523528
+Amatic SC regular,regular,handwriting,-7.118155,14.798153
+Amatic SC 700,700,handwriting,-7.7469597,14.183426
+Archivo Black regular,regular,sans-serif,-10.850617,15.542274
+Rokkitt 100,100,serif,-0.903395,14.414795
+Rokkitt 200,200,serif,-1.3951459,14.008878
+Rokkitt 300,300,serif,-1.9124064,13.571396
+Rokkitt regular,regular,serif,-1.8572359,12.20619
+Rokkitt 500,500,serif,-1.9371647,10.88432
+Rokkitt 600,600,serif,-2.254581,10.731227
+Rokkitt 700,700,serif,-2.0285392,9.805389
+Rokkitt 800,800,serif,-2.2063792,9.240839
+Rokkitt 900,900,serif,-2.3883426,9.06508
+Crete Round regular,regular,serif,-1.3378636,9.9109745
+Crete Round italic,italic,serif,-6.5758467,10.860001
+Libre Franklin 100,100,sans-serif,-3.6381755,17.577053
+Libre Franklin 100italic,100italic,sans-serif,-4.1575584,16.04956
+Libre Franklin 200,200,sans-serif,-4.357772,17.468842
+Libre Franklin 200italic,200italic,sans-serif,-4.5111523,15.409739
+Libre Franklin 300,300,sans-serif,-5.139433,17.677738
+Libre Franklin 300italic,300italic,sans-serif,-5.3985744,14.978135
+Libre Franklin regular,regular,sans-serif,-6.285169,17.44276
+Libre Franklin italic,italic,sans-serif,-6.590862,13.687178
+Libre Franklin 500,500,sans-serif,-7.907998,16.774645
+Libre Franklin 500italic,500italic,sans-serif,-7.728318,11.753712
+Libre Franklin 600,600,sans-serif,-9.182863,15.994941
+Libre Franklin 600italic,600italic,sans-serif,-7.9313784,10.463569
+Libre Franklin 700,700,sans-serif,-9.949129,15.863127
+Libre Franklin 700italic,700italic,sans-serif,-8.321015,10.1360445
+Libre Franklin 800,800,sans-serif,-10.665213,15.843238
+Libre Franklin 800italic,800italic,sans-serif,-8.864781,9.872687
+Libre Franklin 900,900,sans-serif,-11.37999,15.809155
+Libre Franklin 900italic,900italic,sans-serif,-8.967997,9.7208185
+Ropa Sans regular,regular,sans-serif,-9.231656,14.780347
+Ropa Sans italic,italic,sans-serif,-8.621655,11.204132
+Alegreya Sans 100,100,sans-serif,-2.82508,17.443842
+Alegreya Sans 100italic,100italic,sans-serif,-4.108472,15.430812
+Alegreya Sans 300,300,sans-serif,-4.397666,18.06031
+Alegreya Sans 300italic,300italic,sans-serif,-4.7481613,14.757299
+Alegreya Sans regular,regular,sans-serif,-7.389955,17.616106
+Alegreya Sans italic,italic,sans-serif,-7.315657,10.973253
+Alegreya Sans 500,500,sans-serif,-8.42843,15.677736
+Alegreya Sans 500italic,500italic,sans-serif,-7.9605823,10.573306
+Alegreya Sans 700,700,sans-serif,-10.01897,13.9114895
+Alegreya Sans 700italic,700italic,sans-serif,-8.776963,10.493245
+Alegreya Sans 800,800,sans-serif,-10.609888,13.509656
+Alegreya Sans 800italic,800italic,sans-serif,-9.231541,10.443596
+Alegreya Sans 900,900,sans-serif,-11.339005,13.514735
+Alegreya Sans 900italic,900italic,sans-serif,-9.727822,10.414431
+Patua One regular,regular,display,-1.5012525,8.636524
+Source Serif Pro regular,regular,serif,-0.7309849,11.917417
+Source Serif Pro 600,600,serif,-1.3090214,10.137411
+Source Serif Pro 700,700,serif,-1.5187869,9.733794
+Architects Daughter regular,regular,handwriting,-5.257142,15.72547
+Istok Web regular,regular,sans-serif,-6.806031,16.969887
+Istok Web italic,italic,sans-serif,-7.1684833,12.217265
+Istok Web 700,700,sans-serif,-9.471944,15.295278
+Istok Web 700italic,700italic,sans-serif,-7.309011,12.201579
+Cinzel regular,regular,serif,-1.4576021,12.812799
+Cinzel 700,700,serif,-1.8914605,11.512914
+Cinzel 900,900,serif,-2.2349353,10.769604
+BenchNine 300,300,sans-serif,-7.1549053,15.05601
+BenchNine regular,regular,sans-serif,-8.322101,14.7148905
+BenchNine 700,700,sans-serif,-9.097846,13.938888
+Comfortaa 300,300,display,-4.5185037,16.764614
+Comfortaa regular,regular,display,-5.174686,16.33883
+Comfortaa 700,700,display,-5.9737163,15.866074
+Satisfy regular,regular,handwriting,-5.441098,11.922327
+Josefin Slab 100,100,serif,-0.9508645,14.89729
+Josefin Slab 100italic,100italic,serif,0.13753094,13.880969
+Josefin Slab 300,300,serif,-0.5990721,14.34557
+Josefin Slab 300italic,300italic,serif,-0.34829682,13.349536
+Josefin Slab regular,regular,serif,-1.0421708,14.268186
+Josefin Slab italic,italic,serif,-1.1136459,13.034566
+Josefin Slab 600,600,serif,-0.92965883,13.2955675
+Josefin Slab 600italic,600italic,serif,-1.4275266,12.033696
+Josefin Slab 700,700,serif,-0.6620891,11.919531
+Josefin Slab 700italic,700italic,serif,-2.167363,10.890518
+News Cycle regular,regular,sans-serif,-6.6843367,17.769
+News Cycle 700,700,sans-serif,-9.975804,13.557866
+Lobster Two regular,regular,display,-8.714115,13.238951
+Lobster Two italic,italic,display,-8.3532295,12.061385
+Lobster Two 700,700,display,-8.673742,13.026667
+Lobster Two 700italic,700italic,display,-8.11519,11.80718
+Russo One regular,regular,sans-serif,-11.273129,15.368767
+Passion One regular,regular,display,-11.949459,13.185117
+Passion One 700,700,display,-12.497064,14.194752
+Passion One 900,900,display,-12.115399,14.370651
+Cormorant Garamond 300,300,serif,0.59770465,13.098741
+Cormorant Garamond 300italic,300italic,serif,-4.58972,9.670936
+Cormorant Garamond regular,regular,serif,0.8332432,12.854393
+Cormorant Garamond italic,italic,serif,-4.5468917,9.214368
+Cormorant Garamond 500,500,serif,1.0637583,12.616994
+Cormorant Garamond 500italic,500italic,serif,-4.918304,9.330826
+Cormorant Garamond 600,600,serif,1.0807679,11.493758
+Cormorant Garamond 600italic,600italic,serif,-5.1420274,9.301278
+Cormorant Garamond 700,700,serif,0.799587,10.863679
+Cormorant Garamond 700italic,700italic,serif,-5.663975,9.554098
+Noticia Text regular,regular,serif,-1.9033426,12.889214
+Noticia Text italic,italic,serif,-5.732074,11.460419
+Noticia Text 700,700,serif,-2.2897155,10.279133
+Noticia Text 700italic,700italic,serif,-6.3737087,11.393301
+Old Standard TT regular,regular,serif,-0.040846482,12.920509
+Old Standard TT italic,italic,serif,-4.868733,10.542031
+Old Standard TT 700,700,serif,-0.74558026,9.843518
+Hammersmith One regular,regular,sans-serif,-10.435138,15.106862
+Quattrocento Sans regular,regular,sans-serif,-5.759708,17.962769
+Quattrocento Sans italic,italic,sans-serif,-6.365005,12.998185
+Quattrocento Sans 700,700,sans-serif,-9.245397,15.9670725
+Quattrocento Sans 700italic,700italic,sans-serif,-8.055233,10.276939
+ABeeZee regular,regular,sans-serif,-8.003413,17.89487
+ABeeZee italic,italic,sans-serif,-6.8740225,12.19816
+Kanit 100,100,sans-serif,-2.8081536,17.5114
+Kanit 100italic,100italic,sans-serif,-3.6911855,15.941419
+Kanit 200,200,sans-serif,-4.771539,17.669996
+Kanit 200italic,200italic,sans-serif,-4.733702,14.964879
+Kanit 300,300,sans-serif,-6.1827474,17.380846
+Kanit 300italic,300italic,sans-serif,-6.986012,12.429953
+Kanit regular,regular,sans-serif,-8.584062,16.778822
+Kanit italic,italic,sans-serif,-7.6228724,10.4072485
+Kanit 500,500,sans-serif,-10.490643,15.909357
+Kanit 500italic,500italic,sans-serif,-8.204201,9.73802
+Kanit 600,600,sans-serif,-11.214992,15.168352
+Kanit 600italic,600italic,sans-serif,-8.800698,9.506638
+Kanit 700,700,sans-serif,-11.930967,14.628268
+Kanit 700italic,700italic,sans-serif,-9.3725,9.558266
+Kanit 800,800,sans-serif,-12.158204,14.871506
+Kanit 800italic,800italic,sans-serif,-9.871852,9.620358
+Kanit 900,900,sans-serif,-12.382855,14.625107
+Kanit 900italic,900italic,sans-serif,-10.056193,10.086004
+Kaushan Script regular,regular,handwriting,-5.479407,12.468212
+Righteous regular,regular,display,-10.843837,15.85216
+Poiret One regular,regular,display,-2.797266,17.702513
+Gudea regular,regular,sans-serif,-7.070182,18.119595
+Gudea italic,italic,sans-serif,-7.3792024,11.821938
+Gudea 700,700,sans-serif,-10.30037,14.29576
+Sanchez regular,regular,serif,-1.8743002,12.80715
+Sanchez italic,italic,serif,-2.708754,11.667059
+Monda regular,regular,sans-serif,-8.032371,17.551138
+Monda 700,700,sans-serif,-9.927755,15.532256
+Quattrocento regular,regular,serif,-0.5010426,13.122312
+Quattrocento 700,700,serif,-1.5068667,11.154435
+Rajdhani 300,300,sans-serif,-3.3601294,18.151262
+Rajdhani regular,regular,sans-serif,-5.347878,17.317785
+Rajdhani 500,500,sans-serif,-7.3853135,16.741781
+Rajdhani 600,600,sans-serif,-9.249154,15.070688
+Rajdhani 700,700,sans-serif,-9.803064,13.698422
+Courgette regular,regular,handwriting,-5.8836675,12.3856945
+Khand 300,300,sans-serif,-7.2216516,16.144258
+Khand regular,regular,sans-serif,-9.489476,13.495186
+Khand 500,500,sans-serif,-10.162629,12.72529
+Khand 600,600,sans-serif,-10.855179,12.26392
+Khand 700,700,sans-serif,-10.905906,12.535816
+Shrikhand regular,regular,display,-6.3574257,11.578026
+Cantarell regular,regular,sans-serif,-6.969025,17.94105
+Cantarell italic,italic,sans-serif,-7.0992813,11.108468
+Cantarell 700,700,sans-serif,-9.271026,16.630726
+Cantarell 700italic,700italic,sans-serif,-7.4939556,10.468509
+Domine regular,regular,serif,-0.81528807,11.970365
+Domine 700,700,serif,-1.1508657,10.178547
+Economica regular,regular,sans-serif,-8.469822,14.230494
+Economica italic,italic,sans-serif,-8.317401,12.457532
+Economica 700,700,sans-serif,-9.230633,13.315343
+Economica 700italic,700italic,sans-serif,-9.014762,11.904674
+Yellowtail regular,regular,handwriting,-5.2103066,12.694714
+Philosopher regular,regular,sans-serif,-7.210035,16.469019
+Philosopher italic,italic,sans-serif,-6.7936864,12.192515
+Philosopher 700,700,sans-serif,-8.1756315,15.539278
+Philosopher 700italic,700italic,sans-serif,-7.2669797,10.966102
+Pontano Sans regular,regular,sans-serif,-5.896307,17.961777
+Yantramanav 100,100,sans-serif,-2.8678882,17.464375
+Yantramanav 300,300,sans-serif,-4.793481,17.640003
+Yantramanav regular,regular,sans-serif,-7.5478215,17.510944
+Yantramanav 500,500,sans-serif,-9.473642,15.8350725
+Yantramanav 700,700,sans-serif,-10.497968,14.415331
+Yantramanav 900,900,sans-serif,-11.076511,13.867164
+Permanent Marker regular,regular,handwriting,-6.0416174,13.269863
+Chewy regular,regular,display,-7.5961103,13.077426
+Tinos regular,regular,serif,0.45182407,11.815475
+Tinos italic,italic,serif,-6.2407556,10.441651
+Tinos 700,700,serif,-0.71497697,8.920997
+Tinos 700italic,700italic,serif,-6.921983,9.797613
+Arapey regular,regular,serif,-0.044885274,12.640617
+Arapey italic,italic,serif,-4.8822536,9.984639
+Cabin Condensed regular,regular,sans-serif,-9.3831835,14.484161
+Cabin Condensed 500,500,sans-serif,-10.067997,14.359312
+Cabin Condensed 600,600,sans-serif,-10.434406,13.55448
+Cabin Condensed 700,700,sans-serif,-10.734388,13.415925
+Cardo regular,regular,serif,1.4737086,11.881193
+Cardo italic,italic,serif,-5.2319922,9.265828
+Cardo 700,700,serif,0.08100579,10.726744
+Cookie regular,regular,handwriting,-5.452424,13.24203
+Playfair Display SC regular,regular,serif,-1.6075706,11.91939
+Playfair Display SC italic,italic,serif,-4.3691983,10.669009
+Playfair Display SC 700,700,serif,-1.5600542,11.396467
+Playfair Display SC 700italic,700italic,serif,-5.225016,10.472257
+Playfair Display SC 900,900,serif,-1.6889659,11.18786
+Playfair Display SC 900italic,900italic,serif,-5.578449,10.510512
+Handlee regular,regular,handwriting,-6.2635303,14.729159
+Alfa Slab One regular,regular,display,-2.7014694,8.970169
+Armata regular,regular,sans-serif,-6.9095864,17.307703
+Audiowide regular,regular,display,-9.253099,16.304602
+Kalam 300,300,handwriting,-5.486493,13.887309
+Kalam regular,regular,handwriting,-5.9044867,13.099172
+Kalam 700,700,handwriting,-6.275205,12.991776
+Antic Slab regular,regular,serif,-0.88602257,13.717356
+Teko 300,300,sans-serif,-8.793079,13.670459
+Teko regular,regular,sans-serif,-9.043089,13.418116
+Teko 500,500,sans-serif,-9.886358,13.178332
+Teko 600,600,sans-serif,-11.146181,13.263648
+Teko 700,700,sans-serif,-11.88946,13.985955
+Boogaloo regular,regular,display,-9.133111,12.846574
+Ruda regular,regular,sans-serif,-7.4790893,16.949976
+Ruda 700,700,sans-serif,-9.638721,14.968308
+Ruda 900,900,sans-serif,-10.557,14.36831
+Vidaloka regular,regular,serif,-0.26138425,9.681995
+Shadows Into Light Two regular,regular,handwriting,-6.808101,14.579924
+Droid Sans Mono regular,regular,monospace,-8.970608,18.5706
+Oleo Script regular,regular,display,-6.869861,11.578263
+Oleo Script 700,700,display,-6.6948676,11.999542
+Days One regular,regular,sans-serif,-9.054381,15.618748
+Great Vibes regular,regular,handwriting,-4.413762,13.073597
+Heebo 100,100,sans-serif,-2.9836802,17.725391
+Heebo 300,300,sans-serif,-4.6971292,17.727442
+Heebo regular,regular,sans-serif,-7.1814346,17.353392
+Heebo 500,500,sans-serif,-9.5630665,15.675576
+Heebo 700,700,sans-serif,-10.772324,14.311452
+Heebo 800,800,sans-serif,-10.98227,14.242715
+Heebo 900,900,sans-serif,-11.774219,14.2994175
+Concert One regular,regular,display,-7.8280816,13.858495
+Kreon 300,300,serif,0.285968,12.185301
+Kreon regular,regular,serif,-0.10173445,10.19848
+Kreon 700,700,serif,-0.79028463,9.053495
+Ek Mukta 200,200,sans-serif,-4.683601,18.261236
+Ek Mukta 300,300,sans-serif,-6.1389213,18.363314
+Ek Mukta regular,regular,sans-serif,-7.8086867,16.978355
+Ek Mukta 500,500,sans-serif,-9.195147,16.209442
+Ek Mukta 600,600,sans-serif,-9.815347,15.41283
+Ek Mukta 700,700,sans-serif,-10.531292,15.279063
+Ek Mukta 800,800,sans-serif,-10.909295,14.407399
+Tangerine regular,regular,handwriting,-4.8321586,13.501375
+Tangerine 700,700,handwriting,-5.0959973,13.303691
+Patrick Hand regular,regular,handwriting,-7.023281,14.104243
+Hind Siliguri 300,300,sans-serif,-5.4936767,18.690056
+Hind Siliguri regular,regular,sans-serif,-7.34292,18.399174
+Hind Siliguri 500,500,sans-serif,-8.906759,17.272318
+Hind Siliguri 600,600,sans-serif,-10.771439,15.916648
+Hind Siliguri 700,700,sans-serif,-11.551454,14.845108
+Didact Gothic regular,regular,sans-serif,-5.49986,16.941492
+Neuton 200,200,serif,-0.19300856,13.989329
+Neuton 300,300,serif,0.086814724,13.2119465
+Neuton regular,regular,serif,0.20668525,11.123034
+Neuton italic,italic,serif,-5.5452757,10.022095
+Neuton 700,700,serif,-1.7033099,8.817502
+Neuton 800,800,serif,-1.5283196,8.2458105
+Covered By Your Grace regular,regular,handwriting,-6.9002132,13.887434
+Amiri regular,regular,serif,1.1346626,12.014009
+Amiri italic,italic,serif,-5.341636,9.704926
+Amiri 700,700,serif,-0.59799474,9.723537
+Amiri 700italic,700italic,serif,-5.7997284,10.690698
+Rock Salt regular,regular,handwriting,-5.479464,14.170966
+Bad Script regular,regular,handwriting,-4.9267917,13.834079
+Coming Soon regular,regular,handwriting,-5.417487,15.106976
+Playball regular,regular,display,-5.27813,12.456983
+Rochester regular,regular,handwriting,-5.193178,12.989381
+Volkhov regular,regular,serif,-1.3707335,10.657687
+Volkhov italic,italic,serif,-6.335317,10.183266
+Volkhov 700,700,serif,-1.9683987,9.56511
+Volkhov 700italic,700italic,serif,-6.64542,10.2099
+Damion regular,regular,handwriting,-5.076435,12.351074
+Glegoo regular,regular,serif,-1.9505686,13.80713
+Glegoo 700,700,serif,-1.4990017,12.357202
+Sacramento regular,regular,handwriting,-4.553211,13.085771
+Coda regular,regular,display,-8.328135,16.362263
+Coda 800,800,display,-12.620769,14.923177
+Fredoka One regular,regular,display,-8.001554,14.006468
+Sorts Mill Goudy regular,regular,serif,0.3730798,11.968592
+Sorts Mill Goudy italic,italic,serif,-4.8269687,9.612579
+Luckiest Guy regular,regular,display,-11.518533,13.5176115
+Marck Script regular,regular,handwriting,-4.861387,12.829133
+Sintony regular,regular,sans-serif,-6.3348217,17.421085
+Sintony 700,700,sans-serif,-10.181363,15.34322
+Jura 300,300,sans-serif,-4.6959352,16.611881
+Jura regular,regular,sans-serif,-5.364998,16.43024
+Jura 500,500,sans-serif,-5.8670483,15.930744
+Jura 600,600,sans-serif,-5.9867406,15.762852
+Bevan regular,regular,display,-2.8849251,9.570865
+Paytone One regular,regular,sans-serif,-11.759102,15.625911
+Nunito Sans 200,200,sans-serif,-3.9721198,17.257746
+Nunito Sans 200italic,200italic,sans-serif,-4.1786537,16.66521
+Nunito Sans 300,300,sans-serif,-4.948764,17.36388
+Nunito Sans 300italic,300italic,sans-serif,-5.0892277,16.33776
+Nunito Sans regular,regular,sans-serif,-6.043212,17.500584
+Nunito Sans italic,italic,sans-serif,-6.4833856,15.995441
+Nunito Sans 600,600,sans-serif,-7.508617,17.137623
+Nunito Sans 600italic,600italic,sans-serif,-7.565091,15.481531
+Nunito Sans 700,700,sans-serif,-10.150774,16.343605
+Nunito Sans 700italic,700italic,sans-serif,-9.556513,14.545655
+Nunito Sans 800,800,sans-serif,-11.1077385,15.636493
+Nunito Sans 800italic,800italic,sans-serif,-10.307338,13.901744
+Nunito Sans 900,900,sans-serif,-11.681534,15.115041
+Nunito Sans 900italic,900italic,sans-serif,-11.151518,14.264596
+Copse regular,regular,serif,-0.48687744,10.678328
+Sigmar One regular,regular,display,-10.481547,14.210704
+Martel 200,200,serif,-0.8285471,13.530642
+Martel 300,300,serif,-0.415736,13.437054
+Martel regular,regular,serif,-0.69933856,13.1665945
+Martel 600,600,serif,-1.0126693,13.101962
+Martel 700,700,serif,-0.9719268,10.794573
+Martel 800,800,serif,-1.246919,9.826605
+Martel 900,900,serif,-1.5049689,8.897169
+Actor regular,regular,sans-serif,-7.929376,17.960932
+Gentium Book Basic regular,regular,serif,-0.14225893,11.481803
+Gentium Book Basic italic,italic,serif,-6.157071,9.936098
+Gentium Book Basic 700,700,serif,-1.4426244,9.605885
+Gentium Book Basic 700italic,700italic,serif,-6.708488,10.069444
+Amaranth regular,regular,sans-serif,-9.247288,14.310992
+Amaranth italic,italic,sans-serif,-7.2191634,10.903571
+Amaranth 700,700,sans-serif,-9.776388,13.386967
+Amaranth 700italic,700italic,sans-serif,-8.319097,10.496042
+Frank Ruhl Libre 300,300,sans-serif,-0.8700947,12.938119
+Frank Ruhl Libre regular,regular,sans-serif,-0.2833259,12.236763
+Frank Ruhl Libre 500,500,sans-serif,-1.2291788,10.380627
+Frank Ruhl Libre 700,700,sans-serif,-0.82487404,9.492198
+Frank Ruhl Libre 900,900,sans-serif,-1.0151273,9.394211
+Sarala regular,regular,sans-serif,-7.7092876,17.676687
+Sarala 700,700,sans-serif,-10.332433,15.678223
+Nothing You Could Do regular,regular,handwriting,-4.6805654,13.705912
+Alice regular,regular,serif,-0.8111957,11.758768
+PT Mono regular,regular,monospace,-8.809808,18.71159
+Adamina regular,regular,serif,0.5978174,12.062031
+Gentium Basic regular,regular,serif,-0.062004797,12.496268
+Gentium Basic italic,italic,serif,-5.8419895,9.971296
+Gentium Basic 700,700,serif,-0.9287734,10.2579365
+Gentium Basic 700italic,700italic,serif,-6.4731913,10.358049
+Changa One regular,regular,display,-12.06134,14.505789
+Changa One italic,italic,display,-9.358175,9.468992
+Varela regular,regular,sans-serif,-6.5132504,17.549326
+Nobile regular,regular,sans-serif,-6.6905346,18.13385
+Nobile italic,italic,sans-serif,-6.9684234,11.939325
+Nobile 700,700,sans-serif,-10.997845,13.74218
+Nobile 700italic,700italic,sans-serif,-9.619625,10.53019
+Neucha regular,regular,handwriting,-7.8517337,14.798367
+Homemade Apple regular,regular,handwriting,-3.9674287,13.542225
+Syncopate regular,regular,sans-serif,-5.3908343,16.361458
+Syncopate 700,700,sans-serif,-8.370674,15.510215
+Bangers regular,regular,display,-10.502753,11.194466
+Rambla regular,regular,sans-serif,-8.619105,15.595055
+Rambla italic,italic,sans-serif,-8.254162,11.233327
+Rambla 700,700,sans-serif,-10.807154,13.549509
+Rambla 700italic,700italic,sans-serif,-9.444378,10.487086
+Signika Negative 300,300,sans-serif,-6.31497,17.139502
+Signika Negative regular,regular,sans-serif,-7.9451385,15.584533
+Signika Negative 600,600,sans-serif,-8.942681,14.466874
+Signika Negative 700,700,sans-serif,-9.021993,14.359255
+Julius Sans One regular,regular,sans-serif,-5.0001683,17.410564
+Cairo 200,200,sans-serif,-3.835426,17.8847
+Cairo 300,300,sans-serif,-4.9954205,18.137129
+Cairo regular,regular,sans-serif,-7.316924,17.792107
+Cairo 600,600,sans-serif,-8.644261,15.92455
+Cairo 700,700,sans-serif,-10.196363,14.116786
+Cairo 900,900,sans-serif,-11.841189,13.961276
+Cantata One regular,regular,serif,-0.36760658,10.762902
+Molengo regular,regular,sans-serif,-8.039791,17.741823
+Unica One regular,regular,display,-8.666189,15.521724
+Baloo Bhaina regular,regular,display,-7.834572,13.8293
+Black Ops One regular,regular,display,-11.586857,15.610767
+Alex Brush regular,regular,handwriting,-4.7712545,12.982178
+Pragati Narrow regular,regular,sans-serif,-8.507257,15.080362
+Pragati Narrow 700,700,sans-serif,-10.281752,13.498426
+Alegreya Sans SC 100,100,sans-serif,-4.0293255,17.3603
+Alegreya Sans SC 100italic,100italic,sans-serif,-4.291322,16.75278
+Alegreya Sans SC 300,300,sans-serif,-5.612397,16.938562
+Alegreya Sans SC 300italic,300italic,sans-serif,-5.7249775,16.309061
+Alegreya Sans SC regular,regular,sans-serif,-7.9216633,15.8015785
+Alegreya Sans SC italic,italic,sans-serif,-8.077886,13.0726795
+Alegreya Sans SC 500,500,sans-serif,-9.284862,13.988938
+Alegreya Sans SC 500italic,500italic,sans-serif,-8.746063,12.199201
+Alegreya Sans SC 700,700,sans-serif,-9.855793,13.27733
+Alegreya Sans SC 700italic,700italic,sans-serif,-9.36624,11.681697
+Alegreya Sans SC 800,800,sans-serif,-10.107243,12.997328
+Alegreya Sans SC 800italic,800italic,sans-serif,-9.709084,11.774848
+Alegreya Sans SC 900,900,sans-serif,-10.635783,13.371623
+Alegreya Sans SC 900italic,900italic,sans-serif,-10.0305605,12.058242
+Special Elite regular,regular,display,-2.6355093,11.125961
+Caveat regular,regular,handwriting,-5.2217007,13.481396
+Caveat 700,700,handwriting,-5.5662127,12.90576
+Share regular,regular,display,-9.157761,15.019079
+Share italic,italic,display,-8.347833,11.934682
+Share 700,700,display,-10.572033,13.456604
+Share 700italic,700italic,display,-9.761726,11.224332
+Arima Madurai 100,100,display,-2.9972265,17.81368
+Arima Madurai 200,200,display,-3.5676556,18.062542
+Arima Madurai 300,300,display,-4.9768877,17.501726
+Arima Madurai regular,regular,display,-6.6930385,16.156023
+Arima Madurai 500,500,display,-6.978479,15.530511
+Arima Madurai 700,700,display,-7.1907353,14.355735
+Arima Madurai 800,800,display,-7.2723656,14.445057
+Arima Madurai 900,900,display,-7.517428,14.431911
+Squada One regular,regular,display,-11.011672,13.266877
+Fauna One regular,regular,serif,-5.584896,16.599619
+Kameron regular,regular,serif,-1.7213427,12.914854
+Kameron 700,700,serif,-2.4244063,10.336474
+Enriqueta regular,regular,serif,-0.51125866,12.123806
+Enriqueta 700,700,serif,-1.4218297,9.276082
+Antic regular,regular,sans-serif,-6.014144,18.605911
+Scada regular,regular,sans-serif,-8.660278,16.303503
+Scada italic,italic,sans-serif,-7.974714,10.952304
+Scada 700,700,sans-serif,-10.233531,15.011865
+Scada 700italic,700italic,sans-serif,-8.703234,10.429195
+Cousine regular,regular,monospace,-9.08422,18.435213
+Cousine italic,italic,monospace,-7.4802814,12.989029
+Cousine 700,700,monospace,-10.418337,17.17146
+Cousine 700italic,700italic,monospace,-8.27446,11.087544
+Prata regular,regular,serif,0.56061727,12.459572
+Prompt 100,100,sans-serif,-2.959447,17.332972
+Prompt 100italic,100italic,sans-serif,-3.759191,16.00191
+Prompt 200,200,sans-serif,-4.177786,17.082016
+Prompt 200italic,200italic,sans-serif,-4.778513,15.360333
+Prompt 300,300,sans-serif,-5.64745,17.167984
+Prompt 300italic,300italic,sans-serif,-5.9635677,14.372091
+Prompt regular,regular,sans-serif,-6.6567054,16.74376
+Prompt italic,italic,sans-serif,-6.9434247,12.873079
+Prompt 500,500,sans-serif,-9.984497,16.684385
+Prompt 500italic,500italic,sans-serif,-7.578856,10.300621
+Prompt 600,600,sans-serif,-10.843288,16.216282
+Prompt 600italic,600italic,sans-serif,-8.070177,9.529667
+Prompt 700,700,sans-serif,-11.57567,15.914929
+Prompt 700italic,700italic,sans-serif,-8.793131,9.222275
+Prompt 800,800,sans-serif,-12.296344,15.55622
+Prompt 800italic,800italic,sans-serif,-9.235168,9.154813
+Prompt 900,900,sans-serif,-12.529973,15.100131
+Prompt 900italic,900italic,sans-serif,-9.64494,9.493284
+Lusitana regular,regular,serif,0.4093675,12.583347
+Lusitana 700,700,serif,-0.77636266,9.926094
+Ultra regular,regular,serif,-2.8436835,9.568175
+Graduate regular,regular,display,-2.1471064,11.244155
+Gochi Hand regular,regular,handwriting,-6.5344477,13.373703
+Clicker Script regular,regular,handwriting,-4.4829216,13.301333
+Allura regular,regular,handwriting,-4.0077753,13.399252
+Convergence regular,regular,sans-serif,-8.513022,16.819448
+PT Serif Caption regular,regular,serif,-0.7422288,12.249159
+PT Serif Caption italic,italic,serif,-6.471626,10.2774105
+Electrolize regular,regular,sans-serif,-8.372112,16.896816
+Alef regular,regular,sans-serif,-7.482308,17.64496
+Alef 700,700,sans-serif,-9.864461,15.806007
+Ubuntu Mono regular,regular,monospace,-9.174295,17.649597
+Ubuntu Mono italic,italic,monospace,-7.1772523,11.363261
+Ubuntu Mono 700,700,monospace,-9.956544,16.130695
+Ubuntu Mono 700italic,700italic,monospace,-8.255885,10.698434
+Viga regular,regular,sans-serif,-10.248118,13.906053
+Rancho regular,regular,handwriting,-6.9994197,13.395745
+Allerta regular,regular,sans-serif,-9.385354,17.08093
+Just Another Hand regular,regular,handwriting,-6.710346,14.070588
+Reenie Beanie regular,regular,handwriting,-5.1581926,14.675705
+Carme regular,regular,sans-serif,-7.639273,17.99023
+Yesteryear regular,regular,handwriting,-5.388879,12.424289
+Basic regular,regular,sans-serif,-8.903133,15.28708
+Calligraffitti regular,regular,handwriting,-4.2031407,13.375431
+Forum regular,regular,display,-0.52389085,13.692322
+Hind Vadodara 300,300,sans-serif,-5.525591,18.725986
+Hind Vadodara regular,regular,sans-serif,-7.525962,18.672455
+Hind Vadodara 500,500,sans-serif,-8.929325,17.211187
+Hind Vadodara 600,600,sans-serif,-10.794189,15.367605
+Hind Vadodara 700,700,sans-serif,-11.386821,14.827709
+Khula 300,300,sans-serif,-4.187299,17.96501
+Khula regular,regular,sans-serif,-6.472068,18.109827
+Khula 600,600,sans-serif,-8.698289,17.053751
+Khula 700,700,sans-serif,-10.24381,15.210085
+Khula 800,800,sans-serif,-11.368996,14.81603
+Pinyon Script regular,regular,handwriting,-4.479468,12.834498
+Montserrat Alternates 100,100,sans-serif,-3.0277016,17.081333
+Montserrat Alternates 100italic,100italic,sans-serif,-3.4460793,16.657679
+Montserrat Alternates 200,200,sans-serif,-3.92346,17.235537
+Montserrat Alternates 200italic,200italic,sans-serif,-4.2908115,16.16417
+Montserrat Alternates 300,300,sans-serif,-4.824219,16.686155
+Montserrat Alternates 300italic,300italic,sans-serif,-5.227383,15.563981
+Montserrat Alternates regular,regular,sans-serif,-6.1851244,16.86464
+Montserrat Alternates italic,italic,sans-serif,-5.8577757,14.4776
+Montserrat Alternates 500,500,sans-serif,-9.825764,16.617182
+Montserrat Alternates 500italic,500italic,sans-serif,-7.4025993,10.359431
+Montserrat Alternates 600,600,sans-serif,-10.819357,16.313608
+Montserrat Alternates 600italic,600italic,sans-serif,-7.82758,9.691671
+Montserrat Alternates 700,700,sans-serif,-11.472597,15.983634
+Montserrat Alternates 700italic,700italic,sans-serif,-8.381035,9.400733
+Montserrat Alternates 800,800,sans-serif,-11.912594,15.595819
+Montserrat Alternates 800italic,800italic,sans-serif,-8.60267,9.393558
+Montserrat Alternates 900,900,sans-serif,-12.369379,15.125194
+Montserrat Alternates 900italic,900italic,sans-serif,-8.97476,9.197368
+Overlock regular,regular,display,-6.687424,16.233232
+Overlock italic,italic,display,-6.579579,11.977644
+Overlock 700,700,display,-7.4465,14.639643
+Overlock 700italic,700italic,display,-6.919257,11.571632
+Overlock 900,900,display,-7.5414248,13.580049
+Overlock 900italic,900italic,display,-6.979575,12.450029
+Ceviche One regular,regular,display,-7.5196195,12.57901
+Nixie One regular,regular,display,-0.7967312,14.436964
+Chivo 300,300,sans-serif,-4.4450984,17.358166
+Chivo 300italic,300italic,sans-serif,-4.8051558,15.735918
+Chivo regular,regular,sans-serif,-6.8027306,17.1358
+Chivo italic,italic,sans-serif,-7.176821,12.882368
+Chivo 700,700,sans-serif,-10.674768,15.264988
+Chivo 700italic,700italic,sans-serif,-8.427013,9.841052
+Chivo 900,900,sans-serif,-11.748213,15.259245
+Chivo 900italic,900italic,sans-serif,-9.241545,9.389788
+Michroma regular,regular,sans-serif,-5.4618316,16.171144
+Love Ya Like A Sister regular,regular,display,-1.2734886,11.142269
+Cherry Cream Soda regular,regular,display,-9.970638,16.176823
+Rufina regular,regular,serif,-0.211739,12.316853
+Rufina 700,700,serif,-0.37851673,10.173862
+Marmelad regular,regular,sans-serif,-6.5592155,15.195024
+Monoton regular,regular,display,-12.239086,15.060976
+Fanwood Text regular,regular,serif,1.025112,12.582943
+Fanwood Text italic,italic,serif,-4.9322453,9.924795
+Niconne regular,regular,handwriting,-4.720586,12.8840065
+Marcellus SC regular,regular,serif,-8.399311,15.861729
+Changa 200,200,sans-serif,-7.1314855,17.164433
+Changa 300,300,sans-serif,-8.081696,16.668911
+Changa regular,regular,sans-serif,-9.472607,15.6838455
+Changa 500,500,sans-serif,-10.270473,15.084103
+Changa 600,600,sans-serif,-10.43464,14.390683
+Changa 700,700,sans-serif,-11.0533,14.283909
+Changa 800,800,sans-serif,-11.745957,14.699968
+Aldrich regular,regular,sans-serif,-9.083763,16.630663
+Freckle Face regular,regular,display,-7.3412304,13.162962
+Limelight regular,regular,display,-11.501372,16.220325
+Spinnaker regular,regular,sans-serif,-6.324002,17.012884
+Parisienne regular,regular,handwriting,-4.4108405,12.971344
+Jaldi regular,regular,sans-serif,-7.4573593,16.700287
+Jaldi 700,700,sans-serif,-9.60291,13.422928
+Fugaz One regular,regular,display,-8.189038,9.5632105
+Marcellus regular,regular,serif,-7.811588,18.193264
+Telex regular,regular,sans-serif,-7.5331626,18.013823
+Contrail One regular,regular,display,-10.297107,11.427173
+Ruslan Display regular,regular,display,-9.917819,14.003924
+Petit Formal Script regular,regular,handwriting,-4.8994145,13.510896
+Candal regular,regular,sans-serif,-11.5806465,15.936043
+Homenaje regular,regular,sans-serif,-9.043487,13.496502
+Cabin Sketch regular,regular,display,-6.339527,15.095054
+Cabin Sketch 700,700,display,-9.798396,15.060285
+Magra regular,regular,sans-serif,-8.268667,16.07554
+Magra 700,700,sans-serif,-10.907962,12.859591
+Tauri regular,regular,sans-serif,-9.12677,15.134868
+Lustria regular,regular,serif,-0.29741573,13.289044
+Carter One regular,regular,display,-8.658814,11.317597
+Assistant 200,200,sans-serif,-2.9086158,17.884699
+Assistant 300,300,sans-serif,-4.5241146,18.43208
+Assistant regular,regular,sans-serif,-6.385079,17.825191
+Assistant 600,600,sans-serif,-8.744034,16.340803
+Assistant 700,700,sans-serif,-10.355523,14.566244
+Assistant 800,800,sans-serif,-11.411148,13.872253
+Oranienbaum regular,regular,serif,0.6158282,11.506242
+Average regular,regular,serif,0.9065005,11.378126
+Press Start 2P regular,regular,display,-11.574717,13.583692
+Marvel regular,regular,sans-serif,-6.8372927,16.477808
+Marvel italic,italic,sans-serif,-7.6159587,12.85186
+Marvel 700,700,sans-serif,-8.007718,15.619826
+Marvel 700italic,700italic,sans-serif,-7.9707937,12.085174
+Grand Hotel regular,regular,handwriting,-6.4592195,12.920851
+Bubblegum Sans regular,regular,display,-8.036334,12.961698
+Carrois Gothic regular,regular,sans-serif,-7.3432236,17.25478
+Average Sans regular,regular,sans-serif,-7.9174995,17.293344
+Sue Ellen Francisco regular,regular,handwriting,-5.872742,15.057085
+Arbutus Slab regular,regular,serif,-0.85139906,11.175061
+Voltaire regular,regular,sans-serif,-9.783859,13.144411
+Cambay regular,regular,sans-serif,-7.6375084,17.695494
+Cambay italic,italic,sans-serif,-6.998904,11.738765
+Cambay 700,700,sans-serif,-9.841355,15.4167595
+Cambay 700italic,700italic,sans-serif,-7.769964,10.269627
+Jockey One regular,regular,sans-serif,-10.427008,12.539282
+Revalia regular,regular,display,-6.8776174,15.24637
+Merienda regular,regular,handwriting,-6.2851777,13.102933
+Merienda 700,700,handwriting,-6.836405,12.693984
+Fira Sans Condensed 100,100,sans-serif,-2.5077999,17.555714
+Fira Sans Condensed 100italic,100italic,sans-serif,-3.5178123,16.122046
+Fira Sans Condensed 200,200,sans-serif,-4.696406,18.307768
+Fira Sans Condensed 200italic,200italic,sans-serif,-4.538173,15.12876
+Fira Sans Condensed 300,300,sans-serif,-5.7734184,18.075344
+Fira Sans Condensed 300italic,300italic,sans-serif,-5.887854,13.398044
+Fira Sans Condensed regular,regular,sans-serif,-8.96873,15.394529
+Fira Sans Condensed italic,italic,sans-serif,-8.109261,11.724322
+Fira Sans Condensed 500,500,sans-serif,-10.611604,13.355262
+Fira Sans Condensed 500italic,500italic,sans-serif,-9.438702,11.199999
+Fira Sans Condensed 600,600,sans-serif,-10.90888,13.123803
+Fira Sans Condensed 600italic,600italic,sans-serif,-9.947489,11.030496
+Fira Sans Condensed 700,700,sans-serif,-11.280558,12.641051
+Fira Sans Condensed 700italic,700italic,sans-serif,-10.222249,10.888255
+Fira Sans Condensed 800,800,sans-serif,-11.456169,12.787719
+Fira Sans Condensed 800italic,800italic,sans-serif,-10.531347,10.84591
+Fira Sans Condensed 900,900,sans-serif,-11.916248,13.009305
+Fira Sans Condensed 900italic,900italic,sans-serif,-10.675707,10.9881315
+Hind Guntur 300,300,sans-serif,-5.461369,18.515053
+Hind Guntur regular,regular,sans-serif,-7.537938,18.575138
+Hind Guntur 500,500,sans-serif,-9.028115,17.518303
+Hind Guntur 600,600,sans-serif,-10.666269,15.575616
+Hind Guntur 700,700,sans-serif,-11.459654,14.932239
+Goudy Bookletter 1911 regular,regular,serif,-1.409641,12.900927
+Andika regular,regular,sans-serif,-7.9569106,17.20107
+Slabo 13px regular,regular,serif,-0.65082306,12.788685
+Cutive regular,regular,serif,-2.0748816,12.32469
+Rammetto One regular,regular,display,-12.2811575,15.5086
+Radley regular,regular,serif,-0.5811014,11.029599
+Radley italic,italic,serif,-5.229038,11.891281
+Quantico regular,regular,sans-serif,-8.97039,16.488062
+Quantico italic,italic,sans-serif,-7.7430205,11.361165
+Quantico 700,700,sans-serif,-10.442612,15.205471
+Quantico 700italic,700italic,sans-serif,-8.680806,10.149725
+Walter Turncoat regular,regular,handwriting,-6.4146943,14.921829
+Mr Dafoe regular,regular,handwriting,-4.9628096,12.939593
+Six Caps regular,regular,sans-serif,-8.282462,13.959979
+Arsenal regular,regular,sans-serif,-7.6343217,17.454271
+Arsenal italic,italic,sans-serif,-7.5372863,11.937978
+Arsenal 700,700,sans-serif,-10.276773,13.591662
+Arsenal 700italic,700italic,sans-serif,-9.676319,10.758736
+Crafty Girls regular,regular,handwriting,-4.6569843,14.639918
+Anonymous Pro regular,regular,monospace,-8.522489,18.733818
+Anonymous Pro italic,italic,monospace,-6.300853,14.065682
+Anonymous Pro 700,700,monospace,-10.125691,17.728634
+Anonymous Pro 700italic,700italic,monospace,-8.080395,12.042302
+Alegreya SC regular,regular,serif,-1.9984641,11.690828
+Alegreya SC italic,italic,serif,-2.8568072,11.440471
+Alegreya SC 700,700,serif,-2.3246717,10.524906
+Alegreya SC 700italic,700italic,serif,-3.1100473,10.080644
+Alegreya SC 900,900,serif,-2.397136,9.4485235
+Alegreya SC 900italic,900italic,serif,-2.9396167,9.750247
+Fredericka the Great regular,regular,display,-1.7414265,9.574272
+Halant 300,300,serif,-0.81512773,13.886475
+Halant regular,regular,serif,-0.75441015,13.3349
+Halant 500,500,serif,-0.80990404,11.359823
+Halant 600,600,serif,-1.3522723,10.265898
+Halant 700,700,serif,-2.2125766,9.7309475
+Eczar regular,regular,serif,-0.5081909,11.692943
+Eczar 500,500,serif,-1.2015473,10.151791
+Eczar 600,600,serif,-1.7258545,9.495342
+Eczar 700,700,serif,-2.1550348,9.804952
+Eczar 800,800,serif,-2.6420662,9.537612
+Leckerli One regular,regular,handwriting,-5.401211,12.635675
+Puritan regular,regular,sans-serif,-7.596614,17.176777
+Puritan italic,italic,sans-serif,-7.418273,12.627595
+Puritan 700,700,sans-serif,-9.683309,14.893372
+Puritan 700italic,700italic,sans-serif,-9.290881,11.539775
+Schoolbell regular,regular,handwriting,-6.2560945,13.63482
+Caveat Brush regular,regular,handwriting,-7.0870876,12.631181
+Chonburi regular,regular,display,-2.5393214,10.286032
+Annie Use Your Telescope regular,regular,handwriting,-5.196572,16.218752
+Italianno regular,regular,handwriting,-4.6000934,13.2568445
+Doppio One regular,regular,sans-serif,-9.864784,15.954248
+Cutive Mono regular,regular,monospace,-3.8355126,14.857972
+Coustard regular,regular,serif,-0.86621773,10.735919
+Coustard 900,900,serif,-2.7374692,9.163208
+Ovo regular,regular,serif,-0.1665778,12.734267
+Cinzel Decorative regular,regular,display,-1.6353034,13.152867
+Cinzel Decorative 700,700,display,-1.6211042,11.180446
+Cinzel Decorative 900,900,display,-1.5467713,10.57311
+Fontdiner Swanky regular,regular,display,-0.0933175,9.927113
+Lateef regular,regular,handwriting,-1.46223,12.625415
+Rosario regular,regular,sans-serif,-8.094182,16.918808
+Rosario italic,italic,sans-serif,-7.7103605,11.254479
+Rosario 700,700,sans-serif,-10.332913,13.946773
+Rosario 700italic,700italic,sans-serif,-9.874039,10.903744
+Lekton regular,regular,sans-serif,-8.519728,18.850855
+Lekton italic,italic,sans-serif,-6.4853206,15.5285845
+Lekton 700,700,sans-serif,-10.583102,16.763079
+Metrophobic regular,regular,sans-serif,-6.6331367,17.749323
+Port Lligat Slab regular,regular,serif,0.034778357,10.99242
+Racing Sans One regular,regular,display,-9.56035,9.323712
+Martel Sans 200,200,sans-serif,-4.3163548,18.478153
+Martel Sans 300,300,sans-serif,-6.454565,18.490072
+Martel Sans regular,regular,sans-serif,-7.090964,18.070314
+Martel Sans 600,600,sans-serif,-8.553679,16.814201
+Martel Sans 700,700,sans-serif,-9.34717,15.883905
+Martel Sans 800,800,sans-serif,-10.206158,15.319664
+Martel Sans 900,900,sans-serif,-10.833139,14.739568
+Lilita One regular,regular,display,-11.203682,13.725267
+Berkshire Swash regular,regular,handwriting,-7.202399,13.274745
+Kelly Slab regular,regular,display,-0.8578469,10.489319
+Caudex regular,regular,serif,-0.22680718,12.703586
+Caudex italic,italic,serif,-5.705606,10.873511
+Caudex 700,700,serif,-0.32784924,11.533382
+Caudex 700italic,700italic,serif,-6.242611,10.36865
+Baloo regular,regular,display,-7.7079597,13.523324
+Oregano regular,regular,display,-6.8405223,13.475271
+Oregano italic,italic,display,-5.4393854,13.19183
+Karma 300,300,serif,-1.5748876,14.081574
+Karma regular,regular,serif,-1.3979604,13.539539
+Karma 500,500,serif,-1.5980955,13.069924
+Karma 600,600,serif,-1.8255924,11.676174
+Karma 700,700,serif,-1.8768449,10.582037
+Gilda Display regular,regular,serif,0.521331,12.967825
+Give You Glory regular,regular,handwriting,-4.740401,14.57184
+Gruppo regular,regular,display,-4.918459,16.38699
+Lalezar regular,regular,display,-12.003866,14.313028
+Londrina Solid regular,regular,display,-10.630315,13.014872
+Trirong 100,100,serif,-0.4615668,14.421008
+Trirong 100italic,100italic,serif,-4.6132708,10.96987
+Trirong 200,200,serif,-0.4757732,14.043038
+Trirong 200italic,200italic,serif,-4.7576456,10.85695
+Trirong 300,300,serif,-0.37517247,13.831146
+Trirong 300italic,300italic,serif,-5.1155252,10.83222
+Trirong regular,regular,serif,-0.47728726,12.910456
+Trirong italic,italic,serif,-5.216464,10.760871
+Trirong 500,500,serif,-0.6213168,11.86684
+Trirong 500italic,500italic,serif,-5.357475,10.954508
+Trirong 600,600,serif,-1.287444,10.8761635
+Trirong 600italic,600italic,serif,-5.4376845,11.208263
+Trirong 700,700,serif,-1.5089326,10.554798
+Trirong 700italic,700italic,serif,-5.761181,11.265484
+Trirong 800,800,serif,-1.8488718,10.079036
+Trirong 800italic,800italic,serif,-5.821032,11.401601
+Trirong 900,900,serif,-2.2663856,10.1478
+Trirong 900italic,900italic,serif,-6.1157465,11.625094
+Zeyada regular,regular,handwriting,-5.153253,14.292573
+Anaheim regular,regular,sans-serif,-6.6999903,18.502098
+Belleza regular,regular,sans-serif,-7.8474593,17.270176
+Palanquin 100,100,sans-serif,-4.5236597,18.189035
+Palanquin 200,200,sans-serif,-4.724806,17.734571
+Palanquin 300,300,sans-serif,-5.3477297,18.01196
+Palanquin regular,regular,sans-serif,-6.5994153,18.095947
+Palanquin 500,500,sans-serif,-8.378748,17.485834
+Palanquin 600,600,sans-serif,-9.371909,16.201036
+Palanquin 700,700,sans-serif,-10.369613,15.400412
+Inder regular,regular,sans-serif,-8.459787,17.216105
+Space Mono regular,regular,monospace,-9.015082,18.521095
+Space Mono italic,italic,monospace,-6.390471,13.78475
+Space Mono 700,700,monospace,-10.619466,17.058382
+Space Mono 700italic,700italic,monospace,-7.2098594,11.989094
+Cambo regular,regular,serif,-0.044201966,11.408147
+Happy Monkey regular,regular,display,-4.846705,16.491987
+Ranga regular,regular,display,-7.6609635,12.268835
+Ranga 700,700,display,-9.17491,11.70608
+Slackey regular,regular,display,-10.052697,15.242501
+Tenor Sans regular,regular,sans-serif,-6.074677,17.619287
+The Girl Next Door regular,regular,handwriting,-4.8822966,15.469432
+Titan One regular,regular,display,-11.448044,14.870381
+Waiting for the Sunrise regular,regular,handwriting,-5.455715,14.648449
+Mouse Memoirs regular,regular,sans-serif,-8.879225,13.1699095
+Trocchi regular,regular,serif,-1.1598259,11.870585
+Baumans regular,regular,display,-8.368223,16.191805
+Federo regular,regular,sans-serif,-8.714228,16.709435
+Pompiere regular,regular,display,-5.118543,16.884344
+Quando regular,regular,serif,-1.2899197,11.573436
+Palanquin Dark regular,regular,sans-serif,-10.501974,15.844306
+Palanquin Dark 500,500,sans-serif,-11.07378,15.206768
+Palanquin Dark 600,600,sans-serif,-11.558471,14.572159
+Palanquin Dark 700,700,sans-serif,-12.021915,14.764856
+Capriola regular,regular,sans-serif,-7.5663743,15.932584
+Brawler regular,regular,serif,-0.7660804,11.954119
+Merienda One regular,regular,handwriting,-6.779864,12.952591
+Delius regular,regular,handwriting,-5.765052,15.784189
+Itim regular,regular,handwriting,-6.621047,14.182652
+Carrois Gothic SC regular,regular,sans-serif,-8.491559,15.897892
+Mate regular,regular,serif,0.36466166,13.087428
+Mate italic,italic,serif,-5.2701626,9.709409
+Prosto One regular,regular,display,-9.774261,16.72239
+Knewave regular,regular,display,-8.148047,13.13254
+Kranky regular,regular,display,-1.7261446,13.098082
+Yeseva One regular,regular,display,-1.9302574,10.190361
+Chelsea Market regular,regular,display,-9.245845,16.413162
+Lemon regular,regular,display,-6.1348944,13.174423
+Herr Von Muellerhoff regular,regular,handwriting,-4.163376,13.553295
+Fira Sans Extra Condensed 100,100,sans-serif,-3.3552914,17.73138
+Fira Sans Extra Condensed 100italic,100italic,sans-serif,-3.652226,16.148054
+Fira Sans Extra Condensed 200,200,sans-serif,-5.351249,17.874557
+Fira Sans Extra Condensed 200italic,200italic,sans-serif,-5.6348925,14.322212
+Fira Sans Extra Condensed 300,300,sans-serif,-6.7337217,16.957064
+Fira Sans Extra Condensed 300italic,300italic,sans-serif,-7.262204,12.898579
+Fira Sans Extra Condensed regular,regular,sans-serif,-9.848893,13.646691
+Fira Sans Extra Condensed italic,italic,sans-serif,-9.331331,11.43538
+Fira Sans Extra Condensed 500,500,sans-serif,-10.901521,12.553633
+Fira Sans Extra Condensed 500italic,500italic,sans-serif,-10.080984,11.253791
+Fira Sans Extra Condensed 600,600,sans-serif,-10.946101,12.343356
+Fira Sans Extra Condensed 600italic,600italic,sans-serif,-10.35174,11.338644
+Fira Sans Extra Condensed 700,700,sans-serif,-10.967738,12.178395
+Fira Sans Extra Condensed 700italic,700italic,sans-serif,-10.616382,11.077506
+Fira Sans Extra Condensed 800,800,sans-serif,-11.486374,12.438018
+Fira Sans Extra Condensed 800italic,800italic,sans-serif,-10.721718,11.168346
+Fira Sans Extra Condensed 900,900,sans-serif,-11.629843,12.862096
+Fira Sans Extra Condensed 900italic,900italic,sans-serif,-10.593702,11.454796
+Judson regular,regular,serif,-0.76725036,11.79158
+Judson italic,italic,serif,-6.3390007,11.010638
+Judson 700,700,serif,-2.1866972,10.51968
+IM Fell English regular,regular,serif,0.6538638,10.702255
+IM Fell English italic,italic,serif,-5.5755343,10.120488
+Allan regular,regular,display,-8.100152,11.800095
+Allan 700,700,display,-9.24346,11.391141
+Baloo Paaji regular,regular,display,-7.755183,13.840732
+Andada regular,regular,serif,-0.3839745,11.678564
+Short Stack regular,regular,handwriting,-5.678418,15.568225
+Mako regular,regular,sans-serif,-8.129673,17.780811
+Gravitas One regular,regular,display,-2.8851733,10.138383
+Duru Sans regular,regular,sans-serif,-6.2248406,17.681084
+Reem Kufi regular,regular,sans-serif,-8.34064,17.582407
+Mr De Haviland regular,regular,handwriting,-4.432864,13.859916
+Crushed regular,regular,display,-10.308448,12.229375
+Alike regular,regular,serif,0.32785082,11.557386
+Taviraj 100,100,serif,-0.137587,14.2914715
+Taviraj 100italic,100italic,serif,-4.59896,10.506466
+Taviraj 200,200,serif,-0.11944767,13.796924
+Taviraj 200italic,200italic,serif,-4.7991295,10.459153
+Taviraj 300,300,serif,-0.116592385,13.375215
+Taviraj 300italic,300italic,serif,-5.0373936,10.286813
+Taviraj regular,regular,serif,-0.38494146,12.496722
+Taviraj italic,italic,serif,-5.2983694,10.420487
+Taviraj 500,500,serif,-0.8271803,11.257889
+Taviraj 500italic,500italic,serif,-5.8335805,10.645342
+Taviraj 600,600,serif,-1.7135857,10.538278
+Taviraj 600italic,600italic,serif,-5.8910356,10.686741
+Taviraj 700,700,serif,-2.3432455,10.5339365
+Taviraj 700italic,700italic,serif,-5.8152194,10.8693
+Taviraj 800,800,serif,-2.4797974,10.609994
+Taviraj 800italic,800italic,serif,-6.00842,11.096794
+Taviraj 900,900,serif,-2.7323194,10.389055
+Taviraj 900italic,900italic,serif,-6.113602,11.119347
+Montez regular,regular,handwriting,-5.270101,13.639707
+Abhaya Libre regular,regular,serif,-0.39668432,12.484162
+Abhaya Libre 500,500,serif,-0.52003527,11.834554
+Abhaya Libre 600,600,serif,-0.55363,11.190047
+Abhaya Libre 700,700,serif,-0.7147782,10.393301
+Abhaya Libre 800,800,serif,-0.7006474,9.841697
+Prociono regular,regular,serif,0.2134398,11.20301
+Poly regular,regular,serif,-0.17450452,11.260483
+Poly italic,italic,serif,-6.2923794,9.869484
+IM Fell English SC regular,regular,serif,-1.998175,11.472844
+Strait regular,regular,sans-serif,-8.609682,15.534143
+Frijole regular,regular,display,-4.1201434,10.920369
+IM Fell Double Pica regular,regular,serif,0.79365313,11.446193
+IM Fell Double Pica italic,italic,serif,-5.3293276,9.709943
+Oxygen Mono regular,regular,monospace,-9.181823,18.34038
+Wire One regular,regular,sans-serif,-6.8606396,15.287128
+Biryani 200,200,sans-serif,-4.344695,18.331415
+Biryani 300,300,sans-serif,-6.0981812,18.219528
+Biryani regular,regular,sans-serif,-7.4777646,18.13393
+Biryani 600,600,sans-serif,-8.632669,17.128332
+Biryani 700,700,sans-serif,-9.73206,16.277168
+Biryani 800,800,sans-serif,-10.8041115,15.343201
+Biryani 900,900,sans-serif,-11.117031,15.071804
+Kurale regular,regular,serif,-3.8588374,12.399314
+Oleo Script Swash Caps regular,regular,display,-6.59131,12.503303
+Oleo Script Swash Caps 700,700,display,-6.3199153,12.234247
+Belgrano regular,regular,serif,-0.6187022,11.765536
+Arizonia regular,regular,handwriting,-4.4057097,13.36339
+Just Me Again Down Here regular,regular,handwriting,-5.875359,14.096793
+Bowlby One regular,regular,display,-12.417945,15.413156
+Orienta regular,regular,sans-serif,-6.9166203,17.083702
+Meddon regular,regular,handwriting,-3.972116,13.443887
+UnifrakturMaguntia regular,regular,display,-7.466493,12.791599
+Megrim regular,regular,display,-4.406557,17.293606
+Unkempt regular,regular,display,-2.8925498,14.742274
+Unkempt 700,700,display,-4.0082035,12.375514
+Mountains of Christmas regular,regular,display,-4.7745256,11.21257
+Mountains of Christmas 700,700,display,-5.298145,10.981694
+Macondo regular,regular,display,-6.476387,14.430786
+Chau Philomene One regular,regular,sans-serif,-10.028392,12.884235
+Chau Philomene One italic,italic,sans-serif,-9.857384,11.209101
+Norican regular,regular,handwriting,-4.8842044,12.56143
+Averia Sans Libre 300,300,display,-6.6260934,14.432195
+Averia Sans Libre 300italic,300italic,display,-6.2971025,13.294682
+Averia Sans Libre regular,regular,display,-7.094063,14.172034
+Averia Sans Libre italic,italic,display,-6.568612,12.674597
+Averia Sans Libre 700,700,display,-7.591703,14.366029
+Averia Sans Libre 700italic,700italic,display,-6.991151,11.962611
+Averia Serif Libre 300,300,display,-1.7244282,11.324715
+Averia Serif Libre 300italic,300italic,display,-5.3145676,10.437025
+Averia Serif Libre regular,regular,display,-2.0662315,11.049249
+Averia Serif Libre italic,italic,display,-5.617794,11.194642
+Averia Serif Libre 700,700,display,-2.0530922,10.328184
+Averia Serif Libre 700italic,700italic,display,-5.7806354,11.320083
+Gafata regular,regular,sans-serif,-6.2581677,17.903646
+Sansita regular,regular,sans-serif,-9.713435,14.5751915
+Sansita italic,italic,sans-serif,-8.19427,11.237093
+Sansita 700,700,sans-serif,-10.300611,14.035351
+Sansita 700italic,700italic,sans-serif,-8.075194,10.72527
+Sansita 800,800,sans-serif,-11.158794,14.092256
+Sansita 800italic,800italic,sans-serif,-8.241533,10.260593
+Sansita 900,900,sans-serif,-11.926503,14.581238
+Sansita 900italic,900italic,sans-serif,-8.077954,10.730239
+Rationale regular,regular,sans-serif,-9.390696,14.410546
+Euphoria Script regular,regular,handwriting,-4.3699946,13.336408
+Delius Unicase regular,regular,handwriting,-7.1047463,17.311531
+Delius Unicase 700,700,handwriting,-7.9872136,15.543953
+Bungee Inline regular,regular,display,-9.825723,14.600224
+Miriam Libre regular,regular,sans-serif,-6.8453336,18.100965
+Miriam Libre 700,700,sans-serif,-9.171733,15.546074
+Headland One regular,regular,serif,-0.6013282,11.411022
+Nova Square regular,regular,display,-8.590397,16.130453
+Gabriela regular,regular,serif,-4.0408626,12.184931
+Bentham regular,regular,serif,0.5289738,12.112927
+Unna regular,regular,serif,0.09901411,12.037092
+Unna italic,italic,serif,-5.7120285,9.860629
+Unna 700,700,serif,-0.57872254,9.27354
+Unna 700italic,700italic,serif,-6.5861645,10.133478
+Cormorant 300,300,serif,0.53908753,13.063984
+Cormorant 300italic,300italic,serif,-4.8490653,9.55611
+Cormorant regular,regular,serif,0.8580717,12.788959
+Cormorant italic,italic,serif,-4.606558,9.281448
+Cormorant 500,500,serif,0.9568707,12.25979
+Cormorant 500italic,500italic,serif,-4.9941354,9.093742
+Cormorant 600,600,serif,1.1334785,11.402003
+Cormorant 600italic,600italic,serif,-5.113636,9.198636
+Cormorant 700,700,serif,0.73015743,10.87435
+Cormorant 700italic,700italic,serif,-5.526669,9.4209795
+Poller One regular,regular,display,-12.192557,15.652094
+La Belle Aurore regular,regular,handwriting,-4.2256336,12.983304
+Bowlby One SC regular,regular,display,-11.061809,14.305129
+Holtwood One SC regular,regular,serif,-9.755594,13.132796
+Mallanna regular,regular,sans-serif,-6.179239,16.117233
+Sofia regular,regular,handwriting,-6.0446563,13.580184
+Aladin regular,regular,handwriting,-8.234784,12.628654
+Loved by the King regular,regular,handwriting,-5.836888,14.282867
+Lily Script One regular,regular,display,-6.3006487,12.3807955
+Skranji regular,regular,display,-9.802038,12.396633
+Skranji 700,700,display,-10.71245,12.462921
+Pridi 200,200,serif,-1.9505771,14.292125
+Pridi 300,300,serif,-1.4841262,12.918468
+Pridi regular,regular,serif,-1.5587727,10.729259
+Pridi 500,500,serif,-1.6648661,9.588375
+Pridi 600,600,serif,-1.7387062,9.25326
+Pridi 700,700,serif,-2.0120447,9.197312
+Qwigley regular,regular,handwriting,-4.4987106,13.907088
+Kristi regular,regular,handwriting,-5.2112765,13.894948
+Scheherazade regular,regular,serif,-1.5733886,12.499468
+Scheherazade 700,700,serif,-2.0167153,10.006863
+Vast Shadow regular,regular,display,-3.4557202,11.410392
+Fira Mono regular,regular,monospace,-9.226303,18.620634
+Fira Mono 500,500,monospace,-9.946808,17.638264
+Fira Mono 700,700,monospace,-10.810357,17.051758
+Bilbo Swash Caps regular,regular,handwriting,-4.0088906,13.119901
+Yrsa 300,300,serif,-0.8352004,12.859905
+Yrsa regular,regular,serif,-0.48966354,11.355495
+Yrsa 500,500,serif,-1.4017563,9.968064
+Yrsa 600,600,serif,-1.5834072,9.447615
+Yrsa 700,700,serif,-1.6817036,8.643963
+Expletus Sans regular,regular,display,-8.114405,17.037407
+Expletus Sans italic,italic,display,-7.6769533,11.695319
+Expletus Sans 500,500,display,-8.715812,16.505306
+Expletus Sans 500italic,500italic,display,-7.985179,11.075424
+Expletus Sans 600,600,display,-9.340623,15.640565
+Expletus Sans 600italic,600italic,display,-8.040125,11.060081
+Expletus Sans 700,700,display,-9.861978,15.021741
+Expletus Sans 700italic,700italic,display,-8.664998,10.954537
+Voces regular,regular,display,-8.110844,17.317448
+Metamorphous regular,regular,display,-2.0825732,13.559861
+Corben regular,regular,display,-1.4646521,11.867098
+Corben 700,700,display,-4.146664,11.383502
+Shojumaru regular,regular,display,-9.289134,13.692817
+Sniglet regular,regular,display,-6.775804,14.861098
+Sniglet 800,800,display,-8.366436,14.022659
+Cherry Swash regular,regular,display,-2.4000525,11.59061
+Cherry Swash 700,700,display,-3.0314262,10.502431
+Fondamento regular,regular,handwriting,-4.7587495,10.558414
+Fondamento italic,italic,handwriting,-5.589498,9.589304
+Mitr 200,200,sans-serif,-4.556879,16.587172
+Mitr 300,300,sans-serif,-6.1266403,16.594927
+Mitr regular,regular,sans-serif,-8.963515,16.111486
+Mitr 500,500,sans-serif,-9.658154,15.586595
+Mitr 600,600,sans-serif,-9.758361,15.015941
+Mitr 700,700,sans-serif,-10.501906,14.884611
+Seaweed Script regular,regular,display,-4.9213333,13.030172
+IM Fell DW Pica regular,regular,serif,0.1796525,10.61305
+IM Fell DW Pica italic,italic,serif,-5.38533,10.171185
+Imprima regular,regular,sans-serif,-6.708466,18.027685
+Suranna regular,regular,serif,0.5670061,12.288593
+Salsa regular,regular,display,-6.465589,13.079223
+Dorsa regular,regular,sans-serif,-8.124376,14.524567
+Amethysta regular,regular,serif,-0.18356286,12.030519
+Share Tech Mono regular,regular,monospace,-9.545846,18.066305
+Patrick Hand SC regular,regular,handwriting,-7.034979,14.543711
+Denk One regular,regular,sans-serif,-9.635543,13.418034
+Rouge Script regular,regular,handwriting,-4.5155063,13.347832
+Stardos Stencil regular,regular,display,-0.6913846,9.972797
+Stardos Stencil 700,700,display,-0.63992214,8.836651
+Ramabhadra regular,regular,sans-serif,-9.932128,16.358791
+Shanti regular,regular,sans-serif,-7.8737206,17.382717
+Italiana regular,regular,serif,-5.368569,18.730722
+Stalemate regular,regular,handwriting,-4.8287935,14.148503
+Raleway Dots regular,regular,display,-2.7817245,17.130726
+Dawning of a New Day regular,regular,handwriting,-3.9669518,13.723074
+Tienne regular,regular,serif,-2.0690997,11.694311
+Tienne 700,700,serif,-2.8789105,10.726888
+Tienne 900,900,serif,-2.6402936,9.809649
+Lemonada 300,300,display,-5.8257375,14.359339
+Lemonada regular,regular,display,-5.7867,13.882925
+Lemonada 600,600,display,-6.0779767,13.12105
+Lemonada 700,700,display,-6.3667407,12.936403
+Kotta One regular,regular,serif,-4.9520006,11.082337
+Engagement regular,regular,handwriting,-5.66315,13.280818
+Over the Rainbow regular,regular,handwriting,-5.306211,14.257777
+Delius Swash Caps regular,regular,handwriting,-5.5780296,15.096376
+Ledger regular,regular,serif,-1.0296854,12.119871
+Medula One regular,regular,display,-8.139441,13.823144
+Aguafina Script regular,regular,handwriting,-4.975855,13.373328
+Englebert regular,regular,sans-serif,-8.64921,14.278755
+Podkova regular,regular,serif,-2.500572,12.405486
+Podkova 500,500,serif,-2.15916,11.622446
+Podkova 600,600,serif,-1.9755903,11.077523
+Podkova 700,700,serif,-2.1616814,10.716742
+Podkova 800,800,serif,-2.5790734,10.414198
+Finger Paint regular,regular,display,-7.1106544,14.589869
+Buenard regular,regular,serif,0.51032925,12.368159
+Buenard 700,700,serif,-0.48562208,9.857118
+Faster One regular,regular,display,-9.312781,12.562091
+Cedarville Cursive regular,regular,handwriting,-4.308372,13.112558
+Life Savers regular,regular,display,0.18863282,13.586692
+Life Savers 700,700,display,0.66337436,11.932076
+Habibi regular,regular,serif,0.35050958,12.6846285
+Iceland regular,regular,display,-8.660988,16.466185
+Nova Mono regular,regular,monospace,-8.590711,18.079678
+Wendy One regular,regular,sans-serif,-12.268402,15.052527
+BioRhyme 200,200,serif,-1.2060016,14.1103945
+BioRhyme 300,300,serif,-2.4755957,14.141722
+BioRhyme regular,regular,serif,-2.9167688,12.269311
+BioRhyme 700,700,serif,-3.1867023,11.366426
+BioRhyme 800,800,serif,-3.2212448,10.904694
+Geo regular,regular,sans-serif,-9.587451,15.286058
+Geo italic,italic,sans-serif,-8.442675,10.399987
+Harmattan regular,regular,sans-serif,-6.513645,17.21208
+Maitree 200,200,serif,-0.42175883,14.624663
+Maitree 300,300,serif,-0.91586107,13.912254
+Maitree regular,regular,serif,-1.0622449,13.39372
+Maitree 500,500,serif,-0.77112836,12.554742
+Maitree 600,600,serif,-1.3242294,10.872624
+Maitree 700,700,serif,-1.6939616,10.008469
+Esteban regular,regular,serif,-0.8073427,12.658995
+Simonetta regular,regular,display,0.57373714,12.559484
+Simonetta italic,italic,display,-4.236309,10.288274
+Simonetta 900,900,display,-2.2545676,9.2830305
+Simonetta 900italic,900italic,display,-3.3667076,9.458389
+Balthazar regular,regular,serif,-0.522786,10.50394
+Fenix regular,regular,serif,0.19889417,11.2202635
+Sail regular,regular,display,-5.7060575,12.2304735
+Vampiro One regular,regular,display,-5.9193225,12.652175
+NTR regular,regular,sans-serif,-6.1438007,16.070517
+Mukta Vaani 200,200,sans-serif,-4.82722,18.191954
+Mukta Vaani 300,300,sans-serif,-6.0327883,18.29764
+Mukta Vaani regular,regular,sans-serif,-8.063684,17.710651
+Mukta Vaani 500,500,sans-serif,-8.793165,16.206371
+Mukta Vaani 600,600,sans-serif,-9.979751,15.486021
+Mukta Vaani 700,700,sans-serif,-10.57048,15.16884
+Mukta Vaani 800,800,sans-serif,-11.055062,14.567852
+Mandali regular,regular,sans-serif,-5.853147,16.01403
+Baloo Tamma regular,regular,display,-7.7183666,13.551921
+Creepster regular,regular,display,-10.018496,12.304275
+Vesper Libre regular,regular,serif,-0.04833079,11.314333
+Vesper Libre 500,500,serif,-0.76586133,9.838954
+Vesper Libre 700,700,serif,-1.3005455,9.862941
+Vesper Libre 900,900,serif,-1.8070788,9.215023
+Sumana regular,regular,serif,0.3554564,12.095922
+Sumana 700,700,serif,-0.931578,9.376227
+Kite One regular,regular,sans-serif,-6.562488,11.099142
+Ruluko regular,regular,sans-serif,-6.856402,16.249117
+Flamenco 300,300,display,-2.423919,16.941284
+Flamenco regular,regular,display,-5.4610553,16.769625
+Khmer regular,regular,display,2.3602073,11.492369
+Julee regular,regular,handwriting,-6.1373625,13.211223
+League Script regular,regular,handwriting,-4.2001595,13.762075
+Quintessential regular,regular,handwriting,-5.296919,10.998048
+Codystar 300,300,display,-8.833612,14.483716
+Codystar regular,regular,display,-9.064439,14.332491
+Wallpoet regular,regular,display,-8.682697,15.191303
+Mate SC regular,regular,serif,-1.4519415,12.496009
+Rye regular,regular,display,-1.987824,10.21375
+Rosarivo regular,regular,serif,1.3640223,12.020668
+Rosarivo italic,italic,serif,-5.344591,10.068919
+Spirax regular,regular,display,-6.8575516,14.274512
+McLaren regular,regular,display,-6.5342207,15.889749
+Amarante regular,regular,display,-10.164683,12.799354
+Kadwa regular,regular,serif,-1.2639977,10.9990835
+Kadwa 700,700,serif,-1.433174,8.629256
+Share Tech regular,regular,sans-serif,-9.028868,14.784209
+Secular One regular,regular,sans-serif,-11.291027,14.7768345
+Fjord One regular,regular,serif,-0.9972281,12.393064
+Donegal One regular,regular,serif,-0.25017074,10.940346
+Pavanam regular,regular,sans-serif,-5.877812,18.323393
+Suez One regular,regular,serif,-1.9364811,8.597543
+New Rocker regular,regular,display,-9.065789,12.556681
+Mystery Quest regular,regular,display,-4.27162,11.244322
+Sunshiney regular,regular,handwriting,-5.969194,14.187587
+Aref Ruqaa regular,regular,serif,-6.7663403,15.402951
+Aref Ruqaa 700,700,serif,-6.4696054,14.305272
+IM Fell DW Pica SC regular,regular,serif,-2.3656037,11.3499365
+Battambang regular,regular,display,2.14636,11.4075
+Battambang 700,700,display,-0.63290596,8.85305
+Text Me One regular,regular,sans-serif,-5.27356,17.017878
+Dynalight regular,regular,display,-4.8896437,13.232374
+David Libre regular,regular,serif,-0.14963853,12.313325
+David Libre 500,500,serif,-0.2746418,10.570161
+David Libre 700,700,serif,-0.69672173,10.301847
+IM Fell French Canon regular,regular,serif,1.3625045,11.922617
+IM Fell French Canon italic,italic,serif,-5.116436,9.474432
+Cantora One regular,regular,sans-serif,-10.095048,13.26784
+Overpass 100,100,sans-serif,-3.5628421,18.011738
+Overpass 100italic,100italic,sans-serif,-3.8219554,15.462798
+Overpass 200,200,sans-serif,-4.284073,17.734581
+Overpass 200italic,200italic,sans-serif,-4.616111,15.176874
+Overpass 300,300,sans-serif,-5.795562,17.629389
+Overpass 300italic,300italic,sans-serif,-6.408074,12.4806
+Overpass regular,regular,sans-serif,-7.269203,17.689806
+Overpass italic,italic,sans-serif,-7.175455,11.592444
+Overpass 600,600,sans-serif,-9.138388,16.94305
+Overpass 600italic,600italic,sans-serif,-7.858269,11.019129
+Overpass 700,700,sans-serif,-9.794624,16.204443
+Overpass 700italic,700italic,sans-serif,-8.368356,10.289387
+Overpass 800,800,sans-serif,-10.370114,15.709321
+Overpass 800italic,800italic,sans-serif,-9.025106,10.3210125
+Overpass 900,900,sans-serif,-10.80938,15.2160845
+Overpass 900italic,900italic,sans-serif,-9.238813,10.012838
+Mada 300,300,sans-serif,-4.2174096,18.449692
+Mada regular,regular,sans-serif,-8.943077,15.913305
+Mada 500,500,sans-serif,-9.027704,16.123413
+Mada 900,900,sans-serif,-11.504105,14.353308
+Condiment regular,regular,handwriting,-5.583843,12.747137
+Chicle regular,regular,display,-8.61595,12.830761
+Athiti 200,200,sans-serif,-2.929151,18.034935
+Athiti 300,300,sans-serif,-4.349699,18.093115
+Athiti regular,regular,sans-serif,-5.797782,17.904953
+Athiti 500,500,sans-serif,-7.4527073,17.042372
+Athiti 600,600,sans-serif,-9.334443,16.38469
+Athiti 700,700,sans-serif,-11.023089,15.617217
+Maiden Orange regular,regular,display,-1.0957699,8.51689
+Krona One regular,regular,sans-serif,-7.101878,16.108204
+Sonsie One regular,regular,display,-5.955538,12.077679
+Averia Libre 300,300,display,-6.4881377,13.207183
+Averia Libre 300italic,300italic,display,-6.094295,12.077971
+Averia Libre regular,regular,display,-6.6827707,13.534756
+Averia Libre italic,italic,display,-6.177354,12.081713
+Averia Libre 700,700,display,-7.145245,13.39358
+Averia Libre 700italic,700italic,display,-6.3341823,12.248851
+Rozha One regular,regular,serif,-1.5805559,10.116208
+Numans regular,regular,sans-serif,-5.9910684,17.15915
+Milonga regular,regular,display,-0.46957573,11.627928
+Stint Ultra Expanded regular,regular,display,-4.8831935,15.54133
+Stoke 300,300,serif,-1.2380886,11.809813
+Stoke regular,regular,serif,-1.344967,11.77559
+Eagle Lake regular,regular,handwriting,-6.479028,14.5874195
+Amatica SC regular,regular,display,-6.482359,15.287299
+Amatica SC 700,700,display,-7.6376176,14.553399
+Baloo Chettan regular,regular,display,-7.782456,13.5436125
+Miniver regular,regular,display,-5.175645,12.288934
+Rubik Mono One regular,regular,sans-serif,-10.54198,14.863387
+Almendra regular,regular,serif,0.28848904,11.352482
+Almendra italic,italic,serif,-7.2081532,11.695223
+Almendra 700,700,serif,-0.6473932,8.746301
+Almendra 700italic,700italic,serif,-8.616197,12.144327
+Cagliostro regular,regular,sans-serif,-7.084991,16.273705
+Bungee Shade regular,regular,display,-8.915481,14.71464
+Proza Libre regular,regular,sans-serif,-7.2578826,18.036749
+Proza Libre italic,italic,sans-serif,-7.2964544,11.831544
+Proza Libre 500,500,sans-serif,-9.001598,16.907291
+Proza Libre 500italic,500italic,sans-serif,-7.5469136,11.050786
+Proza Libre 600,600,sans-serif,-10.057455,15.920777
+Proza Libre 600italic,600italic,sans-serif,-8.0593815,10.337961
+Proza Libre 700,700,sans-serif,-10.669171,15.153834
+Proza Libre 700italic,700italic,sans-serif,-8.552114,9.990011
+Proza Libre 800,800,sans-serif,-11.19637,14.987972
+Proza Libre 800italic,800italic,sans-serif,-8.775841,10.167987
+Elsie regular,regular,display,0.21798465,11.149354
+Elsie 900,900,display,-0.79429364,9.27094
+Wellfleet regular,regular,display,-1.566056,9.892852
+Nosifer regular,regular,display,-10.459911,14.844543
+Coda Caption 800,800,sans-serif,-11.853124,14.968586
+Vibur regular,regular,handwriting,-6.4862003,11.336054
+Timmana regular,regular,sans-serif,-10.169999,10.777124
+Artifika regular,regular,serif,-7.0600824,15.391816
+Alike Angular regular,regular,serif,0.1280165,11.627103
+Junge regular,regular,serif,-0.69248426,13.7039795
+Inika regular,regular,serif,-0.52124894,11.274487
+Inika 700,700,serif,-1.3282976,8.700927
+Tulpen One regular,regular,display,-7.5150514,14.711987
+Nova Round regular,regular,display,-7.844717,16.25995
+Sriracha regular,regular,handwriting,-6.8086915,11.444921
+Paprika regular,regular,display,-6.34545,12.842585
+Pattaya regular,regular,sans-serif,-8.0283575,11.533099
+Mrs Saint Delafield regular,regular,handwriting,-4.0007477,13.78355
+UnifrakturCook 700,700,display,-8.338287,12.721323
+Bilbo regular,regular,handwriting,-5.1865296,13.96365
+Asul regular,regular,sans-serif,-8.714738,15.544828
+Asul 700,700,sans-serif,-9.474804,14.289848
+Buda 300,300,display,-4.543596,18.707024
+Antic Didone regular,regular,serif,-0.30585998,13.682645
+Petrona regular,regular,serif,-0.70195186,11.986251
+Bungee regular,regular,display,-9.589935,14.469898
+Glass Antiqua regular,regular,display,-0.5999234,13.19734
+IM Fell Great Primer regular,regular,serif,1.056533,11.367135
+IM Fell Great Primer italic,italic,serif,-5.5663505,9.816931
+Sancreek regular,regular,display,-2.8954306,9.083771
+Ribeye regular,regular,display,-2.1456149,11.838292
+Kavoon regular,regular,display,-7.6709714,13.241963
+Stint Ultra Condensed regular,regular,display,-8.629769,13.232656
+Swanky and Moo Moo regular,regular,handwriting,-5.1313076,15.272174
+Sarina regular,regular,display,-5.805987,13.248792
+Croissant One regular,regular,display,-5.559196,13.639672
+Linden Hill regular,regular,serif,0.6806838,12.125974
+Linden Hill italic,italic,serif,-4.7005553,9.775637
+Dekko regular,regular,handwriting,-6.284777,15.256416
+Arya regular,regular,sans-serif,-8.467156,16.49904
+Arya 700,700,sans-serif,-9.56392,15.82077
+Amiko regular,regular,sans-serif,-6.9985256,17.629591
+Amiko 600,600,sans-serif,-8.641919,17.571856
+Amiko 700,700,sans-serif,-9.840159,16.325842
+Trade Winds regular,regular,display,-6.210743,12.210229
+IM Fell Great Primer SC regular,regular,serif,-1.5603886,11.789953
+Hind Madurai 300,300,sans-serif,-5.3939023,18.550732
+Hind Madurai regular,regular,sans-serif,-7.364444,18.519192
+Hind Madurai 500,500,sans-serif,-9.09993,17.351528
+Hind Madurai 600,600,sans-serif,-11.084632,15.618407
+Hind Madurai 700,700,sans-serif,-11.386763,14.954022
+Cormorant Infant 300,300,serif,0.5795183,13.200981
+Cormorant Infant 300italic,300italic,serif,-4.5785193,9.787334
+Cormorant Infant regular,regular,serif,0.9571851,12.750127
+Cormorant Infant italic,italic,serif,-4.8476896,9.296396
+Cormorant Infant 500,500,serif,0.91784036,12.441463
+Cormorant Infant 500italic,500italic,serif,-5.122373,9.198486
+Cormorant Infant 600,600,serif,0.93540335,11.362493
+Cormorant Infant 600italic,600italic,serif,-5.4000506,9.324978
+Cormorant Infant 700,700,serif,0.52587086,10.777686
+Cormorant Infant 700italic,700italic,serif,-5.8965907,9.503678
+Overlock SC regular,regular,display,-7.2045283,15.787603
+Angkor regular,regular,display,2.4606621,11.459466
+Joti One regular,regular,display,-9.355788,12.331813
+Bigshot One regular,regular,display,-3.1813452,10.214841
+Meie Script regular,regular,handwriting,-3.948025,12.958138
+Ruthie regular,regular,handwriting,-3.969949,13.668622
+Offside regular,regular,display,-7.152192,16.573671
+Monsieur La Doulaise regular,regular,handwriting,-3.8387876,13.485769
+Monofett regular,regular,display,-8.983872,14.456354
+Laila 300,300,serif,-5.369557,16.890738
+Laila regular,regular,serif,-6.3147078,16.10727
+Laila 500,500,serif,-6.7135854,15.191258
+Laila 600,600,serif,-6.819565,14.324809
+Laila 700,700,serif,-6.8828425,13.746098
+IM Fell Double Pica SC regular,regular,serif,-1.8790082,11.939413
+Inknut Antiqua 300,300,serif,-0.92748034,11.59144
+Inknut Antiqua regular,regular,serif,-1.3257198,10.728902
+Inknut Antiqua 500,500,serif,-1.5819871,10.56696
+Inknut Antiqua 600,600,serif,-1.6473948,10.103747
+Inknut Antiqua 700,700,serif,-2.2891824,9.557731
+Inknut Antiqua 800,800,serif,-2.1134036,9.517513
+Inknut Antiqua 900,900,serif,-2.048837,9.391642
+IM Fell French Canon SC regular,regular,serif,-1.8863848,12.1563425
+Henny Penny regular,regular,display,-0.013235271,10.348101
+Emilys Candy regular,regular,display,1.1567149,10.670858
+Ravi Prakash regular,regular,display,-9.232281,12.918056
+MedievalSharp regular,regular,display,-7.9704514,15.695384
+Della Respira regular,regular,serif,0.8835892,12.758739
+El Messiri regular,regular,sans-serif,-7.160007,16.320278
+El Messiri 500,500,sans-serif,-7.772284,16.176401
+El Messiri 600,600,sans-serif,-7.8533134,15.706148
+El Messiri 700,700,sans-serif,-8.26082,15.413355
+Jolly Lodger regular,regular,display,-8.113671,13.370227
+Iceberg regular,regular,display,-9.114687,14.491369
+Port Lligat Sans regular,regular,sans-serif,-9.111865,15.510258
+Content regular,regular,display,2.405591,11.548392
+Content 700,700,display,-0.71248156,8.983268
+Trykker regular,regular,serif,-0.8918817,12.811493
+Peralta regular,regular,display,-3.4938843,11.2484255
+Redressed regular,regular,handwriting,-7.46132,13.850752
+Autour One regular,regular,display,-6.2170825,15.092084
+Pirata One regular,regular,display,-8.779301,12.397196
+Nova Slim regular,regular,display,-7.392566,16.362297
+Fresca regular,regular,sans-serif,-9.115766,16.778566
+Lovers Quarrel regular,regular,handwriting,-4.2457247,13.785025
+Snippet regular,regular,sans-serif,-5.251266,17.437582
+Akronim regular,regular,display,-5.4732676,13.216075
+Bubbler One regular,regular,sans-serif,-4.1262517,17.725698
+Germania One regular,regular,display,-9.206928,12.868004
+Dr Sugiyama regular,regular,handwriting,-5.0016556,13.490186
+Galindo regular,regular,display,-10.578051,15.392933
+Oldenburg regular,regular,display,-1.5366079,12.174679
+Nova Oval regular,regular,display,-6.775455,14.680261
+Pangolin regular,regular,handwriting,-6.202522,14.296328
+Koulen regular,regular,display,2.301375,11.4027815
+Piedra regular,regular,display,-8.854474,12.186392
+Montaga regular,regular,serif,0.42072517,12.926368
+Diplomata regular,regular,display,-4.233794,11.537208
+Irish Grover regular,regular,display,-8.549329,15.298058
+Jomhuria regular,regular,display,-8.608698,14.644111
+Ranchers regular,regular,display,-11.572588,12.719025
+Modern Antiqua regular,regular,display,-0.15208969,11.830434
+Griffy regular,regular,display,-4.8951464,11.811785
+Snowburst One regular,regular,display,-2.936507,15.943881
+Lancelot regular,regular,display,0.16337943,12.868199
+Baloo Thambi regular,regular,display,-7.981938,13.540288
+Chango regular,regular,display,-9.523653,14.604209
+Purple Purse regular,regular,display,-0.31215394,9.579791
+Plaster regular,regular,display,-11.851626,15.31943
+Original Surfer regular,regular,display,-7.685526,15.022448
+Bokor regular,regular,display,2.4166343,11.878449
+Keania One regular,regular,display,-9.580863,14.321186
+Ramaraja regular,regular,serif,-0.9498383,9.381702
+Rhodium Libre regular,regular,serif,-1.6307408,11.937528
+Uncial Antiqua regular,regular,display,-0.81122345,11.086582
+Mirza regular,regular,display,-7.9803724,15.194852
+Mirza 500,500,display,-8.362736,14.837375
+Mirza 600,600,display,-8.508914,14.127542
+Mirza 700,700,display,-8.882996,13.608164
+Odor Mean Chey regular,regular,display,2.2724342,11.394916
+Almendra SC regular,regular,serif,-1.6417218,11.230231
+Scope One regular,regular,serif,-1.8077682,14.153736
+Kenia regular,regular,display,-9.283739,13.596935
+Nova Flat regular,regular,display,-8.033987,16.37387
+Galdeano regular,regular,sans-serif,-8.887182,14.703259
+Mrs Sheppards regular,regular,handwriting,-5.2935715,13.2976675
+Spicy Rice regular,regular,display,-10.870152,11.645377
+Londrina Outline regular,regular,display,-7.9587665,15.151129
+Suwannaphum regular,regular,display,2.1786604,11.422511
+Sahitya regular,regular,serif,-0.73051876,11.223134
+Sahitya 700,700,serif,-1.1740415,9.087724
+Princess Sofia regular,regular,handwriting,-5.251524,13.069042
+Goblin One regular,regular,display,-3.3217523,11.092473
+Ewert regular,regular,display,-7.638961,14.759996
+Trochut regular,regular,display,-9.259796,14.109551
+Trochut italic,italic,display,-7.753643,10.8004
+Trochut 700,700,display,-9.167191,13.796387
+Underdog regular,regular,display,-1.244482,12.619018
+Smythe regular,regular,display,-3.3235128,10.662461
+Fascinate regular,regular,display,-11.418954,15.559522
+Molle italic,italic,handwriting,-5.0908356,12.661434
+Modak regular,regular,display,-9.660684,13.964388
+Bayon regular,regular,display,2.3375072,11.671914
+Amita regular,regular,handwriting,-7.4339333,15.55109
+Amita 700,700,handwriting,-7.9136024,14.463371
+Rum Raisin regular,regular,sans-serif,-10.339916,11.931726
+Astloch regular,regular,display,-4.8439016,13.977336
+Astloch 700,700,display,-7.7205877,12.572092
+Caesar Dressing regular,regular,display,-9.686292,12.900135
+Averia Gruesa Libre regular,regular,display,-6.756649,13.135162
+Gorditas regular,regular,display,-3.5257552,10.871407
+Gorditas 700,700,display,-3.3407738,10.20925
+Jim Nightshade regular,regular,handwriting,-5.5519238,11.888935
+Farsan regular,regular,display,-6.9994564,13.051526
+Cormorant SC 300,300,serif,-1.3886081,12.841594
+Cormorant SC regular,regular,serif,-1.2694436,12.719107
+Cormorant SC 500,500,serif,-1.667299,12.3608885
+Cormorant SC 600,600,serif,-2.009849,12.044006
+Cormorant SC 700,700,serif,-1.800324,11.706545
+Asset regular,regular,display,-9.399088,14.062134
+Atomic Age regular,regular,display,-9.509556,16.626993
+Ribeye Marrow regular,regular,display,-2.6847794,13.23868
+Miltonian Tattoo regular,regular,display,-3.9726293,11.133302
+Elsie Swash Caps regular,regular,display,0.62963396,11.478257
+Elsie Swash Caps 900,900,display,-0.9737137,9.336364
+Seymour One regular,regular,sans-serif,-9.783668,15.234693
+Nova Script regular,regular,display,-6.289397,11.91029
+Passero One regular,regular,display,-9.932419,12.821896
+Fascinate Inline regular,regular,display,-11.028542,15.405933
+Cormorant Upright 300,300,serif,-2.2589002,12.717131
+Cormorant Upright regular,regular,serif,-2.3307755,12.250412
+Cormorant Upright 500,500,serif,-2.534077,11.985285
+Cormorant Upright 600,600,serif,-2.6351736,11.600184
+Cormorant Upright 700,700,serif,-3.5015118,11.07741
+Jacques Francois regular,regular,serif,1.13014,11.552411
+Jacques Francois Shadow regular,regular,display,-2.9903455,12.210128
+Margarine regular,regular,display,-7.1908913,13.639824
+Sura regular,regular,serif,-0.112252586,11.30855
+Sura 700,700,serif,-1.3116986,8.397293
+Romanesco regular,regular,handwriting,-6.236446,13.693985
+Miltonian regular,regular,display,-4.3940644,12.520769
+Tillana regular,regular,handwriting,-6.525454,11.543612
+Tillana 500,500,handwriting,-6.601241,11.658367
+Tillana 600,600,handwriting,-6.506193,12.064776
+Tillana 700,700,handwriting,-6.796345,12.265525
+Tillana 800,800,handwriting,-6.612702,12.855728
+Londrina Shadow regular,regular,display,-8.391903,15.348913
+Diplomata SC regular,regular,display,-8.635422,14.261832
+Barrio regular,regular,display,-9.8714,14.450837
+Moul regular,regular,display,2.265626,11.324293
+Siemreap regular,regular,display,2.3003852,11.965065
+Rasa 300,300,serif,-0.7772461,13.24188
+Rasa regular,regular,serif,-0.5736292,11.356692
+Rasa 500,500,serif,-1.4928733,9.793362
+Rasa 600,600,serif,-1.6855124,9.241611
+Rasa 700,700,serif,-1.396477,8.774652
+Freehand regular,regular,display,2.2157512,11.801847
+Rakkas regular,regular,display,-0.36837858,8.869546
+Erica One regular,regular,display,-12.636959,14.708588
+Felipa regular,regular,handwriting,-4.9087873,12.688542
+Miss Fajardose regular,regular,handwriting,-4.506224,13.728747
+Baloo Bhai regular,regular,display,-7.804192,13.749413
+Londrina Sketch regular,regular,display,-7.961456,15.226755
+Geostar Fill regular,regular,display,-10.339853,16.472113
+Arbutus regular,regular,display,-3.2983742,9.74116
+Smokum regular,regular,display,-10.58412,13.388931
+Metal Mania regular,regular,display,-9.479589,11.957386
+Devonshire regular,regular,handwriting,-6.6221967,13.28492
+Asar regular,regular,serif,0.51317984,11.673686
+Bonbon regular,regular,handwriting,-6.1920185,14.205168
+Warnes regular,regular,display,-5.911102,15.19043
+Nova Cut regular,regular,display,-7.391921,16.617897
+Coiny regular,regular,display,-7.670847,13.944358
+Marko One regular,regular,serif,-7.2337923,14.929223
+Combo regular,regular,display,-7.617249,14.663387
+Sirin Stencil regular,regular,display,-7.390848,14.953818
+Galada regular,regular,display,-8.124559,11.562327
+Almendra Display regular,regular,display,-3.5777414,16.603731
+Atma 300,300,display,-6.6765757,14.735144
+Atma regular,regular,display,-8.442382,12.955623
+Atma 500,500,display,-9.099934,12.724483
+Atma 600,600,display,-9.241306,12.388957
+Atma 700,700,display,-9.4527645,12.885642
+Butterfly Kids regular,regular,handwriting,-4.8412356,14.002979
+Metal regular,regular,display,2.366811,11.732091
+Sofadi One regular,regular,display,-5.900656,15.168347
+Eater regular,regular,display,-7.8281913,13.311818
+Macondo Swash Caps regular,regular,display,-6.05473,14.241521
+Geostar regular,regular,display,-6.7481384,16.906673
+Federant regular,regular,display,-8.933715,15.007749
+Flavors regular,regular,display,-8.704681,12.511246
+Aubrey regular,regular,display,-7.8156366,16.156181
+Sevillana regular,regular,display,-5.8925686,13.359448
+Ruge Boogie regular,regular,handwriting,-5.1239724,13.829322
+Unlock regular,regular,display,-11.348325,13.95178
+Stalinist One regular,regular,display,-8.98017,15.113312
+Taprom regular,regular,display,2.360532,12.069779
+Chenla regular,regular,display,2.594285,11.680481
+Bigelow Rules regular,regular,display,-8.103719,14.144636
+Preahvihear regular,regular,display,2.3629467,11.541967
+Dangrek regular,regular,display,2.654072,11.615026
+Yatra One regular,regular,display,-8.999025,15.75087
+Sree Krushnadevaraya regular,regular,serif,-0.49476746,10.813814
+Butcherman regular,regular,display,-9.6803055,12.283129
+Fruktur regular,regular,display,-8.323108,12.419523
+Supermercado One regular,regular,display,-8.255464,14.548054
+Mogra regular,regular,display,-6.037064,12.993484
+Risque regular,regular,display,-2.5515857,11.00595
+Emblema One regular,regular,display,-8.334087,9.515593
+Lakki Reddy regular,regular,handwriting,-8.743287,15.558799
+Katibeh regular,regular,display,-4.269312,11.797894
+Chela One regular,regular,display,-8.528269,12.962663
+Kumar One regular,regular,display,-3.384078,10.262559
+Padauk regular,regular,sans-serif,-7.314696,17.680521
+Padauk 700,700,sans-serif,-9.507459,16.688034
+Tenali Ramakrishna regular,regular,sans-serif,-5.557773,17.018387
+Mr Bedfort regular,regular,handwriting,-4.8313975,12.64542
+Meera Inimai regular,regular,sans-serif,-7.8573556,18.208033
+Baloo Da regular,regular,display,-7.7716804,13.780527
+Kdam Thmor regular,regular,display,2.1953847,11.765942
+Cormorant Unicase 300,300,serif,-1.3785126,13.210304
+Cormorant Unicase regular,regular,serif,-1.398512,13.088728
+Cormorant Unicase 500,500,serif,-0.8832404,12.620502
+Cormorant Unicase 600,600,serif,-1.471162,12.355922
+Cormorant Unicase 700,700,serif,-1.1147062,12.019214
+Moulpali regular,regular,display,2.6971755,11.803158
+Hanalei regular,regular,display,-8.697488,14.592498
+Peddana regular,regular,serif,-2.3976495,12.847061
+Hanalei Fill regular,regular,display,-9.398716,12.107895
+Dhurjati regular,regular,sans-serif,-10.283819,15.9684725
+Bungee Hairline regular,regular,display,-5.483658,17.16014
+Bahiana regular,regular,display,-8.555953,13.535313
+Overpass Mono 300,300,monospace,-8.467128,18.681753
+Overpass Mono regular,regular,monospace,-9.099983,18.658573
+Overpass Mono 600,600,monospace,-9.559876,18.41661
+Overpass Mono 700,700,monospace,-9.99241,17.828398
+Bungee Outline regular,regular,display,-7.9899735,14.465886
+Kavivanar regular,regular,handwriting,-6.443736,14.014526
+Suravaram regular,regular,serif,-2.4580219,12.167564
+BioRhyme Expanded 200,200,serif,-5.5733232,16.295284
+BioRhyme Expanded 300,300,serif,-5.966032,16.117407
+BioRhyme Expanded regular,regular,serif,-6.774453,15.431297
+BioRhyme Expanded 700,700,serif,-7.0639505,14.843188
+BioRhyme Expanded 800,800,serif,-7.322439,15.060739
+Kumar One Outline regular,regular,display,-7.7839007,15.29707
