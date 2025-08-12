@@ -85,29 +85,21 @@ const Dashboard = () => {
     const svg = d3.select(svgRef.current);
     const content = d3.select(contentRef.current);
 
-    // ズーム挙動
     const zoom = d3
       .zoom()
-      .scaleExtent([0.5, 20]) // ズーム範囲
-      // 画面外に無限にドラッグしないための制限（座標系に合わせる）
+      .scaleExtent([0.5, 20])
       .translateExtent([
         [bounds.minX, bounds.minY],
         [bounds.maxX, bounds.maxY],
       ])
       .on("zoom", (event) => {
-        // g要素にtransformを適用
         content.attr("transform", event.transform);
       });
 
-    // アタッチ（ダブルクリックでズームにしたくない場合は .filter() 調整）
     svg.call(zoom);
-
-    // 初期状態をリセット（必要に応じて）
     svg.call(zoom.transform, d3.zoomIdentity);
-
     zoomRef.current = zoom;
 
-    // クリーンアップ
     return () => {
       svg.on(".zoom", null);
     };
@@ -120,7 +112,14 @@ const Dashboard = () => {
     <div>
       {fontLinks}
 
-      <div style={{ marginTop: "1rem", marginBottom: "0.5rem", display: "flex", gap: "10px" }}>
+      <div
+        style={{
+          marginTop: "1rem",
+          marginBottom: "0.5rem",
+          display: "flex",
+          gap: "10px",
+        }}
+      >
         <label>
           表示文字：
           <input
@@ -232,6 +231,8 @@ const Dashboard = () => {
             const fam = extractFamily(d.family);
             const { fontWeight, fontStyle } = parseVariant(d.variant);
 
+            const label = `${fam} ${d.variant} — ${d.category}`;
+
             if (i < 1000 && !hasTrue) {
               return (
                 <text
@@ -249,6 +250,7 @@ const Dashboard = () => {
                     cursor: "pointer",
                   }}
                 >
+                  <title>{label}</title>
                   {glyph}
                 </text>
               );
