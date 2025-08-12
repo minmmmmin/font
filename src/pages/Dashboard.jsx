@@ -1,48 +1,109 @@
-import { useEffect, useState } from "react";
-import { fetchFontAnalytics } from "../api/analytics";
-import FontSelector from "../components/FontSelector";
-import Tabs from "../components/Tabs";
-import FontPreview from "../components/FontPreview";
-import FontMap from "../components/graphs/FontMap";
+import React, { useMemo, useState } from "react";
+import data from "/public/output.json";
 
 const Dashboard = () => {
-  const [fontData, setFontData] = useState([]);
-  const [selectedFont, setSelectedFont] = useState(null);
-  const [previewText, setPreviewText] = useState("サンプルテキスト");
+  const [glyph, setGlyph] = useState("A");
 
-  useEffect(() => {
-    fetchFontAnalytics().then((data) => {
-      setFontData(data);
-      setSelectedFont(data[0]);
-    });
+  // family抽出
+  const extractFamily = (name) =>
+    name.replace(/\s(regular|italic|\d{3}italic?|\d{3})$/i, "");
+
+  // variantをCSSに
+  const parseVariant = (variant) => {
+    if (variant.toLowerCase() === "regular")
+      return { fontWeight: 400, fontStyle: "normal" };
+    const m = variant.match(/^(\d{3})(italic)?$/i);
+    if (m)
+      return {
+        fontWeight: parseInt(m[1], 10),
+        fontStyle: m[2] ? "italic" : "normal",
+      };
+    return { fontWeight: 400, fontStyle: "normal" };
+  };
+
+  // Google Fontsリンク作成
+  const fontLinks = useMemo(() => {
+    const fams = [...new Set(data.map((d) => extractFamily(d.name)))];
+    return fams.map((fam) => (
+      <link
+        key={fam}
+        rel="stylesheet"
+        href={`https://fonts.googleapis.com/css2?family=${encodeURIComponent(
+          fam.replace(/\s+/g, "+")
+        )}&display=swap`}
+      />
+    ));
   }, []);
 
-  if (!selectedFont) return <div>Loading...</div>;
+  // 座標範囲
+  const bounds = useMemo(() => {
+    const xs = data.map((d) => d.x);
+    const ys = data.map((d) => d.y);
+    const pad = 0.5;
+    return {
+      minX: Math.min(...xs) - pad,
+      maxX: Math.max(...xs) + pad,
+      minY: Math.min(...ys) - pad,
+      maxY: Math.max(...ys) + pad,
+    };
+  }, []);
+
+  
+
+  const viewBox = `${bounds.minX} ${bounds.minY} ${bounds.maxX - bounds.minX} ${
+    bounds.maxY - bounds.minY
+  }`;
+
+  const color = (c) => ["#1f77b4", "#ff7f0e", "#2ca02c"][c % 3];
 
   return (
-    <>
-      <div className="flex space-x-4 max-w-4xl mx-auto p-4">
-        <div className="flex-1">
-          <FontSelector
-            fonts={fontData}
-            selectedFont={selectedFont}
-            onSelect={setSelectedFont}
+    <div>
+      {fontLinks}
+      <div style={{ marginBottom: "1rem" }}>
+        <label>
+          表示文字：
+          <input
+            value={glyph}
+            onChange={(e) => setGlyph(e.target.value || "")}
+            maxLength={3}
+            style={{
+              border: "1px solid #ccc",
+              marginLeft: "0.5rem",
+              padding: "0.25rem",
+            }}
           />
-        </div>
-        <input
-          type="text"
-          className="flex-1 p-2 border rounded"
-          placeholder="プレビュー用テキストを入力"
-          value={previewText}
-          onChange={(e) => setPreviewText(e.target.value)}
-        />
+        </label>
       </div>
-
-      <FontPreview fontFamily={selectedFont.family} previewText={previewText} />
-
-
-      <Tabs font={selectedFont} />
-    </>
+      <svg
+        width={1000}
+        height={750}
+        viewBox={viewBox}
+        style={{ background: "#fff", border: "1px solid #ccc" }}
+      >
+        {data.map((d, i) => {
+          const fam = extractFamily(d.name);
+          const { fontWeight, fontStyle } = parseVariant(d.variant);
+          return (
+            <text
+              key={i}
+              x={d.x}
+              y={d.y}
+              fontSize={0.2}
+              textAnchor="middle"
+              dominantBaseline="central"
+              fill={color(d.cluster)}
+              style={{
+                fontFamily: `${fam}, cursive`,
+                fontWeight,
+                fontStyle,
+              }}
+            >
+              {glyph}
+            </text>
+          );
+        })}
+      </svg>
+    </div>
   );
 };
 
