@@ -1,8 +1,14 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useRef, useEffect } from "react";
+import * as d3 from "d3";
 import data from "../../output2.json";
 
 const Dashboard = () => {
   const [glyph, setGlyph] = useState("A");
+
+  // ===== d3用の参照 =====
+  const svgRef = useRef(null);
+  const contentRef = useRef(null);
+  const zoomRef = useRef(null);
 
   // family抽出
   const extractFamily = (family) =>
@@ -39,14 +45,16 @@ const Dashboard = () => {
 
   // 座標範囲
   const bounds = useMemo(() => {
-    const xs = data.map((d) => d.x);
-    const ys = data.map((d) => d.y);
+    const xs = data.map((d) => +d.x);
+    const ys = data.map((d) => +d.y);
     const pad = 0.5;
     return {
       minX: Math.min(...xs) - pad,
       maxX: Math.max(...xs) + pad,
       minY: Math.min(...ys) - pad,
       maxY: Math.max(...ys) + pad,
+      width: Math.max(...xs) - Math.min(...xs) + pad * 2,
+      height: Math.max(...ys) - Math.min(...ys) + pad * 2,
     };
   }, []);
 
@@ -64,21 +72,55 @@ const Dashboard = () => {
     return fallback[idx % fallback.length];
   };
 
-  const viewBox = `${bounds.minX} ${bounds.minY} ${bounds.maxX - bounds.minX} ${
-    bounds.maxY - bounds.minY
-  }`;
+  const viewBox = `${bounds.minX} ${bounds.minY} ${bounds.width} ${bounds.height}`;
 
   const categories = useMemo(() => {
     return [...new Set(data.map((d) => d.category))];
   }, []);
 
-  let array = [];
+  // ===== d3-zoom 初期化 =====
+  useEffect(() => {
+    if (!svgRef.current || !contentRef.current) return;
 
+    const svg = d3.select(svgRef.current);
+    const content = d3.select(contentRef.current);
+
+    // ズーム挙動
+    const zoom = d3
+      .zoom()
+      .scaleExtent([0.5, 20]) // ズーム範囲
+      // 画面外に無限にドラッグしないための制限（座標系に合わせる）
+      .translateExtent([
+        [bounds.minX, bounds.minY],
+        [bounds.maxX, bounds.maxY],
+      ])
+      .on("zoom", (event) => {
+        // g要素にtransformを適用
+        content.attr("transform", event.transform);
+      });
+
+    // アタッチ（ダブルクリックでズームにしたくない場合は .filter() 調整）
+    svg.call(zoom);
+
+    // 初期状態をリセット（必要に応じて）
+    svg.call(zoom.transform, d3.zoomIdentity);
+
+    zoomRef.current = zoom;
+
+    // クリーンアップ
+    return () => {
+      svg.on(".zoom", null);
+    };
+  }, [bounds.minX, bounds.maxX, bounds.minY, bounds.maxY]);
+
+  let array = [];
   const fontSize = 0.2;
+
   return (
     <div>
       {fontLinks}
-      <div style={{ marginBottom: "1rem" }}>
+
+      <div style={{ marginTop: "1rem", marginBottom: "0.5rem", display: "flex", gap: "10px" }}>
         <label>
           表示文字：
           <input
@@ -92,7 +134,31 @@ const Dashboard = () => {
             }}
           />
         </label>
+
+        {/* すぐに全体表示へ戻るボタン */}
+        <button
+          onClick={() => {
+            if (!svgRef.current) return;
+            const svg = d3.select(svgRef.current);
+            svg
+              .transition()
+              .duration(250)
+              .call(zoomRef.current.transform, d3.zoomIdentity);
+          }}
+          style={{
+            padding: "0.25rem 0.5rem",
+            border: "1px solid #ccc",
+            cursor: "pointer",
+          }}
+        >
+          リセット
+        </button>
       </div>
+
+      <div style={{ marginBottom: "1rem", display: "flex", gap: "10px" }}>
+        ※日本語対応のフォントが少ないためアルファベットで試すことをおすすめします。
+      </div>
+
       <div
         style={{
           display: "flex",
@@ -121,65 +187,83 @@ const Dashboard = () => {
           </div>
         ))}
       </div>
+
+      {/* SVG全体にzoomをかけるのでrefを付与 */}
       <svg
+        ref={svgRef}
         viewBox={viewBox}
-        style={{ background: "#fff", border: "1px solid #ccc" }}
+        style={{
+          background: "#fff",
+          border: "1px solid #ccc",
+          width: "100%",
+          height: "70vh",
+          display: "flex",
+        }}
+        preserveAspectRatio="xMidYMid meet"
       >
-        {data.map((d, i) => {
-          // 文字列から数値へ変換
-          const dx = parseFloat(d.x);
-          const dy = parseFloat(d.y);
+        {/* 変換を当てたい要素群をgにまとめてref */}
+        <g ref={contentRef}>
+          {data.map((d, i) => {
+            const dx = parseFloat(d.x);
+            const dy = parseFloat(d.y);
 
-          const conti = array.map((a) => {
-            const overlap = !(
-              (
-                dx + fontSize < a.x1 || // 完全に左
-                dx > a.x2 || // 完全に右
-                dy + fontSize < a.y1 || // 完全に上
-                dy > a.y2
-              ) // 完全に下
-            );
-            return overlap;
-          });
+            const conti = array.map((a) => {
+              const overlap = !(
+                (
+                  dx + fontSize < a.x1 || // 完全に左
+                  dx > a.x2 || // 完全に右
+                  dy + fontSize < a.y1 || // 完全に上
+                  dy > a.y2
+                ) // 完全に下
+              );
+              return overlap;
+            });
 
-          const hasTrue = conti.some((value) => value == true);
-          if (!hasTrue) {
+            const hasTrue = conti.some((v) => v === true);
+            if (!hasTrue) {
+              array.push({
+                x1: dx,
+                x2: dx + fontSize,
+                y1: dy,
+                y2: dy + fontSize,
+              });
+            }
+
+            const fam = extractFamily(d.family);
+            const { fontWeight, fontStyle } = parseVariant(d.variant);
+
+            if (i < 1000 && !hasTrue) {
+              return (
+                <text
+                  key={i}
+                  x={dx}
+                  y={dy}
+                  fontSize={fontSize}
+                  textAnchor="start" // 左基準
+                  dominantBaseline="text-before-edge" // 上基準
+                  fill={categoryColor(d.category, i)}
+                  style={{
+                    fontFamily: `${fam}, cursive`,
+                    fontWeight,
+                    fontStyle,
+                    cursor: "pointer",
+                  }}
+                >
+                  {glyph}
+                </text>
+              );
+            }
+
             array.push({
               x1: dx,
-              x2: dx + fontSize,
               y1: dy,
+              x2: dx + fontSize,
               y2: dy + fontSize,
             });
-          }
-          const fam = extractFamily(d.family);
-          const { fontWeight, fontStyle } = parseVariant(d.variant);
-          if (i < 1000 && !hasTrue) {
-            return (
-              <text
-                key={i}
-                x={dx}
-                y={dy}
-                fontSize={fontSize}
-                textAnchor="start" // 左基準
-                dominantBaseline="text-before-edge" // 上基準
-                fill={categoryColor(d.category, i)}
-                style={{
-                  fontFamily: `${fam}, cursive`,
-                  fontWeight,
-                  fontStyle,
-                }}
-              >
-                {glyph}
-              </text>
-            );
-          }
-          array.push({
-            x1: dx,
-            y1: dy,
-            x2: dx + fontSize,
-            y2: dy + fontSize,
-          });
-        })}
+
+            return null;
+          })}
+        </g>
       </svg>
     </div>
   );

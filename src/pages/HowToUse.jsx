@@ -6,20 +6,15 @@ const HowToUse = () => {
       <h2 className="text-3xl font-bold mb-6 text-green-800">使い方ガイド</h2>
 
       <p className="mb-6">
-        <strong>mojivisual</strong> は、Google Fonts の人気データを可視化し、
-        フォント選びをもっと直感的で楽しいものにするためのツールです。
+        <strong>mojivisual</strong>{" "}
+        は、フォント選びをもっと直感的で楽しいものにするためのツールです。
         デザイン制作や資料作成のフォント選定にぜひ活用してください。
       </p>
 
       <ol className="list-decimal ml-6 space-y-4">
         <li>
           <strong>フォントを選ぶ：</strong>
-          ホーム画面で、一覧または検索から気になるフォントを選択します。
-        </li>
-        <li>
-          <strong>傾向を確認する：</strong>
-          使用ブラウザ・OSの比率、人気の推移、時系列の変化など、
-          選んだフォントの使用傾向がグラフで表示されます。
+          ホーム画面で、一覧または検索から気になるフォントを探すことができます。
         </li>
         <li>
           <strong>診断に挑戦する：</strong>
