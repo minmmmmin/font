@@ -1,42 +1,56 @@
 import pandas as pd
 import numpy as np
 import umap
-from sklearn.metrics.pairwise import cosine_similarity
-
-# 類似フォントデータ保存（JSON形式がReact向き）
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
 import json
+import random
 
-# ファイル読み込み
+# データ読み込み
 vectors = pd.read_csv("public/vectors-200.tsv", sep="\t", header=None)
 metadata = pd.read_csv("public/metadata.tsv", sep="\t")
 
-# UMAPで2次元に圧縮
+# ===== ランダムに1カテゴリ選択 =====
+categories = metadata["category"].unique()
+selected_cat = random.choice(categories)
+print(f"選択されたカテゴリ: {selected_cat}")
+
+# そのカテゴリだけ抽出
+meta_cat = metadata[metadata["category"] == selected_cat].reset_index(drop=True)
+vectors_cat = vectors.loc[meta_cat.index].reset_index(drop=True)
+
+# ===== UMAP（カテゴリ内だけ） =====
 reducer = umap.UMAP(random_state=42)
-embedding = reducer.fit_transform(vectors)
+embedding_cat = reducer.fit_transform(vectors_cat)
 
-# 結合：UMAPの座標とmetadata
-result_df = pd.concat([metadata, pd.DataFrame(embedding, columns=["x", "y"])], axis=1)
+# DataFrameにUMAP座標追加
+df_cat = meta_cat.copy()
+df_cat["x"] = embedding_cat[:, 0]
+df_cat["y"] = embedding_cat[:, 1]
 
-# 保存（Reactで使いやすいCSV形式）
-result_df.to_csv("umap_font_data.csv", index=False)
+# ===== クラスタリング（UMAP後の座標で） =====
+kmeans = KMeans(n_clusters=3, random_state=42, n_init="auto")
+df_cat["cluster"] = kmeans.fit_predict(df_cat[["x", "y"]])
 
-# 類似度マトリクス（オプション）
-similarity_matrix = cosine_similarity(vectors)
-
-# 近傍上位Nを保存（例えば5個）
-top_n = 5
-similarities = []
-for i, row in enumerate(similarity_matrix):
-    sim_indices = np.argsort(row)[-top_n - 1 : -1][::-1]  # 自分自身を除いた上位
-    sim_scores = row[sim_indices]
-    similar_fonts = metadata.loc[sim_indices, "name"].tolist()
-    similarities.append(
-        {
-            "font": metadata.loc[i, "name"],
-            "similar_fonts": similar_fonts,
-            "scores": sim_scores.tolist(),
-        }
+# ===== 散布図表示 =====
+plt.figure(figsize=(8, 8))
+for c in np.unique(df_cat["cluster"]):
+    mask = df_cat["cluster"] == c
+    plt.scatter(
+        df_cat.loc[mask, "x"],
+        df_cat.loc[mask, "y"],
+        s=30,
+        label=f"cluster {c}",
+        alpha=0.9
     )
 
-with open("similar_fonts.json", "w") as f:
-    json.dump(similarities, f, indent=2)
+plt.title(f"UMAP of '{selected_cat}' Fonts (Clustering on UMAP space)")
+plt.xlabel("UMAP-1")
+plt.ylabel("UMAP-2")
+plt.legend(loc="best", fontsize=8, frameon=True, markerscale=1.5)
+plt.tight_layout()
+plt.savefig(f"umap_kmeans_on_umapspace_{selected_cat}.png", dpi=180, bbox_inches="tight")
+plt.show()
+
+# ===== JSON保存（任意） =====
+df_cat.to_json(f"umap_kmeans_on_umapspace_{selected_cat}.json", orient="records", force_ascii=False, indent=2)
