@@ -10,6 +10,9 @@ const Dashboard = () => {
   const contentRef = useRef(null);
   const zoomRef = useRef(null);
 
+  // 全体件数（ユーザー情報では 1881 件）
+  const TOTAL = data.length; // 必要なら 1881 固定にしてもOK: const TOTAL = 1881;
+
   // family抽出
   const extractFamily = (family) =>
     family.replace(/\s(regular|italic|\d{3}italic?|\d{3})$/i, "");
@@ -231,7 +234,9 @@ const Dashboard = () => {
             const fam = extractFamily(d.family);
             const { fontWeight, fontStyle } = parseVariant(d.variant);
 
-            const label = `${fam} ${d.variant} — ${d.category}`;
+            // ホバー表示内容：フォント名・バリアント・カテゴリ・インデックス
+            const label = `${fam} ${d.variant}${d.category}
+            シェア数：${i + 1} / ${TOTAL}`;
 
             if (i < 1000 && !hasTrue) {
               return (
@@ -249,6 +254,7 @@ const Dashboard = () => {
                     fontStyle,
                     cursor: "pointer",
                   }}
+                  data-index={i + 1}
                 >
                   <title>{label}</title>
                   {glyph}
