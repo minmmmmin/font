@@ -25,7 +25,6 @@ const Dashboard = () => {
   const fontLinks = useMemo(() => {
     const fams = [...new Set(data.map((d) => extractFamily(d.family)))];
     return fams.map((fam) => {
-      console.log(fam);
       return (
         <link
           key={fam}
@@ -73,6 +72,9 @@ const Dashboard = () => {
     return [...new Set(data.map((d) => d.category))];
   }, []);
 
+  let array = [];
+
+  const fontSize = 0.2;
   return (
     <div>
       {fontLinks}
@@ -124,27 +126,59 @@ const Dashboard = () => {
         style={{ background: "#fff", border: "1px solid #ccc" }}
       >
         {data.map((d, i) => {
-          console.log(d);
+          // 文字列から数値へ変換
+          const dx = parseFloat(d.x);
+          const dy = parseFloat(d.y);
+
+          const conti = array.map((a) => {
+            const overlap = !(
+              (
+                dx + fontSize < a.x1 || // 完全に左
+                dx > a.x2 || // 完全に右
+                dy + fontSize < a.y1 || // 完全に上
+                dy > a.y2
+              ) // 完全に下
+            );
+            return overlap;
+          });
+
+          const hasTrue = conti.some((value) => value == true);
+          if (!hasTrue) {
+            array.push({
+              x1: dx,
+              x2: dx + fontSize,
+              y1: dy,
+              y2: dy + fontSize,
+            });
+          }
           const fam = extractFamily(d.family);
           const { fontWeight, fontStyle } = parseVariant(d.variant);
-          return (
-            <text
-              key={i}
-              x={d.x}
-              y={d.y}
-              fontSize={0.2}
-              textAnchor="middle"
-              dominantBaseline="central"
-              fill={categoryColor(d.category, i)}
-              style={{
-                fontFamily: `${fam}, cursive`,
-                fontWeight,
-                fontStyle,
-              }}
-            >
-              {glyph}
-            </text>
-          );
+          if (i < 1000 && !hasTrue) {
+            return (
+              <text
+                key={i}
+                x={dx}
+                y={dy}
+                fontSize={fontSize}
+                textAnchor="start" // 左基準
+                dominantBaseline="text-before-edge" // 上基準
+                fill={categoryColor(d.category, i)}
+                style={{
+                  fontFamily: `${fam}, cursive`,
+                  fontWeight,
+                  fontStyle,
+                }}
+              >
+                {glyph}
+              </text>
+            );
+          }
+          array.push({
+            x1: dx,
+            y1: dy,
+            x2: dx + fontSize,
+            y2: dy + fontSize,
+          });
         })}
       </svg>
     </div>
