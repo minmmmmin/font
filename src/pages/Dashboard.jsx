@@ -4,14 +4,15 @@ import data from "../../output2.json";
 
 const Dashboard = () => {
   const [glyph, setGlyph] = useState("A");
+  const [showTop, setShowTop] = useState(500);
 
   // ===== d3用の参照 =====
   const svgRef = useRef(null);
   const contentRef = useRef(null);
   const zoomRef = useRef(null);
 
-  // 全体件数（ユーザー情報では 1881 件）
-  const TOTAL = data.length; // 必要なら 1881 固定にしてもOK: const TOTAL = 1881;
+  // 全体件数
+  const TOTAL = data.length; // 1881 固定にするなら const TOTAL = 1881;
 
   // family抽出
   const extractFamily = (family) =>
@@ -108,11 +109,10 @@ const Dashboard = () => {
     };
   }, [bounds.minX, bounds.maxX, bounds.minY, bounds.maxY]);
 
-  let array = [];
   const fontSize = 0.2;
 
   return (
-    <div>
+    <div style={{ paddingInline: 16 }}>
       {fontLinks}
 
       <div
@@ -121,6 +121,8 @@ const Dashboard = () => {
           marginBottom: "0.5rem",
           display: "flex",
           gap: "10px",
+          alignItems: "center",
+          flexWrap: "wrap",
         }}
       >
         <label>
@@ -137,10 +139,10 @@ const Dashboard = () => {
           />
         </label>
 
-        {/* すぐに全体表示へ戻るボタン */}
+        {/* すぐに全体表示へ戻る */}
         <button
           onClick={() => {
-            if (!svgRef.current) return;
+            if (!svgRef.current || !zoomRef.current) return;
             const svg = d3.select(svgRef.current);
             svg
               .transition()
@@ -157,10 +159,27 @@ const Dashboard = () => {
         </button>
       </div>
 
+      {/* 上位件数セレクト */}
+      <label style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        上位件数：
+        <select
+          value={showTop}
+          onChange={(e) => setShowTop(Number(e.target.value))}
+          style={{ border: "1px solid #ccc", padding: "0.25rem" }}
+        >
+          {[100, 500, 1000, TOTAL].map((n) => (
+            <option key={n} value={n}>
+              {n}
+            </option>
+          ))}
+        </select>
+      </label>
+
       <div style={{ marginBottom: "1rem", display: "flex", gap: "10px" }}>
         ※日本語対応のフォントが少ないためアルファベットで試すことをおすすめします。
       </div>
 
+      {/* 凡例 */}
       <div
         style={{
           display: "flex",
@@ -205,72 +224,70 @@ const Dashboard = () => {
       >
         {/* 変換を当てたい要素群をgにまとめてref */}
         <g ref={contentRef}>
-          {data.map((d, i) => {
-            const dx = parseFloat(d.x);
-            const dy = parseFloat(d.y);
+          {(() => {
+            // シンプルな当たり判定（重なり抑制）
+            const occupied = [];
+            const items = [];
 
-            const conti = array.map((a) => {
-              const overlap = !(
-                (
-                  dx + fontSize < a.x1 || // 完全に左
-                  dx > a.x2 || // 完全に右
-                  dy + fontSize < a.y1 || // 完全に上
-                  dy > a.y2
-                ) // 完全に下
-              );
-              return overlap;
-            });
+            for (let i = 0; i < data.length; i++) {
+              const d = data[i];
+              const dx = parseFloat(d.x);
+              const dy = parseFloat(d.y);
 
-            const hasTrue = conti.some((v) => v === true);
-            if (!hasTrue) {
-              array.push({
-                x1: dx,
-                x2: dx + fontSize,
-                y1: dy,
-                y2: dy + fontSize,
+              // 既存テキストと重なっていたらスキップ
+              const hasOverlap = occupied.some((a) => {
+                const overlap = !(
+                  (
+                    dx + fontSize < a.x1 || // 完全に左
+                    dx > a.x2 || // 完全に右
+                    dy + fontSize < a.y1 || // 完全に上
+                    dy > a.y2
+                  ) // 完全に下
+                );
+                return overlap;
               });
+
+              const fam = extractFamily(d.family);
+              const { fontWeight, fontStyle } = parseVariant(d.variant);
+
+              // ホバー表示内容：フォント名・バリアント・カテゴリ・インデックス（左詰め＆改行）
+              const label = `${fam} ${d.variant} — ${d.category}
+${i + 1} / ${TOTAL}`;
+
+              if (i < showTop && !hasOverlap) {
+                occupied.push({
+                  x1: dx,
+                  y1: dy,
+                  x2: dx + fontSize,
+                  y2: dy + fontSize,
+                });
+
+                items.push(
+                  <text
+                    key={i}
+                    x={dx}
+                    y={dy}
+                    fontSize={fontSize}
+                    textAnchor="start" // 左基準
+                    dominantBaseline="text-before-edge" // 上基準
+                    fill={categoryColor(d.category, i)}
+                    style={{
+                      fontFamily: `${fam}, cursive`,
+                      fontWeight,
+                      fontStyle,
+                      cursor: "pointer",
+                    }}
+                    data-index={i + 1}
+                  >
+                    <title>{label}</title>
+                    {glyph}
+                  </text>
+                );
+              }
             }
 
-            const fam = extractFamily(d.family);
-            const { fontWeight, fontStyle } = parseVariant(d.variant);
-
-            // ホバー表示内容：フォント名・バリアント・カテゴリ・インデックス
-            const label = `${fam} ${d.variant}${d.category}
-            シェア数：${i + 1} / ${TOTAL}`;
-
-            if (i < 1000 && !hasTrue) {
-              return (
-                <text
-                  key={i}
-                  x={dx}
-                  y={dy}
-                  fontSize={fontSize}
-                  textAnchor="start" // 左基準
-                  dominantBaseline="text-before-edge" // 上基準
-                  fill={categoryColor(d.category, i)}
-                  style={{
-                    fontFamily: `${fam}, cursive`,
-                    fontWeight,
-                    fontStyle,
-                    cursor: "pointer",
-                  }}
-                  data-index={i + 1}
-                >
-                  <title>{label}</title>
-                  {glyph}
-                </text>
-              );
-            }
-
-            array.push({
-              x1: dx,
-              y1: dy,
-              x2: dx + fontSize,
-              y2: dy + fontSize,
-            });
-
-            return null;
-          })}
+            return items;
+          })()}
         </g>
       </svg>
     </div>
