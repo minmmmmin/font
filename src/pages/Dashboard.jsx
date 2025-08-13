@@ -251,8 +251,9 @@ const Dashboard = () => {
               const { fontWeight, fontStyle } = parseVariant(d.variant);
 
               // ホバー表示内容：フォント名・バリアント・カテゴリ・インデックス（左詰め＆改行）
-              const label = `${fam} ${d.variant} — ${d.category}
-${i + 1} / ${TOTAL}`;
+              const label = `フォント名：${fam} ${d.variant} \nカテゴリ：${
+                d.category
+              }\n利用数ランキング${i + 1} / ${TOTAL}`;
 
               if (i < showTop && !hasOverlap) {
                 occupied.push({
