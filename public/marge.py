@@ -41,5 +41,5 @@ with open("./public/n150min099.csv", "r", encoding="utf-8") as f:
 
 newDatas.sort(key=lambda a: a.get("totalviews", 0), reverse=True)
 
-with open("./public/output2.json", "w", encoding="utf-8") as f:
+with open("./public/output.json", "w", encoding="utf-8") as f:
     json.dump(newDatas, f, ensure_ascii=False, indent=2)

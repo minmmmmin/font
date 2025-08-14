@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useRef, useEffect } from "react";
 import * as d3 from "d3";
-import data from "../../output2.json";
+import data from "../../output.json";
 
 const Dashboard = () => {
   const [glyph, setGlyph] = useState("A");
