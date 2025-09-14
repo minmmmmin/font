@@ -6,19 +6,15 @@ const Dashboard = () => {
   const [glyph, setGlyph] = useState("A");
   const [showTop, setShowTop] = useState(500);
 
-  // ===== d3用の参照 =====
   const svgRef = useRef(null);
   const contentRef = useRef(null);
   const zoomRef = useRef(null);
 
-  // 全体件数
-  const TOTAL = data.length; // 1881 固定にするなら const TOTAL = 1881;
+  const TOTAL = data.length;
 
-  // family抽出
   const extractFamily = (family) =>
     family.replace(/\s(regular|italic|\d{3}italic?|\d{3})$/i, "");
 
-  // variantをCSSに
   const parseVariant = (variant) => {
     if (variant.toLowerCase() === "regular")
       return { fontWeight: 400, fontStyle: "normal" };
@@ -31,7 +27,6 @@ const Dashboard = () => {
     return { fontWeight: 400, fontStyle: "normal" };
   };
 
-  // Google Fontsリンク作成
   const fontLinks = useMemo(() => {
     const fams = [...new Set(data.map((d) => extractFamily(d.family)))];
     return fams.map((fam) => {
@@ -47,7 +42,6 @@ const Dashboard = () => {
     });
   }, []);
 
-  // 座標範囲
   const bounds = useMemo(() => {
     const xs = data.map((d) => +d.x);
     const ys = data.map((d) => +d.y);
@@ -82,7 +76,6 @@ const Dashboard = () => {
     return [...new Set(data.map((d) => d.category))];
   }, []);
 
-  // ===== d3-zoom 初期化 =====
   useEffect(() => {
     if (!svgRef.current || !contentRef.current) return;
 
@@ -107,125 +100,31 @@ const Dashboard = () => {
     return () => {
       svg.on(".zoom", null);
     };
-  }, [bounds.minX, bounds.maxX, bounds.minY, bounds.maxY]);
+  }, [bounds]);
 
   const fontSize = 0.2;
 
   return (
-    <div style={{ paddingInline: 16 }}>
+    <>
       {fontLinks}
 
-      <div
-        style={{
-          marginTop: "1rem",
-          marginBottom: "0.5rem",
-          display: "flex",
-          gap: "10px",
-          alignItems: "center",
-          flexWrap: "wrap",
-        }}
-      >
-        <label>
-          表示文字：
-          <input
-            value={glyph}
-            onChange={(e) => setGlyph(e.target.value || "")}
-            maxLength={3}
-            style={{
-              border: "1px solid #ccc",
-              marginLeft: "0.5rem",
-              padding: "0.25rem",
-            }}
-          />
-        </label>
-
-        {/* すぐに全体表示へ戻る */}
-        <button
-          onClick={() => {
-            if (!svgRef.current || !zoomRef.current) return;
-            const svg = d3.select(svgRef.current);
-            svg
-              .transition()
-              .duration(250)
-              .call(zoomRef.current.transform, d3.zoomIdentity);
-          }}
-          style={{
-            padding: "0.25rem 0.5rem",
-            border: "1px solid #ccc",
-            cursor: "pointer",
-          }}
-        >
-          リセット
-        </button>
-      </div>
-
-      {/* 上位件数セレクト */}
-      <label style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        上位件数：
-        <select
-          value={showTop}
-          onChange={(e) => setShowTop(Number(e.target.value))}
-          style={{ border: "1px solid #ccc", padding: "0.25rem" }}
-        >
-          {[100, 500, 1000, TOTAL].map((n) => (
-            <option key={n} value={n}>
-              {n}
-            </option>
-          ))}
-        </select>
-      </label>
-
-      <div style={{ marginBottom: "1rem", display: "flex", gap: "10px" }}>
-        ※日本語対応のフォントが少ないためアルファベットで試すことをおすすめします。
-      </div>
-
-      {/* 凡例 */}
-      <div
-        style={{
-          display: "flex",
-          gap: "12px",
-          alignItems: "center",
-          flexWrap: "wrap",
-          marginBottom: "0.5rem",
-        }}
-      >
-        {categories.map((cat, i) => (
-          <div
-            key={cat}
-            style={{ display: "flex", alignItems: "center", gap: 6 }}
-          >
-            <span
-              style={{
-                display: "inline-block",
-                width: 12,
-                height: 12,
-                background: categoryColor(cat, i),
-                borderRadius: 2,
-                border: "1px solid #ccc",
-              }}
-            />
-            <span style={{ fontSize: 12 }}>{cat}</span>
-          </div>
-        ))}
-      </div>
-
-      {/* SVG全体にzoomをかけるのでrefを付与 */}
+      {/* 背景のSVG */}
       <svg
         ref={svgRef}
         viewBox={viewBox}
         style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
           background: "#fff",
-          border: "1px solid #ccc",
-          width: "100%",
-          height: "70vh",
-          display: "flex",
+          zIndex: 0,
         }}
         preserveAspectRatio="xMidYMid meet"
       >
-        {/* 変換を当てたい要素群をgにまとめてref */}
         <g ref={contentRef}>
           {(() => {
-            // シンプルな当たり判定（重なり抑制）
             const occupied = [];
             const items = [];
 
@@ -234,23 +133,18 @@ const Dashboard = () => {
               const dx = parseFloat(d.x);
               const dy = parseFloat(d.y);
 
-              // 既存テキストと重なっていたらスキップ
               const hasOverlap = occupied.some((a) => {
-                const overlap = !(
-                  (
-                    dx + fontSize < a.x1 || // 完全に左
-                    dx > a.x2 || // 完全に右
-                    dy + fontSize < a.y1 || // 完全に上
-                    dy > a.y2
-                  ) // 完全に下
+                return !(
+                  dx + fontSize < a.x1 ||
+                  dx > a.x2 ||
+                  dy + fontSize < a.y1 ||
+                  dy > a.y2
                 );
-                return overlap;
               });
 
               const fam = extractFamily(d.family);
               const { fontWeight, fontStyle } = parseVariant(d.variant);
 
-              // ホバー表示内容：フォント名・バリアント・カテゴリ・インデックス（左詰め＆改行）
               const label = `フォント名：${fam} ${d.variant} \nカテゴリ：${
                 d.category
               }\n利用数ランキング${i + 1} / ${TOTAL}`;
@@ -269,8 +163,8 @@ const Dashboard = () => {
                     x={dx}
                     y={dy}
                     fontSize={fontSize}
-                    textAnchor="start" // 左基準
-                    dominantBaseline="text-before-edge" // 上基準
+                    textAnchor="start"
+                    dominantBaseline="text-before-edge"
                     fill={categoryColor(d.category, i)}
                     style={{
                       fontFamily: `${fam}, cursive`,
@@ -278,7 +172,6 @@ const Dashboard = () => {
                       fontStyle,
                       cursor: "pointer",
                     }}
-                    data-index={i + 1}
                   >
                     <title>{label}</title>
                     {glyph}
@@ -291,7 +184,126 @@ const Dashboard = () => {
           })()}
         </g>
       </svg>
-    </div>
+
+      {/* オーバーレイUI */}
+      <div
+        style={{
+          position: "fixed",
+          top: "1rem",
+          left: "1rem",
+          zIndex: 1,
+          background: "rgba(255,255,255,0.85)",
+          padding: "1rem",
+          borderRadius: "8px",
+        }}
+      >
+        <div
+          style={{
+            marginBottom: "0.5rem",
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <label>
+            表示文字：
+            <input
+              value={glyph}
+              onChange={(e) => setGlyph(e.target.value || "")}
+              maxLength={3}
+              style={{
+                border: "1px solid #ccc",
+                marginLeft: "0.5rem",
+                padding: "0.25rem",
+              }}
+            />
+          </label>
+
+          <label style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            上位件数：
+            <select
+              value={showTop}
+              onChange={(e) => setShowTop(Number(e.target.value))}
+              style={{ border: "1px solid #ccc", padding: "0.25rem" }}
+            >
+              {[100, 500, 1000, TOTAL].map((n) => (
+                <option key={n} value={n}>
+                  {n}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+        <div
+          style={{
+            marginBottom: "0.5rem",
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          ※日本語対応のフォントが少ないためアルファベットで試すことをおすすめします。
+        </div>
+
+        <div
+          style={{
+            marginBottom: "0.5rem",
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          {categories.map((cat, i) => (
+            <div
+              key={cat}
+              style={{ display: "flex", alignItems: "center", gap: 6 }}
+            >
+              <span
+                style={{
+                  display: "inline-block",
+                  width: 12,
+                  height: 12,
+                  background: categoryColor(cat, i),
+                  borderRadius: 2,
+                  border: "1px solid #ccc",
+                }}
+              />
+              <span style={{ fontSize: 12 }}>{cat}</span>
+            </div>
+          ))}
+        </div>
+        <div
+          style={{
+            marginBottom: "0.5rem",
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <button
+            onClick={() => {
+              if (!svgRef.current || !zoomRef.current) return;
+              const svg = d3.select(svgRef.current);
+              svg
+                .transition()
+                .duration(250)
+                .call(zoomRef.current.transform, d3.zoomIdentity);
+            }}
+            style={{
+              padding: "0.25rem 0.5rem",
+              border: "1px solid #ccc",
+              cursor: "pointer",
+            }}
+          >
+            画面をリセット
+          </button>
+        </div>
+      </div>
+    </>
   );
 };
 
