@@ -14,12 +14,7 @@ const HowToUse = () => {
       <ol className="list-decimal ml-6 space-y-4">
         <li>
           <strong>フォントを選ぶ：</strong>
-          ホーム画面で、一覧または検索から気になるフォントを探すことができます。
-        </li>
-        <li>
-          <strong>診断に挑戦する：</strong>
-          「診断」ページでは、好みのフォントを選んでいくことで、
-          あなたにぴったりのフォントを提案してくれます。
+          ホーム画面の一覧や検索で、試してみたいフォントを見つけましょう。
         </li>
       </ol>
 
@@ -34,15 +29,6 @@ const HowToUse = () => {
           className="inline-block px-6 py-3 border border-green-600 text-green-700 font-medium rounded hover:bg-green-50 transition"
         >
           フォント一覧を見てみる
-        </Link>
-      </div>
-
-      <div className="mt-10 text-center">
-        <Link
-          to="/quiz"
-          className="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded hover:bg-green-700 transition"
-        >
-          フォント診断を試してみる
         </Link>
       </div>
     </div>
