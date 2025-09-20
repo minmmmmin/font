@@ -5,6 +5,7 @@ import data from "../../output.json";
 const Dashboard = () => {
   const [glyph, setGlyph] = useState("A");
   const [showTop, setShowTop] = useState(500);
+  const [transform, setTransform] = useState(d3.zoomIdentity);
 
   const svgRef = useRef(null);
   const contentRef = useRef(null);
@@ -27,21 +28,21 @@ const Dashboard = () => {
     return { fontWeight: 400, fontStyle: "normal" };
   };
 
+  // Google Fonts 読み込みリンク
   const fontLinks = useMemo(() => {
     const fams = [...new Set(data.map((d) => extractFamily(d.family)))];
-    return fams.map((fam) => {
-      return (
-        <link
-          key={fam}
-          rel="stylesheet"
-          href={`https://fonts.googleapis.com/css2?family=${encodeURIComponent(
-            fam
-          )}&display=swap`}
-        />
-      );
-    });
+    return fams.map((fam) => (
+      <link
+        key={fam}
+        rel="stylesheet"
+        href={`https://fonts.googleapis.com/css2?family=${encodeURIComponent(
+          fam
+        )}&display=swap`}
+      />
+    ));
   }, []);
 
+  // 座標範囲
   const bounds = useMemo(() => {
     const xs = data.map((d) => +d.x);
     const ys = data.map((d) => +d.y);
@@ -72,10 +73,12 @@ const Dashboard = () => {
 
   const viewBox = `${bounds.minX} ${bounds.minY} ${bounds.width} ${bounds.height}`;
 
-  const categories = useMemo(() => {
-    return [...new Set(data.map((d) => d.category))];
-  }, []);
+  const categories = useMemo(
+    () => [...new Set(data.map((d) => d.category))],
+    []
+  );
 
+  // ズーム初期化
   useEffect(() => {
     if (!svgRef.current || !contentRef.current) return;
 
@@ -91,6 +94,7 @@ const Dashboard = () => {
       ])
       .on("zoom", (event) => {
         content.attr("transform", event.transform);
+        setTransform(event.transform);
       });
 
     svg.call(zoom);
@@ -102,7 +106,7 @@ const Dashboard = () => {
     };
   }, [bounds]);
 
-  const fontSize = 0.2;
+  const fontSize = 0.2; // データ座標系でのベースサイズ
 
   return (
     <>
@@ -129,32 +133,40 @@ const Dashboard = () => {
             const items = [];
 
             for (let i = 0; i < data.length; i++) {
+              if (i >= showTop) break; // 上位件数制限
+
               const d = data[i];
               const dx = parseFloat(d.x);
               const dy = parseFloat(d.y);
 
+              // transform を適用したスクリーン座標
+              const sx = dx * transform.k + transform.x;
+              const sy = dy * transform.k + transform.y;
+              const size = fontSize / transform.k; // 画面上でのサイズ
+
+              // 画面上で重なりチェック
               const hasOverlap = occupied.some((a) => {
                 return !(
-                  dx + fontSize < a.x1 ||
-                  dx > a.x2 ||
-                  dy + fontSize < a.y1 ||
-                  dy > a.y2
+                  sx + size < a.x1 ||
+                  sx > a.x2 ||
+                  sy + size < a.y1 ||
+                  sy > a.y2
                 );
               });
 
               const fam = extractFamily(d.family);
               const { fontWeight, fontStyle } = parseVariant(d.variant);
 
-              const label = `フォント名：${fam} ${d.variant} \nカテゴリ：${
+              const label = `フォント名：${fam} ${d.variant}\nカテゴリ：${
                 d.category
-              }\n利用数ランキング${i + 1} / ${TOTAL}`;
+              }\n利用数ランキング ${i + 1} / ${TOTAL}`;
 
-              if (i < showTop && !hasOverlap) {
+              if (!hasOverlap) {
                 occupied.push({
-                  x1: dx,
-                  y1: dy,
-                  x2: dx + fontSize,
-                  y2: dy + fontSize,
+                  x1: sx,
+                  y1: sy,
+                  x2: sx + size,
+                  y2: sy + size,
                 });
 
                 items.push(
@@ -235,6 +247,7 @@ const Dashboard = () => {
             </select>
           </label>
         </div>
+
         <div
           style={{
             marginBottom: "0.5rem",
@@ -275,6 +288,7 @@ const Dashboard = () => {
             </div>
           ))}
         </div>
+
         <div
           style={{
             marginBottom: "0.5rem",
