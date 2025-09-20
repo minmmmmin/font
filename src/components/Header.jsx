@@ -14,9 +14,6 @@ const Header = () => {
           <Link to="/dashboard" className="hover:underline">
             Dashboard
           </Link>
-          <Link to="/quiz" className="hover:underline">
-            診断
-          </Link>
           <a
             href="https://github.com/minmmmmin/font"
             target="_blank"
