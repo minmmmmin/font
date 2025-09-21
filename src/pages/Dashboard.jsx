@@ -6,6 +6,8 @@ const Dashboard = () => {
   const [glyph, setGlyph] = useState("A");
   const [showTop, setShowTop] = useState(500);
   const [transform, setTransform] = useState(d3.zoomIdentity);
+  const [fontSizeMap, setFontSizeMap] = useState(new Map()); 
+  // key: index, value: "small" or "normal"
 
   const svgRef = useRef(null);
   const contentRef = useRef(null);
@@ -106,7 +108,9 @@ const Dashboard = () => {
     };
   }, [bounds]);
 
-  const fontSize = 0.2; // データ座標系でのベースサイズ
+  // フォントサイズ
+  const baseFontSize = 0.15;      // 通常サイズ
+  const overlapFontSize = 0.1;   // 重なったときのサイズ
 
   return (
     <>
@@ -133,18 +137,18 @@ const Dashboard = () => {
             const items = [];
 
             for (let i = 0; i < data.length; i++) {
-              if (i >= showTop) break; // 上位件数制限
+              if (i >= showTop) break;
 
               const d = data[i];
               const dx = parseFloat(d.x);
               const dy = parseFloat(d.y);
 
-              // transform を適用したスクリーン座標
+              // スクリーン座標に変換
               const sx = dx * transform.k + transform.x;
               const sy = dy * transform.k + transform.y;
-              const size = fontSize / transform.k; // 画面上でのサイズ
+              const size = baseFontSize / transform.k;
 
-              // 画面上で重なりチェック
+              // 重なりチェック
               const hasOverlap = occupied.some((a) => {
                 return !(
                   sx + size < a.x1 ||
@@ -157,39 +161,55 @@ const Dashboard = () => {
               const fam = extractFamily(d.family);
               const { fontWeight, fontStyle } = parseVariant(d.variant);
 
-              const label = `フォント名：${fam} ${d.variant}\nカテゴリ：${
-                d.category
-              }\n利用数ランキング ${i + 1} / ${TOTAL}`;
+              let fontSizeType = fontSizeMap.get(i);
 
-              if (!hasOverlap) {
+              if (!fontSizeType) {
+                // 初回のみ決定 → 以後は固定
+                fontSizeType = hasOverlap ? "small" : "normal";
+                setFontSizeMap((prev) => {
+                  const next = new Map(prev);
+                  next.set(i, fontSizeType);
+                  return next;
+                });
+              }
+
+              const effectiveSize =
+                fontSizeType === "small" ? overlapFontSize : baseFontSize;
+
+              if (fontSizeType === "normal") {
                 occupied.push({
                   x1: sx,
                   y1: sy,
                   x2: sx + size,
                   y2: sy + size,
                 });
-
-                items.push(
-                  <text
-                    key={i}
-                    x={dx}
-                    y={dy}
-                    fontSize={fontSize}
-                    textAnchor="start"
-                    dominantBaseline="text-before-edge"
-                    fill={categoryColor(d.category, i)}
-                    style={{
-                      fontFamily: `${fam}, cursive`,
-                      fontWeight,
-                      fontStyle,
-                      cursor: "pointer",
-                    }}
-                  >
-                    <title>{label}</title>
-                    {glyph}
-                  </text>
-                );
               }
+
+              const label = `フォント名：${fam} ${d.variant}\nカテゴリ：${
+                d.category
+              }\n利用数ランキング ${i + 1} / ${TOTAL}`;
+
+              items.push(
+                <text
+                  key={i}
+                  x={dx}
+                  y={dy}
+                  fontSize={effectiveSize}
+                  textAnchor="start"
+                  dominantBaseline="text-before-edge"
+                  fill={categoryColor(d.category, i)}
+                  style={{
+                    fontFamily: `${fam}, cursive`,
+                    fontWeight,
+                    fontStyle,
+                    cursor: "pointer",
+                    opacity: fontSizeType === "small" ? 0.6 : 1,
+                  }}
+                >
+                  <title>{label}</title>
+                  {glyph}
+                </text>
+              );
             }
 
             return items;
@@ -248,15 +268,7 @@ const Dashboard = () => {
           </label>
         </div>
 
-        <div
-          style={{
-            marginBottom: "0.5rem",
-            display: "flex",
-            gap: "10px",
-            alignItems: "center",
-            flexWrap: "wrap",
-          }}
-        >
+        <div style={{ marginBottom: "0.5rem" }}>
           ※日本語対応のフォントが少ないためアルファベットで試すことをおすすめします。
         </div>
 
@@ -289,33 +301,23 @@ const Dashboard = () => {
           ))}
         </div>
 
-        <div
+        <button
+          onClick={() => {
+            if (!svgRef.current || !zoomRef.current) return;
+            const svg = d3.select(svgRef.current);
+            svg
+              .transition()
+              .duration(250)
+              .call(zoomRef.current.transform, d3.zoomIdentity);
+          }}
           style={{
-            marginBottom: "0.5rem",
-            display: "flex",
-            gap: "10px",
-            alignItems: "center",
-            flexWrap: "wrap",
+            padding: "0.25rem 0.5rem",
+            border: "1px solid #ccc",
+            cursor: "pointer",
           }}
         >
-          <button
-            onClick={() => {
-              if (!svgRef.current || !zoomRef.current) return;
-              const svg = d3.select(svgRef.current);
-              svg
-                .transition()
-                .duration(250)
-                .call(zoomRef.current.transform, d3.zoomIdentity);
-            }}
-            style={{
-              padding: "0.25rem 0.5rem",
-              border: "1px solid #ccc",
-              cursor: "pointer",
-            }}
-          >
-            画面をリセット
-          </button>
-        </div>
+          画面をリセット
+        </button>
       </div>
     </>
   );
